@@ -1,0 +1,172 @@
+\documentclass[a4paper, fontsize=14pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[left=2cm,right=1.5cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[english, russian]{babel}
+% \usepackage[left=2.5cm, right=1.5cm, vmargin=2.5cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{scrextend}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\renewcommand*\contentsname{Содержание}
+
+\title{\textbf{Отчет по заданию \\"Решение системы нелинейных уравнений"}}
+\author{Сибгатуллин Артур, 208 учебная группа}
+\date{21 Мая, 2020}
+
+
+
+\begin{document}
+
+        \maketitle
+
+    \newpage
+        \tableofcontents
+
+        \newpage
+	\section{Введение}
+	 В курсе предмета "Работа на ЭВМ и программирование" перед нами была поставлена задача: численно решить систему нелинейных уравнений методом \textbf{"Сжимающих отображений"}, с использованием языка C++.
+
+         \section{Исходные данные}
+	    Система нелинейных уравнений (№\ 8 в списке задач). Небходимо найти решение $(x_0,y_0) \in \mathbb{R^2}$, где $\alpha \in \mathbb{R}$
+	\begin{equation*}
+	    \begin{cases}
+	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
+		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
+		\end{cases}
+	\end{equation*}
+
+    \section{Теоретическая часть}
+        Для численного решения данной системы воспользуемся итеррационным методом "Сжимающие отображения". Определим необходимый нам набор фактов:
+	    \begin{itemize}
+	        \item \textit{\textbf{Определение: }Пусть на метрическом пространстве  $(\mathbb{M}, \rho)$ определён оператор $\mathbf{A}: \mathbb{M} \rightarrow \mathbb{M}$. Он называется сжимающим на $\mathbb{M}$, если существует такое неотрицательное число $\alpha < 1$, что $\forall x,y \in \mathbb{M}$ выполняется неравенство $\rho(Ax, Ay) \leq \alpha*\rho(x, y)$}.
+
+                \item \textit{\textbf{Определение: } Матричной нормой $\Vert A\Vert_1$ матрицы размером $m\times n$ назовем число $\Vert A\Vert_1 = \max\limits_{1\leq j\leq n}\sum\limits_{i = 1}^m |a_{ij}|$}
+
+                \item \textit{\textbf{Теорема(Банах-Каччиопполи): }Пусть
+		    \begin{enumerate}
+		        \item $X$ -- полное пространство с нормой $\Vert\circ\Vert$
+			\item $\Omega \subset X$, где $\Omega-\text{замкнутое множество}$
+			\item $\Omega$ - выпуклое множество
+			\item Задано отображение $F:\Omega\times A \rightarrow \Omega$
+			\item $\forall \Bar{x} \in \Omega$ $\exists$ $\frac{\partial F(\Bar{x}, \alpha)}{\partial \Bar{x}}$
+			\item $\forall \Bar{x} \in \Omega$ $F(\Bar{x}, \alpha)$ - непрерывное по $\alpha$
+			\item $\forall \Bar{x} \in \Omega$ $\forall \alpha \in A$ верно, что $\Vert\frac{\partial F}{\partial \Bar{x}}\Vert \leq q < 1$
+			\end{enumerate}
+		Тогда:
+		    \begin{enumerate}
+		        \item $F$ является сжимающим отображением на $\Omega$
+			\item Существует единственное решение $\Bar{x}_0 = \Bar{x}_0(\alpha) $ уравнения $F(\Bar{x}) = \Bar{x}$
+			\item Последовательность  $\{\Bar{x}_k\}_{n = 1}^\infty$, где $\Bar{x}_i = \Bar{x}_i(\alpha)$ $\Bar{x}_{k+1} = F(\Bar{x}_k, \alpha_0)$,  сходится к $\Bar{x}_0 = \Bar{x}_0(\alpha)$ - решениe уравнения $F(\Bar{x}) = \Bar{x}$,
+			\item При $0\leq q < 1$ мы можем оценить скорость сходимости последовательности $\{\Bar{x}_k\}_{n = 1}^\infty$.
+			\\ $\Vert \Bar{x}_k - \Bar{x}_0\Vert \leq \frac{q^k}{1-q}*\Vert \Bar{x}_0 - \Bar{x}_1\Vert$
+			\end{enumerate}
+		}
+		\end{itemize}
+	Таким образом мы можем представить нашу систему:
+	\begin{equation*}
+	    \begin{cases}
+	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
+		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
+		\end{cases}
+	\end{equation*}
+	в виде
+	\begin{equation*}
+	    \begin{cases}
+	        \widetilde{F_1}(x,y,\alpha) = x\\
+		\widetilde{F_2}(x,y,\alpha) = y
+		\end{cases}
+	\end{equation*}
+	и показать, что все условия \textbf{Теоремы(Банах-Каччиопполи)} выполняются. Далее с помощью итеррационного процесса описанного в пункте 3 найти решение нашей системы для заданного $\alpha$.
+
+    \newpage
+    \section{Практическая часть}
+    Приведем систему
+    \begin{equation}
+            \begin{cases}
+	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
+		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
+		\end{cases}
+	\end{equation}
+    к виду (2), выразив $x$ из 1 уравнения и $y$ из 2.
+            \begin{equation}
+	    \begin{cases}
+	        \widetilde{F_1}(x,y,\alpha) = x\\
+		\widetilde{F_2}(x,y,\alpha) = y
+		\end{cases}
+	\end{equation}.
+    Получили (3)
+    \begin{equation}
+            \begin{cases}
+	        x=\frac{e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos(y) - 1\right)^2}}{\alpha^2 + 1}\\
+		y=-\frac{1}{3}\left(\frac{x^2}{2\sqrt{x^2 + 1}} + \frac{1}{y^2 + 1}\right)
+		\end{cases}
+	\end{equation}
+    Составим матрицу Якоби ($J_{\widetilde{F}(x,y,\alpha)}$) и оценим ее $\Vert A\Vert_1$-норму.
+    $$J_{\widetilde{F}(x,y,\alpha)} =
+      \begin{pmatrix}
+          \frac{\partial\widetilde{F_1}(x,y,\alpha)}{\partial x} &\frac{\partial\widetilde{F_1}(x,y,\alpha)}{\partial y} \\
+	  \frac{\partial\widetilde{F_2}(x,y,\alpha)}{\partial x} &\frac{\partial\widetilde{F_2}(x,y,\alpha)}{\partial y}
+      \end{pmatrix}
+    $$
+    Таким образом получаем, что матрица Якоби имеет вид.
+    $$%J_{\widetilde{F}(x,y,\alpha)} =%
+      \begin{pmatrix}
+          -\frac{2e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\sqrt{x^2+1} \cos (y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}
+	  &\frac{e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)2\sin(y)}{\alpha ^2+1}
+	  \\\\
+	  -\frac{x \left(x^2+2\right)}{6 \left(x^2+1\right)^{3/2}} &\frac{2 y}{3 \left(y^2+1\right)^2}
+      \end{pmatrix}
+    $$
+
+    Оценим модули всех элементов матрицы Якоби:
+    \begin{itemize}
+        \item $|J_{11}| = |-\frac{2 e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos(y)-1\right)^2} \left(\sqrt{x^2+1}\cos(y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}|  \leq |\frac{2 \left(\sqrt{x^2+1} \cos (y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}| \leq
+	\\ \leq |\frac{2 \left(\sqrt{x^2+1}-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}| \leq \frac{2 x}{\left(x^2+1\right)^2}$ (4).
+	\\ Найдем максимум выражения (4):
+	\\${\frac{|2 x|}{\left(x^2+1\right)^2}}^\prime = \frac{2}{\left(x^2+1\right)^2}-\frac{8 x^2}{\left(x^2+1\right)^3}$.
+	\\Корни уравнения $\frac{2}{\left(x^2+1\right)^2}-\frac{8 x^2}{\left(x^2+1\right)^3} = 0$ равны $x_{1,2} = \pm \frac{1}{\sqrt{3}}$.
+	\\Максимум в точке $x_1 = \frac{1}{\sqrt{3}}$ и он равен $\frac{3 \sqrt{3}}{8}$
+
+        \item $|J_{21}| =  |-\frac{x \left(x^2+2\right)}{6 \left(x^2+1\right)^{3/2}}| \leq |\frac{x \left(x^2+2\right)}{\left(x^2+1\right)^{3/2}}|$(5).
+	\\Найдем максимум выражения (5):
+	\\ ${\frac{|x| \left(x^2+2\right)}{\left(x^2+1\right)^{3/2}}}^\prime = \frac{2-x^2}{\left(x^2+1\right)^{5/2}} $
+	\\Корни уравнения $ \frac{2-x^2}{\left(x^2+1\right)^{5/2}} = 0 $ равны $x_{1,2} = \pm \sqrt{2}$.
+	\\Максимум в точке $x_1 = -\sqrt{2}$ и он равен $\frac{2 \sqrt{\frac{2}{3}}}{9} $
+
+        Таким образом сумма элементов 1 столбца матрицы Якоби равна $\frac{2 \sqrt{\frac{2}{3}}}{9} + \frac{3 \sqrt{3}}{8} \approx 0.85  $
+
+        \item $|J_{12}| = |\frac{2\sin(y)e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)\sin(y)}{\alpha ^2+1}| \leq |\frac{\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)\sin(y)}{\alpha ^2+1}|\leq
+	\\ \leq |2 \sin (y) \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)| \leq |2 \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)| \leq |2\left(\frac{x}{\sqrt{x^2+1}}\right)|$
+	Заметим что $\lim\limits_{x\to\infty}|2\left(\frac{x}{\sqrt{x^2+1}}\right)| = 2$, максимум достигается только на $\infty$.
+
+        \item $|J_{22}| = |\frac{2 y}{3 \left(y^2+1\right)^2}|$ (6)
+	Найдем максимум выражения (6):
+	\\$|\frac{2 y}{3 \left(y^2+1\right)^2}|^\prime = \frac{2-6 y^2}{3 \left(y^2+1\right)^3}$
+	\\Корни уравнения $\frac{2-6 y^2}{3 \left(y^2+1\right)^3} = 0$, в точках $y_{1,2} = \pm\frac{1}{\sqrt{3}}$.
+	Максимуму в точке $y_2 = -\frac{1}{\sqrt{3}}$ и он равен $\frac{\sqrt{3}}{8}$
+
+        Как можно сумма модулей элементов столбца 2 может стать больше 1 на $\mathbb{R}^2$, поэтому определим $\Omega$ так, чтобы норма оставалась меньше 1. Пусть $\Omega = [-0.4; 0.4]\times \mathbb{R}$, при ней сумма модулей элементова столбца 2 $\approx 0.95$
+    \end{itemize}
+    Таким образом $q = 0.95 < 1$, заметим что все остальные условия Теоремы(Банаха-Каччиопполи) тоже выполняются, поэтому можем найти решение системы (1) с помощью принципа \textbf{"Сжимающих отображений"}.
+    \\
+    Оценим количество шагов иттерационного метода с помощью 4 вывода из \\
+    Теоремы(Банаха-Каччиопполи):
+    $q = 0.05$, точность необходимая нам в расчетах $\epsilon = \Vert\Bar{x}_0 - \Bar{x}_k\Vert$
+    из 4 вывода имеем: $k \geq \log_q \frac{\epsilon(1-q)}{\Vert\Bar{x}_0 - \Bar{x}_1\Vert}$.
+    \\За начальную точку возьмем $(0;0)$, тогда $\Bar{x}_0 = \{\frac{1}{\alpha^2 + 1}, \frac{-1}{3} \}$, $\Bar{x}_1 = \widetilde{F}(x_0, y_0, \alpha) =
+    \\ = \left\{ \frac{e^{ -\left(\frac{1}{\left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-1+\cos \left(\frac{1}{3}\right)\right)^2}}{a^2+1}, \frac{1}{3} \left(-\frac{1}{2 \left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-\frac{9}{10}\right)\right\}$
+
+    $ \Vert\Bar{x}_0 - \Bar{x}_1\Vert =
+    \\\\ = \Vert\left\{\frac{-1 + e^{ -\left(\frac{1}{\left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-1+\cos \left(\frac{1}{3}\right)\right)^2}}{a^2+1} , \frac{1}{3} \left(-\frac{1}{2 \left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-\frac{19}{10}\right) \right\} \Vert$
+
+    $\Vert\Bar{x}_0 - \Bar{x}_1\Vert \leq \sqrt{\frac{1}{9} \left(\frac{19}{10}+\frac{1}{2 \sqrt{2}}\right)+\left(e^{-\left(\frac{1}{\sqrt{2}}-1+\cos \left(\frac{1}{3}\right)\right)^2}-1\right)^2} \approx 0.6$
+    \\\\Оценка на k:
+    \\$k \geq \log_{0.95} (\frac{\epsilon * 0.05}{0.6})$
+
+
+
+
+
+\end{document}
