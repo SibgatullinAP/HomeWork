@@ -44,20 +44,20 @@ void check (double *arr, int size)
           return;
         }
     }
-    printf("\x1b[32m[SORTED]\x1b[0m\n");
+  printf("\x1b[32m[SORTED]\x1b[0m\n");
 }
 
 void heap_sort(double *arr, int size)
 {
-    int i;
-    for (i = (size / 2) - 1; i >= 0; i--)
-      create_heap(arr, i, size);
+  int i;
+  for (i = (size / 2) - 1; i >= 0; i--)
+    create_heap(arr, i, size);
 
-    for (i = size - 1; i >= 0; i--)
-      {
-        swap(arr, 0, i);
-        create_heap(arr, 0, i);
-      }
+  for (i = size - 1; i >= 0; i--)
+    {
+      swap(arr, 0, i);
+      create_heap(arr, 0, i);
+    }
 }
 
 
@@ -77,13 +77,13 @@ void create_heap(double *arr, int root, int bottom)
 
           if(arr[root] < arr[max])
             {
-                swap(arr, root, max);
-                root = max;
+              swap(arr, root, max);
+              root = max;
             }
           else
             flag = 0;
         }
-  }
+    }
 }
 
 void swap (double *a, int i, int j)

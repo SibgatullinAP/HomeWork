@@ -27,17 +27,17 @@ int main (int argc, char *argv[])
     {
       switch(ret)
         {
-          case CANNOT_OPEN_FILE:
-            printf("\x1b[31m[ERROR] \x1b[0mCan't open %s\n", name);
-            break;
-          case CANNOT_READ_FILE:
-            printf("\x1b[31m[ERROR] \x1b[0mCan't read %s\n", name);
-            break;
-          case INVALID_FILE:
-            printf("\x1b[31m[ERROR] \x1b[0mInvalid file (only part of the file is read)\n");
-            break;
-          default:
-            printf("\x1b[31m[ERROR] \x1b[0mUnknown error\n");
+        case CANNOT_OPEN_FILE:
+          printf("\x1b[31m[ERROR] \x1b[0mCan't open %s\n", name);
+          break;
+        case CANNOT_READ_FILE:
+          printf("\x1b[31m[ERROR] \x1b[0mCan't read %s\n", name);
+          break;
+        case INVALID_FILE:
+          printf("\x1b[31m[ERROR] \x1b[0mInvalid file (only part of the file is read)\n");
+          break;
+        default:
+          printf("\x1b[31m[ERROR] \x1b[0mUnknown error\n");
         }
 
       free (arr);

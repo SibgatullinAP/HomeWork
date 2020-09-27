@@ -6,6 +6,3 @@ void check (double *arr, int size);
 void heap_sort(double *arr, int size);
 void create_heap(double *arr, int root, int bottom);
 void swap (double *a, int i, int j);
-
-
-
