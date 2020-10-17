@@ -1,0 +1,10 @@
+#CFLAGS= -O3
+all: prog.exe
+main.o: main.c f.h test.h
+f.o: f.c f.h
+test.o: test.c test.h
+%.o: %.c
+	gcc -$(CFLAGS) $<
+prog.exe: main.o f.o test.o
+	gcc -$(CFLAGS) $^ -o $@
+-Wall -Wextra -pedantic -Wmissing-prototypes -Wstrict-prototypes -Wold-style-definition -Werror -lm'

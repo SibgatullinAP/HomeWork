@@ -7,8 +7,15 @@
 % \usepackage[left=2.5cm, right=1.5cm, vmargin=2.5cm]{geometry}
 \usepackage{indentfirst}
 \usepackage{scrextend}
-\usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+
+
+
+
 \renewcommand*\contentsname{Содержание}
 
 \title{\textbf{Отчет по заданию \\"Решение системы линейных уравнений методом вращений"}}
@@ -16,6 +23,9 @@
 \date{27 сентября, 2020}
 
 
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
 
 \begin{document}
 
@@ -26,8 +36,7 @@
 
         \newpage
 	\section{Введение}
-		 В курсе предмета "Работа на ЭВМ и программирование" перед нами была поставлена задача: решить систему линейных уравнений методом \textbf{"Вращений (QR-разложения, Гивенса)"}.
-		 
+		 В курсе предмета "Работа на ЭВМ и программирование" перед нами была поставлена задача: решить систему линейных уравнений методом \textbf{"Вращений (Гивенса)"}.
 		 Пусть система уравнений $Ax = b $ задана следующими элементами:
 		 \begin{equation*}
 			 	A = \left(
@@ -57,151 +66,241 @@
 	 	\end{equation*}
  	
  	
-		Где матрица $A-$невырожденная, $x-$вектор столбец искомых неизвестных, $b-$вектор столбец свободных коэффицентов.
+		Где матрица $A-$невырожденная, $x-$вектор столбец искомых неизвестных, $b-$вектор столбец свободных членов. Необходимо найти $x$.
 		
-		Алгоритм вращени
+		\subsection{Алгоритм метода вращений}
+		
+		\textbf{Лемма 1}: $ \, \forall \, \, r = (x_1,x_2)^T \in \mathbb{R}^2,$ где $r\neq0$ существует матрица $T$:
+		 $$T = \begin{pmatrix}
+			\cos(\varphi)& \ -sin(\varphi)\\
+			\sin(\varphi)& \cos(\varphi)
+		\end{pmatrix} \text{и} \, Tr = \Vert r \Vert(1,0)^T \, \text{где} \Vert r \Vert = \sqrt{x_1^2 + x_2^2} $$
+		$\Box$
+		Просто предъявим такую матрицу: $cos(\varphi) = \frac{x_1}{\sqrt{x_1^2 + x_2^2}}$, $sin(\varphi) = -\frac{x_2}{\sqrt{x_1^2 + x_2^2}}\blacksquare$
+		
+		$\\$
+		Как можно заметить матрица $T$ это матрица вращения на угол $\varphi$ в $\mathbb{R}$ относительно оси $x_1$, поэтому метод называется методом вращения.
+		\\Таким же образом мы можем привести вектор-столбцы любого размера к виду $(\Vert x_1\Vert,\dots, 0  )^T$ , например $(x_1, x_2, x_3 )^T$ приводим к виду $(\Vert x_1\Vert, 0, 0 )^T$, сначала преобразовав к виду $(\Vert x_1\Vert, 0, x_3  )^T$, а затем к $(\Vert x_1\Vert, 0, 0  )^T$. Формальное доказательство этого факта приведено в учебнике К.Ю.Богачева <<Практикум на ЭВМ. Методы решения линейных систем и нахождения собственных значений>>, стр.43 Лемма 3.
+		\\
+		\\Сам алгоритм заключается в приведении матрицы $A$ к верхнетреугольному виду следующим образом. Обозначим первый столбец матрицы $A$ как
+		\begin{equation*}
+			a^1 = 
+			\left( \begin{array}{cccc}
+				a_{1,1} \\
+				a_{1,1} \\
+				\vdots \\
+				a_{n,1} 
+				\end{array}
+			\right)
+		\end{equation*}
+		 Тогда$\,\exists$ набор матриц $\,T_{1,2},\dots ,T_{1,n}$, таких что $T_{1,2}*\dots*T_{1,n}*a^1 = \Vert a^1\Vert *e_1$,  ($e_1,\dots e_n $) - стандартный базис в $\,\mathbb{R}^n$. Умножим систему $Ax=b$ на $T_{1,2}*\dots*T_{1,n}$ слева. Получим новую систему $A^{(1)}x=b^{(1)}$ эквивалентную исходной,
+		 где
+		 \begin{equation*}
+			A^{(1)} = T_{1,2}*\dots*T_{1,n}*A =
+			\left(
+			\begin{array}{cccc}
+			\Vert a_1\Vert & c_{1,2} & \ldots & c_{1,n}\\
+			0 & a_{2,2}^{(1)} & \ldots & a_{2,n}^{(1)}\\
+			\vdots & \vdots & \ddots & \vdots\\
+			0 & a_{n,2}^{(1)} & \ldots & a_{n,n}^{(1)}
+			\end{array}
+			\right),
+			b^{(1)} = T_{1,2}*\dots*T_{1,n}* \left(
+			\begin{array}{cccc}
+				b_{1,1} \\
+				b_{2,1} \\
+				\vdots \\
+				b_{n,1} 
+			\end{array}
+			\right)
+		\end{equation*}
+		
+		Далее применим процесс для подматрицы $(a_{i,j}^{(1)})_{i,j = 2\dots n}\,(1)$. После применения данного процесса ко всем подматрицам вида$\,(1)$ мы получим матрицу 
+		\begin{equation*}
+			R =
+			\left(
+			\begin{array}{ccccccc}
+				\Vert a_1\Vert & c_{1,2} & c_{1,3} & \ldots & c_{1,n-2} & c_{1,n-1} & c_{1,n}\\
+				 					 & \Vert a_1^{(1)}\Vert & c_{2,3} & \ldots & c_{2,n-2} & c_{2,n-1} & c_{2,n}\\
+									 		&  & \Vert a_1^{(2)}\Vert & \ldots & c_{3,n-2} & c_{3,n-1} & c_{3,n}\\
+									 		&  &  &\ddots & \vdots & \vdots & \vdots\\
+											&  &  & & \Vert a_1^{(n-3)}\Vert  & c_{n-2,n-1} & c_{n-2,n}\\
+											&  &  & & & \Vert a_1^{(n-2)}\Vert   & c_{n-1,n}\\
+											&  &  & & & & a_{n,n}^{(n-1)}\\
+			\end{array}
+			\right),
+			\end{equation*}
+		и столбец свободных коэффицентов 
+		$y = b^{(n-1)} = \prod_{i = n-1}^{n-1}\prod_{j=n}^{i+1}T_{ij}b$, где $\prod_{j=n}^{i+1}$ означает, что сомножители берутся в порядке $n,\dots,i+1$
+		\\Система $Rx=y$, где $R$ - верхнетреугольная матрица, решается обратным ходом метода Гаусса.
+
+	
 	 	
  	
+	\newpage
+ 	\section{Точечный метод вращения}
+	 	\subsection{Реализация(Псевдокод)}
+	 	
+	 	\lstinline$for i=1 to n do $
+	 	\\
+	 	\lstinline$	for j = i+1 to n do$
+	 	\\
+	 	\lstinline$		cos(phi) = A[i][i] / norm(j) $
+	 	\\
+	 	\lstinline$		sin(phi) = -A[j][i] / norm(j) $
+	 	\\
+		\lstinline$		for k = i to n do$
+		\\
+		\lstinline$			A[i][k] = A[k][j] * cos(phi) - sin(phi) * A[j][k]$
+		\\
+		\lstinline$			A[j][k] = A[k][j] * cos(phi) + sin(phi) * A[j][k]$
+		\\
+		\lstinline$		end for$
+		\\
+		\lstinline$		b[i] = b[i] * cos(phi) - sin(phi) * b[j]$
+		\\
+		\lstinline$		b[j] = b[i] * cos(phi) + sin(phi) * b[j]$
+		\\	
+		\lstinline$	if A[i][i] < EPS $
+		\\	
+		\lstinline$		return ERROR:System is incosistent$
+		\\	
+		\lstinline$	end for$
+		\\
+		\lstinline$end for$
+		\\
+		\lstinline$Back-Subtitution_procedure()$
 
-         \section{Исходные данные}
-	    Система линейных уравнений (№\ 8 в списке задач). Небходимо найти решение $(x_0,y_0) \in \mathbb{R^2}$, где $\alpha \in \mathbb{R}$
-	\begin{equation*}
-	    \begin{cases}
-	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
-		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
-		\end{cases}
-	\end{equation*}
-
-    \section{Теоретическая часть}
-        Для численного решения данной системы воспользуемся итеррационным методом "Сжимающие отображения". Определим необходимый нам набор фактов:
-	    \begin{itemize}
-	        \item \textit{\textbf{Определение: }Пусть на метрическом пространстве  $(\mathbb{M}, \rho)$ определён оператор $\mathbf{A}: \mathbb{M} \rightarrow \mathbb{M}$. Он называется сжимающим на $\mathbb{M}$, если существует такое неотрицательное число $\alpha < 1$, что $\forall x,y \in \mathbb{M}$ выполняется неравенство $\rho(Ax, Ay) \leq \alpha*\rho(x, y)$}.
-
-                \item \textit{\textbf{Определение: } Матричной нормой $\Vert A\Vert_1$ матрицы размером $m\times n$ назовем число $\Vert A\Vert_1 = \max\limits_{1\leq j\leq n}\sum\limits_{i = 1}^m |a_{ij}|$}
-
-                \item \textit{\textbf{Теорема(Банах-Каччиопполи): }Пусть
-		    \begin{enumerate}
-		        \item $X$ -- полное пространство с нормой $\Vert\circ\Vert$
-			\item $\Omega \subset X$, где $\Omega-\text{замкнутое множество}$
-			\item $\Omega$ - выпуклое множество
-			\item Задано отображение $F:\Omega\times A \rightarrow \Omega$
-			\item $\forall \Bar{x} \in \Omega$ $\exists$ $\frac{\partial F(\Bar{x}, \alpha)}{\partial \Bar{x}}$
-			\item $\forall \Bar{x} \in \Omega$ $F(\Bar{x}, \alpha)$ - непрерывное по $\alpha$
-			\item $\forall \Bar{x} \in \Omega$ $\forall \alpha \in A$ верно, что $\Vert\frac{\partial F}{\partial \Bar{x}}\Vert \leq q < 1$
-			\end{enumerate}
-		Тогда:
-		    \begin{enumerate}
-		        \item $F$ является сжимающим отображением на $\Omega$
-			\item Существует единственное решение $\Bar{x}_0 = \Bar{x}_0(\alpha) $ уравнения $F(\Bar{x}) = \Bar{x}$
-			\item Последовательность  $\{\Bar{x}_k\}_{n = 1}^\infty$, где $\Bar{x}_i = \Bar{x}_i(\alpha)$ $\Bar{x}_{k+1} = F(\Bar{x}_k, \alpha_0)$,  сходится к $\Bar{x}_0 = \Bar{x}_0(\alpha)$ - решениe уравнения $F(\Bar{x}) = \Bar{x}$,
-			\item При $0\leq q < 1$ мы можем оценить скорость сходимости последовательности $\{\Bar{x}_k\}_{n = 1}^\infty$.
-			\\ $\Vert \Bar{x}_k - \Bar{x}_0\Vert \leq \frac{q^k}{1-q}*\Vert \Bar{x}_0 - \Bar{x}_1\Vert$
-			\end{enumerate}
-		}
+ 	 	\subsection{Применимость}
+ 	 	Матрица $A$ должна быть не вырожденной.
+ 	 	
+ 	    \subsection{Обратный ход метода Гаусса}
+ 	    Обратный ход метода Гаусса заключается в нахождении $x$ из верхнетреугольной матрицы, следующим образом:
+ 	    $$x_n = y_n, x_i = y_i - \sum_{j = i+1}^{n} c_{i,j}x_j \,\text{где} \, i=n-1,\dots,1$$
+ 	    
+     	\subsection{Оценка числа арифметических операций}
+     	Посчитаем сложность алгоритма для $k$-го шага а затем просуммируем по $k=1,\dots,n-1$
+     	\begin{itemize}
+     		\item Для вычисления матриц $T_{k,k+1},\dots,T_{k,n}$ необходимо n-k аддитивных, $4*(n-k)$ мультипликативных и $n-k$ операций извлечения корня.
+		    \item Для вычисления компонент $k,\dots,n$ $k$-го столбца матрицы $A^{(k)}$, которые мы считаем по формуле $\Vert a_1^{(k-1)} \Vert e_1^{(n-k+1)}$ требуется $(n-k+1)$ мультипликативных операций, $(n-k)$ аддитивных операций и 1 операция извлечения корня 
+		    \item Так как в алгоритме мы применяем умножение $n-k$ матриц вращения на подматрицу$\,(a_{i,j}^{(k-1)})_{i = 1,\dots,n,j = k+1\dots n}$, то на это требуется $4(n-k)^2$ мультипликативных и $2(n-k)^2$ аддитивных операций
+		   	\item Для вычисления столбца $y$ требуется $4(n-k)$ мультипликативных и $n-k$ аддитивных операций
+		   	\item Для вычисления обратного хода метода Гаусса требуется $\frac{n(n-1)}{n}$ аддитивных и $\frac{n(n-1)}{n}$ операций
+     	\end{itemize}
+     \textbf{Итого:}
+      \begin{itemize}
+     	\item Аддитивных операций $\sum_{k=1}^{n-1}(4(n-k)^2 + 9(n-k) + 1) = \frac{4n^3}{3} + O(n^2)$ при $n\to\inf$
+     	\item Мультипликативных операций $\sum_{k=1}^{n-1}(2(n-k)^2 + 3(n-k)) = \frac{2n^3}{3} + O(n^2)$ при $n\to\inf$
+     	\item Операций извлечения корня $\sum_{k=1}^{n-1}(n-k+1) =  O(n^2)$ при $n\to\inf$
+     \end{itemize}
+ 	 Как можно заметить, метод вращений требует в 2 раза больше мультипликативных и в 4 раза больше аддитивных операций, чем метод Гаусса.
+     	
+ 		\subsection{Организация хранения в памяти}
+ 		Матрица $A$ хранится в памяти в виде массива размером $n^2$, решение $x$ и столбец свободных членов $b$ хранятся в виде массивов длины $n$. Таким потребление памяти $n^2 + 2n + O(1)$. Так как совершается $O(n^3)\,$ операций с $O(n^2)$ элементами, то возникает необходимость в кэшировании часто используемых данных, для оптимизации работы с памятью.
+ 		 
+	\newpage
+	\section{Блочный метод вращения}
+		Представим нашу матрицу A в блочном виде:
+		\begin{equation*}
+			A = \left(
+			\begin{array}{cccc}
+				A_{11} & A_{12} & \ldots & A_{1k}\\
+				A_{21} & A_{22} & \ldots & A_{2k}\\
+				\vdots & \vdots & \ddots & \vdots\\
+				A_{k1} & A_{k2} & \ldots & A_{kk}
+			\end{array}
+			\right)
+		\end{equation*}
+	Где размер каждого блока $m$, тогда без ограничения общности $k = n / m$ - нацело.
+		\\На первом шаге алгоритма преобразуем блок $A_{11}$ к верхнетреугольному виду с помощью обыкновенного метода вращений. Как побочный продукт алгоритма у нас останутся вычисленными матрицы поворота: $T_{11} = \prod_{i = n-1}^{n-1}\prod_{j=n}^{i+1}T_{ij}$ . Применим их к строке блоков $A_{12}\dots A_{1k}$ и к блоку $B_{1}$ - вектор столбец $B$ в блочном виде. Получим матрицу вида:
+				\begin{equation*}
+			A = \left(
+			\begin{array}{cccc}
+				A_{11}^{(1)} & A_{12}^{(1)} & \ldots & A_{1k}^{(1)}\\
+				A_{21} & A_{22} & \ldots & A_{2k}\\
+				\vdots & \vdots & \ddots & \vdots\\
+				A_{k1} & A_{k2} & \ldots & A_{kk}
+			\end{array}
+			\right)
+		\end{equation*}
+		Затем обнуляем столбец блоков $A_{21}\dots A_{k1}$, матрицами вращений, строящихся из диагональных элементов $a_{ii} \in  A_{11}^{(1)}$ и элементов из столбца $a_{2i}, \dots a_{ji} \in A_{21}^{(1)}$. Эти же матрицы поворота испольуем для преобразования строк блоков $A_{22},\dots , A_{2k}, \dots  ,A_{k2}, \dots , A_{kk}$.
+		Имеем:
+		\begin{equation*}
+			A = \left(
+			\begin{array}{cccc}
+				A_{11}^{(1,2)} & A_{12}^{(1,2)} & \ldots & A_{1k}^{(1,2)}\\
+				0 & A_{22}^{(2)} & \ldots & A_{2k}^{(2)}\\
+				\vdots & \vdots & \ddots & \vdots\\
+				0 & A_{k2}^{(2)} & \ldots & A_{kk}^{(2)}
+			\end{array}
+			\right)
+		\end{equation*}
+		Теперь применяем тот же алгоритм для подматрицы c начальным элементом $A_{22}^{(2)}$
+		
+		В конечном итоге получаем верхнетреугольную матрицу, которую можно разрешить обратным ходом метода Гаусса.
+	 	\subsection{Обратный ход метода Гаусса}
+	    Обратный ход метода Гаусса заключается в нахождении $x$ из верхнетреугольной матрицы, следующим образом:
+	 	$$x_n = y_n, x_i = y_i - \sum_{j = i+1}^{n} c_{i,j}x_j \,\text{где} \, i=n-1,\dots,1$$
+	 	
+		\subsection{Оценка числа арифметических операций}
+		$m$ - размер блока, $k$ - количество блоков в строке (столбце). 
+		\begin{itemize}
+			\item Для приведения блока $A_{ii}$ к верхнетреугольному виду необходимо $2m^3$ арифметических операций. Таких преобразований будет $k$ штук.
+			\item Для умножения строки блоков $A_{i2}\dots A_{ik}$ на матрицы поворота необходимо $(k-t)m(m-1)6m$ арифметических операций.
+			\item Для обнуления столбца блоков необходимо $6m^2(k-t)\sum_{i = 1}^{m} (m - i)$ 
 		\end{itemize}
-	Таким образом мы можем представить нашу систему:
-	\begin{equation*}
-	    \begin{cases}
-	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
-		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
-		\end{cases}
-	\end{equation*}
-	в виде
-	\begin{equation*}
-	    \begin{cases}
-	        \widetilde{F_1}(x,y,\alpha) = x\\
-		\widetilde{F_2}(x,y,\alpha) = y
-		\end{cases}
-	\end{equation*}
-	и показать, что все условия \textbf{Теоремы(Банах-Каччиопполи)} выполняются. Далее с помощью итеррационного процесса описанного в пункте 3 найти решение нашей системы для заданного $\alpha$.
+		Итого:
+		$2nm^2 + \sum_{t = 1}^{n/m} (6m^2(m-1)(k-t) + 6m^2(k-t)\sum_{i = 1}^{m} (m - i)) = $
+	
+		\begin{itemize}
+			\item $m = 1:$
+			\item $m = n:$
+		\end{itemize}
+		\subsection{Организация хранения в памяти}
+		Матрица $A$ хранится в памяти в виде массива размером $n^2$, решение $x$ и столбец свободных членов $b$ хранятся в виде массивов длины $n$. Также необходимо хранить $3\,$ массива размером $m^2$ в кэш-памяти.
+		\\Подпрограмма загрузки (выгрузки) блока матрицы в кэш-память:
+		\begin{lstlisting}
+void get_block (double *A, int matrix_size, double *Block,
+                int block_size, int i_, int j_)
+{
+	int dev = matrix_size / block_size;
+	int rem_of_dev = matrix_size % block_size;
+	int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+	int block_n_size = (j_ < dev ? block_size : rem_of_dev);
+	
+	double *Block_i = Block;
+	double *Ai = A + (i_ * matrix_size + j_) * block_size;
+	
+	for (int i = 0; i < block_m_size; i++)
+	{
+		for (int j = 0; j < block_n_size; j++)
+		Block_i[j] = Ai[j];
+		
+		Ai += matrix_size;
+		Block_i += block_n_size;
+	}
+}
 
-    \newpage
-    \section{Практическая часть}
-    Приведем систему
-    \begin{equation}
-            \begin{cases}
-	        (1+\alpha^2)x = e^{-(\frac{x}{\sqrt{1+x^2}} + cos(y) -1)^2}\\
-		\frac{x^2}{2\sqrt{1+x^2}} +3y + \frac{1}{1+y^2} = 0
-		\end{cases}
-	\end{equation}
-    к виду (2), выразив $x$ из 1 уравнения и $y$ из 2.
-            \begin{equation}
-	    \begin{cases}
-	        \widetilde{F_1}(x,y,\alpha) = x\\
-		\widetilde{F_2}(x,y,\alpha) = y
-		\end{cases}
-	\end{equation}.
-    Получили (3)
-    \begin{equation}
-            \begin{cases}
-	        x=\frac{e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos(y) - 1\right)^2}}{\alpha^2 + 1}\\
-		y=-\frac{1}{3}\left(\frac{x^2}{2\sqrt{x^2 + 1}} + \frac{1}{y^2 + 1}\right)
-		\end{cases}
-	\end{equation}
-    Составим матрицу Якоби ($J_{\widetilde{F}(x,y,\alpha)}$) и оценим ее $\Vert A\Vert_1$-норму.
-    $$J_{\widetilde{F}(x,y,\alpha)} =
-      \begin{pmatrix}
-          \frac{\partial\widetilde{F_1}(x,y,\alpha)}{\partial x} &\frac{\partial\widetilde{F_1}(x,y,\alpha)}{\partial y} \\
-	  \frac{\partial\widetilde{F_2}(x,y,\alpha)}{\partial x} &\frac{\partial\widetilde{F_2}(x,y,\alpha)}{\partial y}
-      \end{pmatrix}
-    $$
-    Таким образом получаем, что матрица Якоби имеет вид.
-    $$%J_{\widetilde{F}(x,y,\alpha)} =%
-      \begin{pmatrix}
-          -\frac{2e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\sqrt{x^2+1} \cos (y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}
-	  &\frac{e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)2\sin(y)}{\alpha ^2+1}
-	  \\\\
-	  -\frac{x \left(x^2+2\right)}{6 \left(x^2+1\right)^{3/2}} &\frac{2 y}{3 \left(y^2+1\right)^2}
-      \end{pmatrix}
-    $$
-
-    Оценим модули всех элементов матрицы Якоби:
-    \begin{itemize}
-        \item $|J_{11}| = |-\frac{2 e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos(y)-1\right)^2} \left(\sqrt{x^2+1}\cos(y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}|  \leq |\frac{2 \left(\sqrt{x^2+1} \cos (y)-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}| \leq
-	\\ \leq |\frac{2 \left(\sqrt{x^2+1}-\sqrt{x^2+1}+x\right)}{\left(\alpha ^2+1\right) \left(x^2+1\right)^2}| \leq \frac{2 x}{\left(x^2+1\right)^2}$ (4).
-	\\ Найдем максимум выражения (4):
-	\\${\frac{|2 x|}{\left(x^2+1\right)^2}}^\prime = \frac{2}{\left(x^2+1\right)^2}-\frac{8 x^2}{\left(x^2+1\right)^3}$.
-	\\Корни уравнения $\frac{2}{\left(x^2+1\right)^2}-\frac{8 x^2}{\left(x^2+1\right)^3} = 0$ равны $x_{1,2} = \pm \frac{1}{\sqrt{3}}$.
-	\\Максимум в точке $x_1 = \frac{1}{\sqrt{3}}$ и он равен $\frac{3 \sqrt{3}}{8}$
-
-        \item $|J_{21}| =  |-\frac{x \left(x^2+2\right)}{6 \left(x^2+1\right)^{3/2}}| \leq |\frac{x \left(x^2+2\right)}{\left(x^2+1\right)^{3/2}}|$(5).
-	\\Найдем максимум выражения (5):
-	\\ ${\frac{|x| \left(x^2+2\right)}{\left(x^2+1\right)^{3/2}}}^\prime = \frac{2-x^2}{\left(x^2+1\right)^{5/2}} $
-	\\Корни уравнения $ \frac{2-x^2}{\left(x^2+1\right)^{5/2}} = 0 $ равны $x_{1,2} = \pm \sqrt{2}$.
-	\\Максимум в точке $x_1 = -\sqrt{2}$ и он равен $\frac{2 \sqrt{\frac{2}{3}}}{9} $
-
-        Таким образом сумма элементов 1 столбца матрицы Якоби равна $\frac{2 \sqrt{\frac{2}{3}}}{9} + \frac{3 \sqrt{3}}{8} \approx 0.85  $
-
-        \item $|J_{12}| = |\frac{2\sin(y)e^{-\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)^2} \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)\sin(y)}{\alpha ^2+1}| \leq |\frac{\left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)\sin(y)}{\alpha ^2+1}|\leq
-	\\ \leq |2 \sin (y) \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)| \leq |2 \left(\frac{x}{\sqrt{x^2+1}}+\cos (y)-1\right)| \leq |2\left(\frac{x}{\sqrt{x^2+1}}\right)|$
-	Заметим что $\lim\limits_{x\to\infty}|2\left(\frac{x}{\sqrt{x^2+1}}\right)| = 2$, максимум достигается только на $\infty$.
-
-        \item $|J_{22}| = |\frac{2 y}{3 \left(y^2+1\right)^2}|$ (6)
-	Найдем максимум выражения (6):
-	\\$|\frac{2 y}{3 \left(y^2+1\right)^2}|^\prime = \frac{2-6 y^2}{3 \left(y^2+1\right)^3}$
-	\\Корни уравнения $\frac{2-6 y^2}{3 \left(y^2+1\right)^3} = 0$, в точках $y_{1,2} = \pm\frac{1}{\sqrt{3}}$.
-	Максимуму в точке $y_2 = -\frac{1}{\sqrt{3}}$ и он равен $\frac{\sqrt{3}}{8}$
-
-        Как можно сумма модулей элементов столбца 2 может стать больше 1 на $\mathbb{R}^2$, поэтому определим $\Omega$ так, чтобы норма оставалась меньше 1. Пусть $\Omega = [-0.4; 0.4]\times \mathbb{R}$, при ней сумма модулей элементова столбца 2 $\approx 0.95$
-    \end{itemize}
-    Таким образом $q = 0.95 < 1$, заметим что все остальные условия Теоремы(Банаха-Каччиопполи) тоже выполняются, поэтому можем найти решение системы (1) с помощью принципа \textbf{"Сжимающих отображений"}.
-    \\
-    Оценим количество шагов иттерационного метода с помощью 4 вывода из \\
-    Теоремы(Банаха-Каччиопполи):
-    $q = 0.05$, точность необходимая нам в расчетах $\epsilon = \Vert\Bar{x}_0 - \Bar{x}_k\Vert$
-    из 4 вывода имеем: $k \geq \log_q \frac{\epsilon(1-q)}{\Vert\Bar{x}_0 - \Bar{x}_1\Vert}$.
-    \\За начальную точку возьмем $(0;0)$, тогда $\Bar{x}_0 = \{\frac{1}{\alpha^2 + 1}, \frac{-1}{3} \}$, $\Bar{x}_1 = \widetilde{F}(x_0, y_0, \alpha) =
-    \\ = \left\{ \frac{e^{ -\left(\frac{1}{\left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-1+\cos \left(\frac{1}{3}\right)\right)^2}}{a^2+1}, \frac{1}{3} \left(-\frac{1}{2 \left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-\frac{9}{10}\right)\right\}$
-
-    $ \Vert\Bar{x}_0 - \Bar{x}_1\Vert =
-    \\\\ = \Vert\left\{\frac{-1 + e^{ -\left(\frac{1}{\left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-1+\cos \left(\frac{1}{3}\right)\right)^2}}{a^2+1} , \frac{1}{3} \left(-\frac{1}{2 \left(a^2+1\right) \sqrt{\frac{1}{\left(a^2+1\right)^2}+1}}-\frac{19}{10}\right) \right\} \Vert$
-
-    $\Vert\Bar{x}_0 - \Bar{x}_1\Vert \leq \sqrt{\frac{1}{9} \left(\frac{19}{10}+\frac{1}{2 \sqrt{2}}\right)+\left(e^{-\left(\frac{1}{\sqrt{2}}-1+\cos \left(\frac{1}{3}\right)\right)^2}-1\right)^2} \approx 0.6$
-    \\\\Оценка на k:
-    \\$k \geq \log_{0.95} (\frac{\epsilon * 0.05}{0.6})$
-
-
-
-
-
+void set_block (double *A, int matrix_size, double *Block,
+                int block_size, int i_, int j_)
+{
+	int dev = matrix_size / block_size;
+	int rem_of_dev = matrix_size % block_size;
+	int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+	int block_n_size = (j_ < dev ? block_size : rem_of_dev);
+	
+	double *Block_i = Block;
+	double *Ai = A + (i_ * matrix_size + j_) * block_size;
+	
+	for (int i = 0; i < block_m_size; i++)
+	{
+		for (int j = 0; j < block_n_size; j++)
+		Ai[j] = Block_i[j];
+		
+		Ai += matrix_size;
+		Block_i += block_n_size;
+	}
+}
+		\end{lstlisting}
+		
 \end{document}

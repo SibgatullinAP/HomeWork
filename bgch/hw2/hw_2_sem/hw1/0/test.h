@@ -1,0 +1,1 @@
+int test_str(const char *in, const char *s);
