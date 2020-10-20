@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
   char *str_pattern = argv[3];
 
   double time = clock ();
-  int ret = regexp_1 (in_file_name, out_file_name, str_pattern);
+  int ret = regexp (in_file_name, out_file_name, str_pattern, parse_1, cmp_1);
   time = (clock () - time) / CLOCKS_PER_SEC;
 
   if (ret < 0)

@@ -14,9 +14,9 @@ FLAGS_COMPATABILITY = $(CPP_FLAGS_COMPATABILITY)
 
 build: build_1
 
-build_1: main_1.o string_.o
+build_1: main_1.o main_2.o string_.o
 	$(CC) main_1.o string_.o $(FLAGS_DEBUG) -o 1.out
-	# $(CC) main_2.o string_.o $(FLAGS_DEBUG) -o 2.out
+	 $(CC) main_2.o string_.o $(FLAGS_DEBUG) -o 2.out
 	# $(CC) main_3.o string_.o $(FLAGS_DEBUG) -o 3.out
 	# $(CC) main_4.o string_.o $(FLAGS_DEBUG) -o 4.out
 	# $(CC) main_5.o string_.o $(FLAGS_DEBUG) -o 5.out

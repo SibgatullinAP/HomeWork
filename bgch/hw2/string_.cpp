@@ -2,9 +2,10 @@
 
 int parse_1 (char *str_pattern, char *str_pattern_copy)
 {
-  strcpy (str_pattern_copy, str_pattern);
   int i = 0;
   int shift = 0;
+
+  strcpy (str_pattern_copy, str_pattern);
 
   if (str_pattern_copy[0] == '^')
     {
@@ -42,6 +43,7 @@ int parse_1 (char *str_pattern, char *str_pattern_copy)
     }
 
   str_pattern_copy[strlen (str_pattern_copy) - shift] = 0;
+  strcpy (str_pattern_copy, str_pattern);
 
   return 0;
 }
@@ -55,24 +57,19 @@ bool cmp_1 (char *str, char *str_pattern, int is_begin)
   return false;
 }
 
-
 int parse_2 (char *str_pattern, char *str_pattern_copy)
 {
   strcpy (str_pattern_copy, str_pattern);
-  int i = 0;
-  int shift = 0;
 
-  if (str_pattern_copy[0] == '^')
+  int len = strlen (str_pattern_copy);
+  if((unsigned int)str_pattern_copy[len - 1] == '$')
     {
-      while(str_pattern_copy[i])
-        {
-          i++;
-          str_pattern_copy[i - 1] = str_pattern_copy[i];
-        }
-      str_pattern_copy[i] = 0;
-
+      str_pattern_copy[len - 1] = 0;
       return 1;
     }
+
+  int i = 0;
+  int shift = 0;
 
   for (i = 0; str_pattern_copy[i]; )
     {
@@ -80,7 +77,7 @@ int parse_2 (char *str_pattern, char *str_pattern_copy)
         {
           if(str_pattern_copy[i + 1] &&
              (str_pattern_copy[i + 1] == '\\'
-              || str_pattern_copy[i + 1]== '^'))
+              || str_pattern_copy[i + 1]== '$'))
             {
               shift++;
               i++;
@@ -97,14 +94,13 @@ int parse_2 (char *str_pattern, char *str_pattern_copy)
         }
     }
 
-  str_pattern_copy[strlen (str_pattern_copy) - shift] = 0;
-
-  return 0;
+  str_pattern_copy[len - shift] = 0;
+  return len;
 }
 
 bool cmp_2 (char *str, char *str_pattern, int is_begin)
 {
-  if((is_begin > 0 && strstr(str, str_pattern) == str)
+  if((is_begin > 0 && strstr(str, str_pattern) == str + (strlen (str) - is_begin))
      || (is_begin == 0 && (bool) strstr(str, str_pattern)))
     return true;
 
@@ -112,8 +108,8 @@ bool cmp_2 (char *str, char *str_pattern, int is_begin)
 }
 
 int regexp (char *in_file_name, char *out_file_name, char *str_pattern,
-              int (*parse)(char *, char *),
-              bool (*cmp)(char *, char *, int ))
+            int (*parse)(char *, char *),
+            bool (*cmp)(char *, char *, int ))
 {
   FILE *in_file = fopen (in_file_name, "r");
   if (in_file == NULL)

@@ -89,7 +89,7 @@ int main (int argc, char *argv[])
       free (block_1);
       return -2;
     }
-  double *block_3 = (double*) malloc (block_size * block_size * sizeof (double));
+  double *block_3 = (double*) malloc (2 * block_size * block_size * sizeof (double));
   if (block_3 == NULL)
     {
       printf ("\x1b[31m[ERROR] \x1b[0mNot enough memmory for for block_3.\n");

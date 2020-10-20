@@ -139,7 +139,7 @@ int solve (int matrix_size, double *A, double *B, double *X,
     }
 
   eps *= norm;
-  
+
   for (k = 0; k < matrix_size - 1; k++)
     {
       Ak = A + k * matrix_size;
@@ -187,27 +187,25 @@ int solve (int matrix_size, double *A, double *B, double *X,
     return INCONSISTENT_SYSTEM;
 
 
-  for (k = matrix_size - 1; k >= 0; k--)
-    {
-      Ak = A + k;
-      temp = Ak[k * matrix_size];
-      B[k] /= temp;
-      for (j = 0; j < k; j++)
-        {
-          temp = Ak[j * matrix_size];
-          B[j] -= B[k] * temp;
-        }
-    }
+  //  for (k = matrix_size - 1; k >= 0; k--)
+  //    {
+  //      Ak = A + k;
+  //      temp = Ak[k * matrix_size];
+  //      B[k] /= temp;
+  //      for (j = 0; j < k; j++)
+  //        {
+  //          temp = Ak[j * matrix_size];
+  //          B[j] -= B[k] * temp;
+  //        }
+  //    }
 
   memcpy (X, B, matrix_size * sizeof (double));
   return 0;
 }
 
-inline void get_block (double *A, int matrix_size, double *Block, int block_size,
-                int i_, int j_)
+void get_block (double *A, int matrix_size, double *Block, int block_size,
+                int i_, int j_, int dev, int rem_of_dev)
 {
-  int dev = matrix_size / block_size;
-  int rem_of_dev = matrix_size % block_size;
   int block_m_size = (i_ < dev ? block_size : rem_of_dev);
   int block_n_size = (j_ < dev ? block_size : rem_of_dev);
 
@@ -216,8 +214,9 @@ inline void get_block (double *A, int matrix_size, double *Block, int block_size
 
   for (int i = 0; i < block_m_size; i++)
     {
-      for (int j = 0; j < block_n_size; j++)
-        Block_i[j] = Ai[j];
+      //      for (int j = 0; j < block_n_size; j++)
+      //        Block_i[j] = Ai[j];
+      memcpy (Block_i, Ai, block_size * sizeof (double));
 
       Ai += matrix_size;
       Block_i += block_n_size;
@@ -225,11 +224,9 @@ inline void get_block (double *A, int matrix_size, double *Block, int block_size
 }
 
 
-inline void set_block (double *A, int matrix_size, double *Block, int block_size,
-                int i_, int j_)
+void set_block (double *A, int matrix_size, double *Block, int block_size,
+                int i_, int j_, int dev, int rem_of_dev)
 {
-  int dev = matrix_size / block_size;
-  int rem_of_dev = matrix_size % block_size;
   int block_m_size = (i_ < dev ? block_size : rem_of_dev);
   int block_n_size = (j_ < dev ? block_size : rem_of_dev);
 
@@ -238,46 +235,57 @@ inline void set_block (double *A, int matrix_size, double *Block, int block_size
 
   for (int i = 0; i < block_m_size; i++)
     {
-      for (int j = 0; j < block_n_size; j++)
-        Ai[j] = Block_i[j];
+      memcpy (Ai, Block_i, block_size * sizeof (double));
+      //      for (int j = 0; j < block_n_size; j++)
+      //        Ai[j] = Block_i[j];
 
       Ai += matrix_size;
       Block_i += block_n_size;
     }
 }
 
-inline int diagonalize_block (double *A, int matrix_size, double *T)
+void get_block_vector (double *B, double *Block, int block_size,
+                       int i_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  double *Bi = B + i_ * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    Block[block_m_size * i] = Bi[i];
+}
+
+
+void set_block_vector (double *B, double *Block,int block_size,
+                       int i_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  double *Bi = B + i_ * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    Bi[i] = Block[block_m_size * i];
+}
+
+int diagonalize_block (double *A, int matrix_size, double *T, double eps)
 {
   double root, temp;
   double buff_1, buff_2, cos_, sin_;
   double *Ak, *Ai;
+  double Aik;
   int i, j, k;
 
-  double eps = EPS;
-  double norm = 0;
-  for (i = 0; i < matrix_size; i++)
-    {
-      Ai = A + i * matrix_size;
-      temp = 0;
-      for (j = 0; j < matrix_size; j++)
-        temp += fabs (Ai[j]);
-
-      norm = ((norm > temp) ? norm : temp);
-    }
-
-  eps *= norm;
+  memset (T, 0, matrix_size * matrix_size * sizeof (double));
 
   for (k = 0; k < matrix_size - 1; k++)
     {
       Ak = A + k * matrix_size;
       temp = Ak[k] * Ak[k];
-      T[k + k * matrix_size] = 0;
 
       for (i = k + 1; i < matrix_size; i++)
         {
           Ai = A + i * matrix_size;
+          Aik = Ai[k];
 
-          temp += Ai[k] * Ai[k];
+          temp += Aik * Aik;
           root = sqrt (temp);
 
           if (root < eps)
@@ -289,7 +297,7 @@ inline int diagonalize_block (double *A, int matrix_size, double *T)
             }
 
           cos_ = Ak[k] / root;
-          sin_ = - Ai[k] / root;
+          sin_ = - Aik / root;
 
           T[i + k * matrix_size] = cos_;
           T[k + i * matrix_size] = sin_;
@@ -315,77 +323,121 @@ inline int diagonalize_block (double *A, int matrix_size, double *T)
   if (fabs (A[matrix_size * matrix_size - 1]) < eps)
     return INCONSISTENT_BLOCK;
 
-  T[matrix_size * matrix_size - 1] = 0;
-
   return 0;
 }
 
-inline void traverse_block (double *A, double *B, int matrix_size, double *T)
+
+void traverse_block (double *A, int matrix_size, double *T)
 {
   double buff_1, buff_2, cos_, sin_;
-  double *Ak, *Bi;
+  double *Ak, *Ai;
   int i, j, k;
 
-  for (k = 0; k < matrix_size; k++)
+  for (k = 0; k < matrix_size - 1; k++)
     {
       Ak = A + k * matrix_size;
 
-      for (i = k; i < matrix_size; i++)
+      for (i = k + 1; i < matrix_size; i++)
         {
-          Bi = B + i * matrix_size;
+          Ai = A + i * matrix_size;
 
           cos_ = T[i + k * matrix_size];
           sin_ = T[k + i * matrix_size];
 
-          for (j = k; j < matrix_size; j++)
+          for (j = 0; j < matrix_size; j++)
             {
               buff_1 = Ak[j];
-              buff_2 = Bi[j];
+              buff_2 = Ai[j];
 
               Ak[j] = buff_1 * cos_ - buff_2 * sin_;
-              Bi[j] = buff_1 * sin_ + buff_2 * cos_;
+              Ai[j] = buff_1 * sin_ + buff_2 * cos_;
             }
         }
     }
 }
 
-inline void zeroing_block (double *A, double *B, int matrix_size, double *T)
+void traverse_vector (double *A, int matrix_size, double *T)
+{
+  double buff_1, buff_2, cos_, sin_;
+  int i, k;
+
+  for (k = 0; k < matrix_size - 1; k++)
+    {
+      for (i = k + 1; i < matrix_size; i++)
+        {
+          cos_ = T[i + k * matrix_size];
+          sin_ = T[k + i * matrix_size];
+
+          buff_1 = A[k * matrix_size];
+          buff_2 = A[i * matrix_size];
+
+          A[k * matrix_size] = buff_1 * cos_ - buff_2 * sin_;
+          A[i * matrix_size] = buff_1 * sin_ + buff_2 * cos_;
+        }
+    }
+}
+void traverse_vector_zeroing (double *A, double *B, int matrix_size, double *T)
+{
+  double buff_1, buff_2, cos_, sin_;
+  int i, k;
+
+  for (k = 0; k < matrix_size; k++)
+    {
+      for (i = 0; i < matrix_size; i++)
+        {
+          cos_ = T[k + i * matrix_size];
+          sin_ = T[matrix_size * matrix_size + k + i * matrix_size];
+
+          buff_1 = A[k * matrix_size];
+          buff_2 = B[i * matrix_size];
+
+          A[k * matrix_size] = buff_1 * cos_ - buff_2 * sin_;
+          B[i * matrix_size] = buff_1 * sin_ + buff_2 * cos_;
+        }
+    }
+}
+
+
+
+void zeroing_block (double *A, double *B, int matrix_size, double *T, double eps)
 {
   double root, temp;
   double buff_1, buff_2, cos_, sin_;
   double *Ak, *Bi;
+  double Bik;
   int i, j, k;
-  double eps = 1e-16;
+  int matrix_size_squared = matrix_size * matrix_size;
+
+  memset (T, 0, 2 * matrix_size * matrix_size * sizeof (double));
 
   for (k = 0; k < matrix_size; k++)
     {
       Ak = A + k * matrix_size;
       temp = Ak[k] * Ak[k];
 
-      T[k + k * matrix_size] = 0;
-
-      for (i = k; i < matrix_size; i++)
+      for (i = 0; i < matrix_size; i++)
         {
           Bi = B + i * matrix_size;
+          Bik = Bi[k];
 
-          temp += Bi[k] * Bi[k];
+          temp += Bik * Bik;
           root = sqrt (temp);
 
           if (root < eps)
             {
-              T[i + k * matrix_size] = 1;
               T[k + i * matrix_size] = 1;
+              T[matrix_size_squared + k + i * matrix_size] = 1;
               continue;
             }
 
           cos_ = Ak[k] / root;
-          sin_ = - Bi[k] / root;
+          sin_ = - Bik / root;
 
-          T[i + k * matrix_size] = cos_;
-          T[k + i * matrix_size] = sin_;
+          T[k + i * matrix_size] = cos_;
+          T[matrix_size_squared  + k + i * matrix_size] = sin_;
 
           Ak[k] = root;
-          for (j = k; j < matrix_size; j++)
+          for (j = k + 1 ; j < matrix_size; j++)
             {
               buff_1 = Ak[j];
               buff_2 = Bi[j];
@@ -397,65 +449,115 @@ inline void zeroing_block (double *A, double *B, int matrix_size, double *T)
           Bi[k] = 0;
         }
     }
+}
 
-  T[matrix_size * matrix_size - 1] = 0;
+void traverse_block_zeroing (double *A, double *B, int matrix_size, double *T)
+{
+  double buff_1, buff_2, cos_, sin_, res_1, res_2;
+  double *Ak, *Bi;
+  int i, j, k;
+  int matrix_size_squared = matrix_size * matrix_size;
 
+  for (k = 0; k < matrix_size; k++)
+    {
+      Ak = A + k * matrix_size;
+
+      for (i = 0; i < matrix_size; i++)
+        {
+          Bi = B + i * matrix_size;
+
+          cos_ = T[k + i * matrix_size];
+          sin_ = T[matrix_size_squared + k + i * matrix_size];
+
+          for (j = 0; j < matrix_size; j++)
+            {
+              buff_1 = Ak[j];
+              buff_2 = Bi[j];
+
+              Ak[j] = buff_1 * cos_ - buff_2 * sin_;
+              Bi[j] = buff_1 * sin_ + buff_2 * cos_;
+            }
+        }
+    }
 }
 
 int solve_optimized (int matrix_size, double *A, double *B, double *X,
                      int block_size, double *block_1, double *block_2, double *block_3)
 {
-  int block_quantity = matrix_size / block_size;
+
+  int block_quantity_dev = matrix_size / block_size;
+  int block_quantity_reminder = matrix_size % block_size;
+  int block_quantity = (block_quantity_reminder == 0 ? block_quantity_dev : block_quantity_dev + 1);
   int i, j, k;
+
+  double *Ai = NULL;
+  double eps = EPS;
+  double norm = 0;
+  double temp = 0;
+  for (i = 0; i < matrix_size; i++)
+    {
+      Ai = A + i * matrix_size;
+      temp = 0;
+      for (j = 0; j < matrix_size; j++)
+        temp += fabs (Ai[j]);
+
+      norm = ((norm > temp) ? norm : temp);
+    }
+  eps *= norm;
 
   for (i = 0; i < block_quantity; i++)
     {
-      get_block(A, matrix_size, block_1, block_size, i, i);
-
-      if(diagonalize_block(block_1, block_size, block_2) < 0)
+      get_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
+      if(diagonalize_block(block_1, block_size, block_2, eps) < 0)
         return INCONSISTENT_SYSTEM;
 
-      set_block(A, matrix_size, block_1, block_size, i, i);
+      set_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
 
       for (j = i + 1; j < block_quantity; j++)
         {
-          get_block (A, matrix_size, block_3, block_size, i, j);
-          traverse_block (block_3, block_3, block_size, block_2);
-          set_block(A, matrix_size, block_3, block_size, i, j);
-
+          get_block (A, matrix_size, block_1, block_size, i, j, block_quantity_dev, block_quantity_reminder);
+          traverse_block (block_1, block_size, block_2);
+          set_block (A, matrix_size, block_1, block_size, i, j, block_quantity_dev, block_quantity_reminder);
         }
 
+      get_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
+      traverse_vector (block_1, block_size, block_2);
+      set_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
 
       for (j = i + 1; j < block_quantity; j++)
         {
-          get_block (A, matrix_size, block_1, block_size, i, i);
-          get_block (A, matrix_size, block_2, block_size, j, i);
 
-          zeroing_block (block_1, block_2, block_size, block_3);
+          get_block (A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
+          get_block (A, matrix_size, block_2, block_size, j, i, block_quantity_dev, block_quantity_reminder);
 
-          set_block(A, matrix_size, block_1, block_size, i, i);
-          set_block(A, matrix_size, block_2, block_size, j, i);
+          zeroing_block (block_1, block_2, block_size, block_3, eps);
 
+          set_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
+          set_block(A, matrix_size, block_2, block_size, j, i, block_quantity_dev, block_quantity_reminder);
 
           for (k = i + 1; k < block_quantity; k++)
             {
-              printf ("\n");
-              print(block_3, block_size, block_size, 2);
 
-              get_block (A, matrix_size, block_1, block_size, i, k);
-              get_block (A, matrix_size, block_2, block_size, j, k);
+              get_block (A, matrix_size, block_1, block_size, i, k, block_quantity_dev, block_quantity_reminder);
+              get_block (A, matrix_size, block_2, block_size, j, k, block_quantity_dev, block_quantity_reminder);
 
-              traverse_block (block_1, block_2, block_size, block_3);
+              traverse_block_zeroing (block_1, block_2, block_size, block_3);
 
-              set_block(A, matrix_size, block_1, block_size, i, k);
-              set_block(A, matrix_size, block_2, block_size, j, k);
+              set_block(A, matrix_size, block_1, block_size, i, k, block_quantity_dev, block_quantity_reminder);
+              set_block(A, matrix_size, block_2, block_size, j, k, block_quantity_dev, block_quantity_reminder);
             }
+
+          get_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
+          get_block_vector (B, block_2, block_size, j, block_quantity_dev, block_quantity_reminder);
+
+          traverse_vector_zeroing (block_1, block_2, block_size, block_3);
+
+          set_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
+          set_block_vector (B, block_2, block_size, j, block_quantity_dev, block_quantity_reminder);
         }
     }
 
   double *Ak;
-  double temp;
-
   for (k = matrix_size - 1; k >= 0; k--)
     {
       Ak = A + k;
