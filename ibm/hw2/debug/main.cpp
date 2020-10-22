@@ -156,7 +156,7 @@ int main (int argc, char *argv[])
     {
       printf ("\n\x1b[32m[OUTPUT] \x1b[0mVector X:\n");
       print (X, matrix_size, 1, print_size);
-      printf ("\x1b[32m[OUTPUT] \x1b[0mSolving time: %.2lf\n", time);
+      printf ("\x1b[32m[OUTPUT] \x1b[0mSolving time: %.8lf\n", time);
 
       if (argc == 5)
         init_A (A, matrix_size, formula_type);
