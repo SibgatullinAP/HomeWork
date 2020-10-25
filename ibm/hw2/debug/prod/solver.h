@@ -28,7 +28,5 @@ void traverse_vector_zeroing (double *A, double *B, int matrix_size, int m_block
 void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_size, int n_block_size, double *T);
 void traverse_block (double *A, int m_matrix_size, int n_matrix_size, double *T);
 
-double norm_1_blocking (double A, int matrix_size, double *block_1, double *block_2, int block_size);
-
 int solve_optimized (int matrix_size, double *A, double *B, double *X,
                      int block_size, double *block_1, double *block_2, double *block_3);

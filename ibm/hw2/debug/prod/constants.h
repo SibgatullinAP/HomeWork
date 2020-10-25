@@ -8,7 +8,6 @@
 #include <time.h>
 #include <stddef.h>
 #include <fenv.h>
-#include <unistd.h>
 
 #define CANNOT_OPEN_FILE -1
 #define CANNOT_READ_FILE -2
