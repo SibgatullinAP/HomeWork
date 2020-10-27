@@ -1,0 +1,27 @@
+select * where name = Ostap;
+select * where name = Ostap order by name;
+select * where name = Ostap order by phone;
+select * where name = Ostap order by group;
+select * where group = 210;
+select * where group = 210 order by name;
+select * where group = 210 order by phone;
+select * where group = 210 order by group;
+select * where phone = 1234;
+select * where phone = 1234 order by name;
+select * where phone = 1234 order by phone;
+select * where phone = 1234 order by group;
+select * where group = 210 and name = Ostap;
+select * where group = 210 and name = Ostap order by name;
+select * where group = 210 and name = Ostap order by phone;
+select * where group = 210 and name = Ostap order by group;
+select * where phone = 1234 and name = Ostap;
+select * where phone = 1234 and name = Ostap order by name;
+select * where phone = 1234 and name = Ostap order by phone;
+select * where phone = 2134 and name = Ostap order by group;
+select * where group = 210 and phone = 1234;
+select * where group = 210 and phone = 1234 order by name;
+select * where group = 210 and phone = 1234 order by phone;
+select * where group = 210 and phone = 1234 order by group;
+
+quit;
+

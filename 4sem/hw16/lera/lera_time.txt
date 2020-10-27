@@ -1,0 +1,60 @@
+Data=/home/pam/dz/tests/a10000000.txt Commands=/home/pam/dz/tests/commands_1000000_v.txt
+TIME_READ: 66.557370
+TIME_DO_COMMAND: 23.170530
+All time : 99
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000.txt Commands=/home/pam/dz/tests/commands_1000000_g.txt
+TIME_READ: 65.324969
+TIME_DO_COMMAND: 7.655925
+All time : 82
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000.txt Commands=/home/pam/dz/tests/commands4.txt
+TIME_READ: 64.630687
+TIME_DO_COMMAND: 18.571484
+All time : 94
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_g.txt Commands=/home/pam/dz/tests/commands_1000000_v.txt
+TIME_READ: 44.091335
+TIME_DO_COMMAND: 8.424600
+All time : 60
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_g.txt Commands=/home/pam/dz/tests/commands_1000000_g.txt
+TIME_READ: 43.239341
+TIME_DO_COMMAND: 3.516744
+All time : 53
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_g.txt Commands=/home/pam/dz/tests/commands4.txt
+TIME_READ: 39.767992
+TIME_DO_COMMAND: 22.323445
+All time : 68
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_n.txt Commands=/home/pam/dz/tests/commands_1000000_v.txt
+TIME_READ: 59.842468
+TIME_DO_COMMAND: 8.470494
+All time : 77
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_n.txt Commands=/home/pam/dz/tests/commands_1000000_g.txt
+TIME_READ: 63.188216
+TIME_DO_COMMAND: 3.730183
+All time : 79
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_n.txt Commands=/home/pam/dz/tests/commands4.txt
+TIME_READ: 76.819864
+TIME_DO_COMMAND: 18.085672
+All time : 102
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_v.txt Commands=/home/pam/dz/tests/commands_1000000_v.txt
+TIME_READ: 30.770814
+TIME_DO_COMMAND: 5.158063
+All time : 42
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_v.txt Commands=/home/pam/dz/tests/commands_1000000_g.txt
+TIME_READ: 30.802926
+TIME_DO_COMMAND: 3.712512
+All time : 42
+------------------------------------------------------------
+Data=/home/pam/dz/tests/a10000000_sort_v.txt Commands=/home/pam/dz/tests/commands4.txt
+TIME_READ: 30.881861
+TIME_DO_COMMAND: 17.248740
+All time : 54
+------------------------------------------------------------

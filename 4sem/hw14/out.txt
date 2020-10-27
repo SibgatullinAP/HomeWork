@@ -1,0 +1,5 @@
+Please, choose type of printing.
+1 - Debug(table) print
+2 - Normal print
+Your choise: Error: Incorrect input values!
+Error: Unknown error, error_value = -7
