@@ -245,26 +245,29 @@
 		\subsection{Оценка числа арифметических операций}
 		$m$ - размер блока, $k$ - количество блоков в строке (столбце). 
 		\begin{itemize}
-			\item Для приведения блока $A_{ii}$ к верхнетреугольному виду необходимо $2m^3$ арифметических операций. Таких преобразований будет $k$ штук.
-			\item Для умножения строки блоков $A_{i2}\dots A_{ik}$ на матрицы поворота необходимо $(k-t)m(m-1)6m$ арифметических операций.
-			\item Для обнуления столбца блоков необходимо $6m^2(k-t)\sum_{i = 1}^{m} (m - i)$ 
+			\item Для приведения блоков $A_{ii}$ к верхнетреугольному виду необходимо $2m^2n$ арифметических операций.
+			\item Для умножения строки блоков $A_{i2}\dots A_{ik}$ на матрицы поворота необходимо $\frac{3nm(\frac{n}{m}-2)(m-1)}{2}$ арифметических операций.
+			\item Для обнуления блока лежащим под диагональным необходимо $3(m+1)(4 + m^2 +m)$ операций.
+			\\Всего таких блоков лежащих под диагональными $\frac{n(m+n)}{2m^2}$.
+			\\ Итого: $3(m+1)(4 + m^2 +m) * \frac{n(m+n)}{2m^2}$
+			\item Для применения матриц вращения из предыдущего пункта ко всей строчке блоков небходимо $(m+1)^3 *\frac{n(m+n)(m+2n)}{m^3}$ операций
+			
 		\end{itemize}
 		Итого:
-		$2nm^2 + \sum_{t = 1}^{n/m} (6m^2(m-1)(k-t) + 6m^2(k-t)\sum_{i = 1}^{m} (m - i)) = $
 	
 		\begin{itemize}
-			\item $m = 1:$
-			\item $m = n:$
+			\item $m = 1: 2m^3$
+			\item $m = n: 2m^3$
 		\end{itemize}
 		\subsection{Организация хранения в памяти}
-		Матрица $A$ хранится в памяти в виде массива размером $n^2$, решение $x$ и столбец свободных членов $b$ хранятся в виде массивов длины $n$. Также необходимо хранить $3\,$ массива размером $m^2$ в кэш-памяти.
+		Матрица $A$ хранится в памяти в виде массива размером $n^2$, решение $x$ и столбец свободных членов $b$ хранятся в виде массивов длины $n$. Также необходимо хранить $2\,$ массива размером $2m^2$ в кэш-памяти (для выгрузки блоков над которыми производятся операции и для хранения матриц вращения). Итого потребление памяти алгоритма: $n^2 + n + 4m^2 + O(1)$
+		\\
 		\\Подпрограмма загрузки (выгрузки) блока матрицы в кэш-память:
 		\begin{lstlisting}
 void get_block (double *A, int matrix_size, double *Block,
-                int block_size, int i_, int j_)
+		int block_size, int i_, int j_,
+		int dev, int rem_of_dev)
 {
-	int dev = matrix_size / block_size;
-	int rem_of_dev = matrix_size % block_size;
 	int block_m_size = (i_ < dev ? block_size : rem_of_dev);
 	int block_n_size = (j_ < dev ? block_size : rem_of_dev);
 	
@@ -277,15 +280,16 @@ void get_block (double *A, int matrix_size, double *Block,
 		Block_i[j] = Ai[j];
 		
 		Ai += matrix_size;
-		Block_i += block_n_size;
+		Block_i += block_size;
 	}
 }
+		\end{lstlisting}
 
+		\begin{lstlisting}
 void set_block (double *A, int matrix_size, double *Block,
-                int block_size, int i_, int j_)
+	int block_size, int i_, int j_,
+	int dev, int rem_of_dev)
 {
-	int dev = matrix_size / block_size;
-	int rem_of_dev = matrix_size % block_size;
 	int block_m_size = (i_ < dev ? block_size : rem_of_dev);
 	int block_n_size = (j_ < dev ? block_size : rem_of_dev);
 	
@@ -298,7 +302,7 @@ void set_block (double *A, int matrix_size, double *Block,
 		Ai[j] = Block_i[j];
 		
 		Ai += matrix_size;
-		Block_i += block_n_size;
+		Block_i += block_size;
 	}
 }
 		\end{lstlisting}

@@ -2,7 +2,7 @@
 
 echo "" > tmp.txt
 
-for i in 1000 2000
+for i in 20
 do 
 
 for ((j=1; j <= $i; j++ ))

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/debug.dir/main.cpp.o CMakeFiles/debug.dir/solver.cpp.o  -o debug 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.26)  12 OCT 2020 08:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.26)  27 OCT 2020 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,39 +540,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--86
  []
 
 [3] [4] [5] [6] [7]
-Overfull \hbox (3.58054pt too wide) in paragraph at lines 248--249
-[]\T2A/cmr/m/n/14.4 ƒл€ при-ве-де-ни€ бло-ка $\OML/cmm/m/it/14.4 A[]$ \T2A/cmr/
-m/n/14.4 к верх-не-тре-уголь-но-му ви-ду необ-хо-ди-мо $\OT1/cmr/m/n/14.4 2\OML
-/cmm/m/it/14.4 m[]$ \T2A/cmr/m/n/14.4 ариф-
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
  []
 
 
-Overfull \hbox (28.43124pt too wide) in paragraph at lines 268--269
+Overfull \hbox (28.43124pt too wide) in paragraph at lines 271--272
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (28.43124pt too wide) in paragraph at lines 269--271
+Overfull \hbox (28.43124pt too wide) in paragraph at lines 272--274
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (11.98267pt too wide) in paragraph at lines 272--274
+Overfull \hbox (11.98267pt too wide) in paragraph at lines 275--277
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [8]
-Overfull \hbox (28.43124pt too wide) in paragraph at lines 289--290
+Overfull \hbox (28.43124pt too wide) in paragraph at lines 293--294
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (28.43124pt too wide) in paragraph at lines 290--292
+Overfull \hbox (28.43124pt too wide) in paragraph at lines 294--296
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (11.98267pt too wide) in paragraph at lines 293--295
+Overfull \hbox (11.98267pt too wide) in paragraph at lines 297--299
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -585,7 +583,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  6003 strings out of 482657
  83093 string characters out of 5957838
- 362218 words of memory out of 5000000
+ 360218 words of memory out of 5000000
  20976 multiletter control sequences out of 15000+600000
  548243 words of font info for 65 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
@@ -600,16 +598,17 @@ Here is how much of TeX's memory you used:
 0pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on Sibgatullin_AP.pdf (9 pages, 183097 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb>
+Output written on Sibgatullin_AP.pdf (9 pages, 190070 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 361 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
