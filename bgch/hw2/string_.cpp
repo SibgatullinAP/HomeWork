@@ -1,115 +1,133 @@
 #include "string_.h"
 
-int parse_1 (char *str_pattern, char *str_pattern_copy)
+void parse_2 (char *str_pattern, char *str_pattern_copy, Parse_results &regexp)
 {
   int i = 0;
   int shift = 0;
 
-  strcpy (str_pattern_copy, str_pattern);
-
-  if (str_pattern_copy[0] == '^')
+  if (strlen (str_pattern) <= 0)
     {
-      while(str_pattern_copy[i])
-        {
-          i++;
-          str_pattern_copy[i - 1] = str_pattern_copy[i];
-        }
-      str_pattern_copy[i] = 0;
-
-      return 1;
+      regexp.error = -1;
+      return;
     }
 
-  for (i = 0; str_pattern_copy[i]; )
+  for (i = 0, shift = 0; str_pattern[i]; i++)
     {
-      if(str_pattern_copy[i] == '\\')
+      if (str_pattern[i] == '$')
         {
-          if(str_pattern_copy[i + 1] &&
-             (str_pattern_copy[i + 1] == '\\'
-              || str_pattern_copy[i + 1]== '^'))
+          if (str_pattern[i + 1])
             {
-              shift++;
-              i++;
-              str_pattern_copy[i - shift] = str_pattern_copy[i];
-              i++;
+              regexp.error = -1;
+              return;
             }
-          else
-            return -1;
+
+          str_pattern_copy[shift] = 0;
+          regexp.is_regexp = true;
+          regexp.pattern_len = shift;
+
+          return;
         }
-      else
+      if (str_pattern[i] == '\\')
         {
-          str_pattern_copy[i - shift] = str_pattern_copy[i];
           i++;
+          if (str_pattern[i] != '$' && str_pattern[i] != '\\')
+            {
+              regexp.error = -1;
+              return;
+            }
+          str_pattern_copy[shift] = str_pattern[i];
+          shift++;
+          continue;
         }
+      str_pattern_copy[shift] = str_pattern[i];
+      shift++;
+
     }
+  str_pattern_copy[shift] = str_pattern[i];
 
-  str_pattern_copy[strlen (str_pattern_copy) - shift] = 0;
-  strcpy (str_pattern_copy, str_pattern);
-
-  return 0;
+  regexp.pattern_len = shift;
+  return ;
 }
 
-bool cmp_1 (char *str, char *str_pattern, int is_begin)
+bool cmp_2 (char *str, char *str_pattern, Parse_results &regexp)
 {
-  if((is_begin > 0 && strstr(str, str_pattern) == str)
-     || (is_begin == 0 && (bool) strstr(str, str_pattern)))
+  int i;
+  for (i = 0; str[i]; i++)
+    {
+      if (str[i] == '\n')
+        {
+          str[i] = 0;
+          break;
+        }
+    }
+
+  if ((regexp.is_regexp && strstr (str + i - regexp.pattern_len, str_pattern) != nullptr)
+      || (strstr (str, str_pattern) != nullptr))
     return true;
 
   return false;
 }
 
-int parse_2 (char *str_pattern, char *str_pattern_copy)
+void parse_1 (char *str_pattern, char *str_pattern_copy, Parse_results &regexp)
 {
-  strcpy (str_pattern_copy, str_pattern);
+  if (*str_pattern == '^')
+    regexp.is_regexp = true;
 
-  int len = strlen (str_pattern_copy);
-  if((unsigned int)str_pattern_copy[len - 1] == '$')
+  for (int i = 0; str_pattern[i]; i++)
     {
-      str_pattern_copy[len - 1] = 0;
-      return 1;
-    }
-
-  int i = 0;
-  int shift = 0;
-
-  for (i = 0; str_pattern_copy[i]; )
-    {
-      if(str_pattern_copy[i] == '\\')
+      if (str_pattern[i] == '\\')
         {
-          if(str_pattern_copy[i + 1] &&
-             (str_pattern_copy[i + 1] == '\\'
-              || str_pattern_copy[i + 1]== '$'))
-            {
-              shift++;
-              i++;
-              str_pattern_copy[i - shift] = str_pattern_copy[i];
-              i++;
-            }
-          else
-            return -1;
-        }
-      else
-        {
-          str_pattern_copy[i - shift] = str_pattern_copy[i];
           i++;
+          if ((str_pattern[i] != '\\') && str_pattern[i] != '^')
+            {
+              regexp.error = -1;
+              return ;
+            }
         }
     }
 
-  str_pattern_copy[len - shift] = 0;
-  return len;
+  int shift = 0;
+  if (str_pattern[0] == '^')
+    shift = 1;
+
+  for (int i = 0; i < STRING_BUFF_LEN && str_pattern[shift]; i++, shift++)
+    {
+      if (str_pattern[shift] == '\\')
+        shift++;
+
+      str_pattern_copy[i] = str_pattern[shift];
+    }
+
+  if (str_pattern[shift])
+    {
+      regexp.error = -1;
+      return;
+    }
+
+  return ;
 }
 
-bool cmp_2 (char *str, char *str_pattern, int is_begin)
+bool cmp_1 (char *str, char *str_pattern, Parse_results &regexp)
 {
-  if((is_begin > 0 && strstr(str, str_pattern) == str + (strlen (str) - is_begin))
-     || (is_begin == 0 && (bool) strstr(str, str_pattern)))
+  for (int i = 0; str[i]; i++)
+    {
+      if (str[i] == '\n')
+        {
+          str[i] = 0;
+          break;
+        }
+    }
+
+  if ((regexp.is_regexp && strstr (str, str_pattern) == str)
+      || (strstr (str, str_pattern) != NULL))
     return true;
 
   return false;
 }
 
-int regexp (char *in_file_name, char *out_file_name, char *str_pattern,
-            int (*parse)(char *, char *),
-            bool (*cmp)(char *, char *, int ))
+int regexp_solve (char *in_file_name, char *out_file_name, char *str_pattern,
+                  void (*parse)(char *, char *, Parse_results &),
+                  bool (*cmp)(char *, char *, Parse_results &))
 {
   FILE *in_file = fopen (in_file_name, "r");
   if (in_file == NULL)
@@ -125,8 +143,10 @@ int regexp (char *in_file_name, char *out_file_name, char *str_pattern,
   char buff[STRING_BUFF_LEN];
   char str_pattern_copy[STRING_BUFF_LEN];
 
-  int is_regexp = parse (str_pattern, str_pattern_copy);
-  if (is_regexp < 0)
+  Parse_results obj;
+  Parse_results &regexp = obj;
+  parse (str_pattern, str_pattern_copy, regexp);
+  if (regexp.error < 0)
     {
       fclose (in_file);
       fclose (out_file);
@@ -136,7 +156,7 @@ int regexp (char *in_file_name, char *out_file_name, char *str_pattern,
   int answer = 0;
   while (fgets (buff, STRING_BUFF_LEN, in_file))
     {
-      if (cmp (buff, str_pattern_copy, is_regexp))
+      if (cmp (buff, str_pattern_copy, regexp))
         {
           answer++;
           if (!fprintf (out_file, "%s", buff))

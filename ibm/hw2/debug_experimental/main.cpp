@@ -1,5 +1,7 @@
 #include "solver.h"
 
+int CRUTCH = 0;
+
 int main (int argc, char *argv[])
 {
   bool is_terminal = isatty (fileno (stdout));
@@ -31,6 +33,7 @@ int main (int argc, char *argv[])
 
 
   int formula_type = atoi (argv[4]);
+  CRUTCH = formula_type;
   if (argc == 5 && ((formula_type == 0 && strcmp (argv[4], "0") != 0)
                     || (formula_type > 4 || formula_type < 0)))
     {
@@ -191,11 +194,11 @@ int main (int argc, char *argv[])
   print (B, matrix_size, 1, print_size);
 
   double time = clock ();
-  int ret = solve (matrix_size, A, B, X, block_size, block_1, block_2, block_2);
+  int ret = solve_optimized (matrix_size, A, B, X, block_size, block_1, block_2);
   time  = (clock () - time) / CLOCKS_PER_SEC;
 
-  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
-  print (A, matrix_size, matrix_size, print_size);
+//  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
+//  print (A, matrix_size, matrix_size, print_size);
 
   if (ret == INCONSISTENT_SYSTEM)
     {

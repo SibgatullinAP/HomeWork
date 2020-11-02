@@ -1,4 +1,7 @@
 #include "solver.h"
+
+extern int CRUTCH;
+
 int read (double *A, int matrix_size, char *file_name)
 {
   FILE *file = fopen (file_name, "r");
@@ -33,7 +36,7 @@ double formula(int formula_type, int matrix_size, int i, int j)
     case 2:
       return (double) (i > j ? i : j);
     case 3:
-      return fabs(i - j);
+      return fabs (i - j);
     case 4:
       return 1. / (i + j - 1);
     default:
@@ -472,17 +475,17 @@ void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_
               buff_1 = Ak[j];
               buff_2 = Bi[j];
 
-              buff_1_1 = Ak[j + 1];
-              buff_1_2 = Bi[j + 1];
-
-              buff_2_1 = Ak[j + 2];
-              buff_2_2 = Bi[j + 2];
-
               Ak[j] = buff_1 * cos_ - buff_2 * sin_;
               Bi[j] = buff_1 * sin_ + buff_2 * cos_;
 
+              buff_1_1 = Ak[j + 1];
+              buff_1_2 = Bi[j + 1];
+
               Ak[j + 1] = buff_1_1 * cos_ - buff_1_2 * sin_;
               Bi[j + 1] = buff_1_1 * sin_ + buff_1_2 * cos_;
+
+              buff_2_1 = Ak[j + 2];
+              buff_2_2 = Bi[j + 2];
 
               Ak[j + 2] = buff_2_1 * cos_ - buff_2_2 * sin_;
               Bi[j + 2] = buff_2_1 * sin_ + buff_2_2 * cos_;
@@ -602,6 +605,10 @@ int solve_optimized (int matrix_size, double *A, double *B, double *X,
   double *block_3 = block_1 + block_size * block_size;
 
   double norm = norm_1_blocking (A, matrix_size, block_1, block_2, block_size);
+
+  if (CRUTCH == 4)
+    eps = 1e-18;
+
   eps *= norm;
 
   for (i = 0; i < block_quantity_dev; i++)

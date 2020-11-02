@@ -15,6 +15,6 @@
 #define INVALID_FILE -3
 #define INCONSISTENT_SYSTEM -10
 #define INCONSISTENT_BLOCK -100
-#define EPS 1e-17
+#define EPS 1e-16
 
 #endif //CONSTANTS_H
