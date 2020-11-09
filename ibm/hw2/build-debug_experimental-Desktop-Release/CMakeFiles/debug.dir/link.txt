@@ -1,0 +1,1 @@
+/usr/bin/g++  -O3 -DNDEBUG   CMakeFiles/debug.dir/main.cpp.o CMakeFiles/debug.dir/solver.cpp.o  -o debug 

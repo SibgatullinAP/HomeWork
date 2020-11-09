@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pam/HomeWork/ibm/hw2/debug_experimental/constants.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+math.h
+-
+time.h
+-
+stddef.h
+-
+fenv.h
+-
+unistd.h
+-
+sched.h
+-
+sys/sysinfo.h
+-
+
+/home/pam/HomeWork/ibm/hw2/debug_experimental/main.cpp
+solver.h
+/home/pam/HomeWork/ibm/hw2/debug_experimental/solver.h
+
+/home/pam/HomeWork/ibm/hw2/debug_experimental/solver.cpp
+solver.h
+/home/pam/HomeWork/ibm/hw2/debug_experimental/solver.h
+
+/home/pam/HomeWork/ibm/hw2/debug_experimental/solver.h
+constants.h
+/home/pam/HomeWork/ibm/hw2/debug_experimental/constants.h
+

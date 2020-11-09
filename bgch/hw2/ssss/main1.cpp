@@ -117,27 +117,27 @@ int solve (const char *file_in, const char *file_out, const char *s)
     }
 
   //special for "with strstr"
-/*
-  char s_new[LEN];
-  int j = 0;
-  if (s[0] == '^')
-      j = 1;
 
-  for (i = 0; s[j] && (i < LEN); j++, i++)
-    {
-      if (s[j] == '\\')
-        {
-          j++;
-        }
-      s_new[i] = s[j];
-    }
-  if (s[j])
-    {
-      printf ("%c", s[j]);
-      return -5;
-    }
+  // char s_new[LEN];
+  // int j = 0;
+  // if (s[0] == '^')
+  //     j = 1;
 
-*/
+  // for (i = 0; s[j] && (i < LEN); j++, i++)
+  //   {
+  //     if (s[j] == '\\')
+  //       {
+  //         j++;
+  //       }
+  //     s_new[i] = s[j];
+  //   }
+  // if (s[j])
+  //   {
+  //     printf ("%c", s[j]);
+  //     return -5;
+  //   }
+
+
 
   while (fgets (buf, LEN, fin))
     {
@@ -150,7 +150,7 @@ int solve (const char *file_in, const char *file_out, const char *s)
             }
         }
 
-      //without "strstr"
+      without "strstr"
       if (*s == '^')
         {
           if (chek_s_right_here (buf, s + 1))
@@ -171,22 +171,22 @@ int solve (const char *file_in, const char *file_out, const char *s)
         }
 
       //with "strstr"
-/*
-      if (*s == '^')
-        {
-          if (strstr (buf, s_new) == buf)
-            {
-              fprintf (fout, "%s\n", buf);
-              count_res++;
-            }
-          continue;
-        }
-      if (strstr (buf, s_new) != nullptr)
-        {
-          fprintf (fout, "%s\n", buf);
-          count_res++;
-        }
-*/
+
+    //   if (*s == '^')
+    //     {
+    //       if (strstr (buf, s_new) == buf)
+    //         {
+    //           fprintf (fout, "%s\n", buf);
+    //           count_res++;
+    //         }
+    //       continue;
+    //     }
+    //   if (strstr (buf, s_new) != nullptr)
+    //     {
+    //       fprintf (fout, "%s\n", buf);
+    //       count_res++;
+    //     }
+
     }
 
   fclose (fout);

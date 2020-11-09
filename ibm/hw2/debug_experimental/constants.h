@@ -9,6 +9,12 @@
 #include <stddef.h>
 #include <fenv.h>
 #include <unistd.h>
+#include <sched.h>
+#include <sys/sysinfo.h>
+
+#ifndef _GNU_SOURCE
+#define _GNU_SOURCE
+#endif
 
 #define CANNOT_OPEN_FILE -1
 #define CANNOT_READ_FILE -2

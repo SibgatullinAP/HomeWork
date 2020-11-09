@@ -1,0 +1,21 @@
+# callgrind format
+version: 1
+creator: callgrind-3.16.1
+pid: 44041
+cmd:  /home/pam/HomeWork/ibm/hw2/build-debug_experimental-Desktop-Release/debug 1000 100 10 3
+part: 1
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 0 - 0
+desc: Trigger: Program termination
+
+positions: line
+events: Ir
+summary: 0
+
+
+totals: 0

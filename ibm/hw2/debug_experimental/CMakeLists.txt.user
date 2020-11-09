@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2020-11-02T12:08:59. -->
+<!-- Written by QtCreator 4.13.2, 2020-11-09T17:32:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -354,7 +354,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.debug</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">debug</value>
-    <value type="QString" key="RunConfiguration.Arguments">1000 100 10 3</value>
+    <value type="QString" key="RunConfiguration.Arguments">20 10 10 4</value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
@@ -364,7 +364,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/pam/HomeWork/ibm/hw2/build-debug_experimental-Desktop-Release</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

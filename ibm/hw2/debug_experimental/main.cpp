@@ -7,6 +7,12 @@ int main (int argc, char *argv[])
   bool is_terminal = isatty (fileno (stdout));
   feenableexcept (FE_INVALID|FE_DIVBYZERO|FE_OVERFLOW|FE_UNDERFLOW);
 
+  cpu_set_t cpu;
+  CPU_ZERO (&cpu);
+  CPU_SET (get_nprocs() - 1, &cpu);
+
+  sched_setaffinity (getpid(), sizeof (cpu), &cpu);
+
   if (argc != 5 && argc != 6)
     {
       if (is_terminal)
@@ -193,24 +199,24 @@ int main (int argc, char *argv[])
     printf ("[OUTPUT] Vector B:\n");
   print (B, matrix_size, 1, print_size);
 
-  double time = clock ();
+  double elapsed = clock ();
   int ret = solve_optimized (matrix_size, A, B, X, block_size, block_1, block_2);
-  time  = (clock () - time) / CLOCKS_PER_SEC;
+  elapsed  = (clock () - elapsed) / CLOCKS_PER_SEC;
 
-//  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
-//  print (A, matrix_size, matrix_size, print_size);
+  //  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
+  //  print (A, matrix_size, matrix_size, print_size);
 
   if (ret == INCONSISTENT_SYSTEM)
     {
       if (is_terminal)
         {
           printf ("\x1b[31m[ERROR] \x1b[0mInconsistent system\n");
-          printf ("\x1b[32m[OUTPUT] \x1b[0mTime: %.4lf\n", time);
+          printf ("\x1b[32m[OUTPUT] \x1b[0mTime: %.4lf\n", elapsed);
         }
       else
         {
           printf ("[ERROR] Inconsistent system\n");
-          printf ("[OUTPUT] Time: %.4lf\n", time);
+          printf ("[OUTPUT] Time: %.4lf\n", elapsed);
         }
     }
   else
@@ -222,9 +228,9 @@ int main (int argc, char *argv[])
 
       print (X, matrix_size, 1, print_size);
       if(is_terminal)
-        printf ("\x1b[32m[OUTPUT] \x1b[0mSolving time: %.8lf\n", time);
+        printf ("\x1b[32m[OUTPUT] \x1b[0mSolving time: %.8lf\n", elapsed);
       else
-        printf ("[OUTPUT] Solving time: %.8lf\n", time);
+        printf ("[OUTPUT] Solving time: %.8lf\n", elapsed);
 
       if (argc == 5)
         init_A (A, matrix_size, formula_type);
@@ -271,7 +277,7 @@ int main (int argc, char *argv[])
         }
       init_B (A, B, matrix_size);
 
-      time  = clock ();
+      double time  = clock ();
       double residual = discrepancy_rate_norm_1 (A, X, B, matrix_size);
       time  = (clock () - time) / CLOCKS_PER_SEC;
 
@@ -288,7 +294,8 @@ int main (int argc, char *argv[])
           printf ("[OUTPUT] ||Error rate||_1 = %10.3e\n", error_rate_norm_1 (X, matrix_size));
         }
 
-      printf ("\nResidual = %e for s = %d n = %d m = %d\n", residual, formula_type, matrix_size, block_size);
+      printf ("%s : residual = %e elapsed = %.2f for s = %d n = %d m = %d\n",
+              argv[0], residual, elapsed, formula_type, matrix_size, block_size);
     }
 
   free (A);
