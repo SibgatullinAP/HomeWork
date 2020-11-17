@@ -1,0 +1,445 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.29)  15 NOV 2020 18:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Sibgatullin_AP_310_Overview.tex
+(./Sibgatullin_AP_310_Overview.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-07-17>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.3 \usepackage
+               [english,russian]{babel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \DeclareUnicodeCharacter has an extra }.
+<inserted text> 
+                \par 
+l.3 \usepackage
+               [english,russian]{babel}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \DeclareUnicodeCharacter was complete.
+<to be read again> 
+                   \par 
+l.3 \usepackage
+               [english,russian]{babel}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \DeclareUnicodeCharacter has an extra }.
+<inserted text> 
+                \par 
+l.3 \usepackage
+               [english,russian]{babel}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \DeclareUnicodeCharacter was complete.
+<to be read again> 
+                   \par 
+l.3 \usepackage
+               [english,russian]{babel}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.111 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \ProcessOptions*
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.111 \ProcessOptions*
+                      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+)
+Runaway text?
+\let \def \MessageBreak  
+(inputenc)                 \def \errmessage \ETC.
+! File ended while scanning text of \errhelp.
+<inserted text> 
+                }
+l.3 \usepackage
+               [english,russian]{babel}
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               [english,russian]{babel}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown option `\begingroup\immediate \write \@unused   \def 
+ 
+ \let \edef  You may provide a definition with
+\par   \errhelp \let \def 
+ 
+(inputenc)                 \def \errmessage  Package inputenc Error: Unicode ch
+aracter Т (U+0422)
+not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help \endgroup 2\begingroup\immediate \write \@
+unused   \def 
+ 
+ \let \edef  You may provide a definition with
+\par   \errhelp \let \def 
+ 
+(inputenc)                 \def \errmessage  Package inputenc Error: Unicode ch
+aracter А (U+0410)
+not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help \endgroup ' for package `fontenc'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               [english,russian]{babel}
+The option `\begingroup\immediate \write \@unused   \def 
+ 
+ \let \edef  You may provide a definition with
+\par   \errhelp \let \def 
+ 
+(inputenc)                 \def \errmessage  Package inputenc Error: Unicode ch
+aracter Т (U+0422)
+not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help \endgroup 2\begingroup\immediate \write \@
+unused   \def 
+ 
+ \let \edef  You may provide a definition with
+\par   \errhelp \let \def 
+ 
+(inputenc)                 \def \errmessage  Package inputenc Error: Unicode ch
+aracter А (U+0410)
+not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help \endgroup ' was not declared in package `f
+ontenc', perhaps you
+misspelled its name. Try typing  <return>  to proceed.
+
+
+! LaTeX Error: \RequirePackage or \LoadClass in Options Section.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage
+               {amssymb,amsfonts,amsmath,cite,enumerate,float,indentfirst}
+The package `' is defective.
+It attempts to load `babel' in the options section, i.e.,
+between \DeclareOption and \ProcessOptions.
+
+
+! LaTeX Error: \RequirePackage or \LoadClass in Options Section.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage
+               [dvips]{graphicx}
+The package `' is defective.
+It attempts to load `amssymb,amsfonts,amsmath,cite,enumerate,float,indentfirst'
+ in the options section, i.e.,
+between \DeclareOption and \ProcessOptions.
+
+
+! LaTeX Error: \RequirePackage or \LoadClass in Options Section.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \graphicspath
+                 {{images/}}
+The package `' is defective.
+It attempts to load `graphicx' in the options section, i.e.,
+between \DeclareOption and \ProcessOptions.
+
+! Undefined control sequence.
+<recently read> \graphicspath 
+                              
+l.6 \graphicspath
+                 {{images/}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \geometry
+             {left=2cm}% левое поле
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \RequirePackage or \LoadClass in Options Section.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \geometry
+             {left=2cm}% левое поле
+The package `' is defective.
+It attempts to load `geometry' in the options section, i.e.,
+between \DeclareOption and \ProcessOptions.
+
+! Undefined control sequence.
+<recently read> \geometry 
+                          
+l.9 \geometry
+             {left=2cm}% левое поле
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10 \geometry
+              {right=1.5cm}% правое поле
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 \geometry
+              {top=1cm}% верхнее поле
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 \geometry
+              {bottom=2cm}% нижнее поле
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \begin
+           {document}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count176
+\l__pdf_internal_box=\box45
+)
+(./Sibgatullin_AP_310_Overview.aux)
+\openout1 = `Sibgatullin_AP_310_Overview.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+
+! LaTeX Error: File `RefProject-Title.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.15 \input{RefProject-Title}
+                              % это титульный лист^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 569 strings out of 482811
+ 7797 string characters out of 5955739
+ 242178 words of memory out of 5000000
+ 16003 multiletter control sequences out of 15000+600000
+ 535386 words of font info for 30 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 24i,1n,25p,171b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

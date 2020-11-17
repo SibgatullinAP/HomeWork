@@ -4,7 +4,7 @@ int main (int argc, char *argv[])
 {
   if (argc != 4)
     {
-      printf ("\x1b[31m[ERROR] \x1b[0mPlease, use: "
+      printf ("[ERROR] Please, use: "
               "%s Input_file_name Output_file_name str_pattern\n", argv[0]);
       return -1;
     }
@@ -22,34 +22,34 @@ int main (int argc, char *argv[])
       switch (ret)
         {
         case CANNOT_OPEN_FILE_IN:
-          printf ("\x1b[31m[ERROR] \x1b[0mCan't open %s to read.\n", in_file_name);
+          printf ("[ERROR] Can't open %s to read.\n", in_file_name);
           break;
         case CANNOT_OPEN_FILE_OUT:
-          printf ("\x1b[31m[ERROR] \x1b[0mCan't open %s to write.\n", out_file_name);
+          printf ("[ERROR] Can't open %s to write.\n", out_file_name);
           break;
         case CANNOT_READ_FILE_IN:
-          printf ("\x1b[31m[ERROR] \x1b[0mCan't read %s\n", in_file_name);
+          printf ("[ERROR] Can't read %s\n", in_file_name);
           break;
         case CANNOT_WRITE_FILE_OUT:
-          printf ("\x1b[31m[ERROR] \x1b[0mCan't write to %s\n", out_file_name);
+          printf ("[ERROR] Can't write to %s\n", out_file_name);
           break;
         case INVALID_FILE_IN:
-          printf ("\x1b[31m[ERROR] \x1b[0mInvalid file %s"
+          printf ("[ERROR] Invalid file %s"
                   " (only part of the file is read)\n", in_file_name);
           break;
         case EMPTY_FILE_IN:
-          printf ("\x1b[31m[ERROR] \x1b[0mEmpty file %s\n", out_file_name);
+          printf ("[ERROR] Empty file %s\n", out_file_name);
           break;
         case INCORRECT_REGEXP:
-          printf ("\x1b[31m[ERROR] \x1b[0mIncorrect regular expression %s\n", str_pattern);
+          printf ("[ERROR] Incorrect regular expression %s\n", str_pattern);
           break;
         default:
-          printf ("\x1b[31m[ERROR] \x1b[0mUnknown error\n");
+          printf ("[ERROR] Unknown error\n");
         }
       return -2;
     }
 
-  printf ("\x1b[32m[OUTPUT] \x1b[0mAnswer = %d\n", ret);
+  printf ("[OUTPUT] Answer = %d\n", ret);
 
   return 0;
 }
