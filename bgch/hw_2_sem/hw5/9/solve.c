@@ -9,12 +9,17 @@ int solve( double (*f)(double), double a, double b, double e, double *r){
 
 		s1new=0.5*(s1+s2);
 		s2new=0;
+		
 		for(i=0; i<2*n; i++)	s2new+=f(a+(2*i+1)*(h/2.0));
+
 		s2new*=(h/2.0);
-		snew=(h/6.0)*fa + (2.0/3.0)*s1new +(4.0/3.0)*s2new + (h/6.0)*fb;
+		snew=(h/6.0)*fa + (2.0/3.0)* s1new +(4.0/3.0)*s2new + (h/6.0)*fb;
 
     	if(fabs(snew-s)<e) break;
-        s=snew; s1=s1new; s2=s2new; h/=2.0; n*=2;
+        s=snew;
+        s1=s1new;
+        s2=s2new;
+         h/=2.0; n*=2;
 	}
 
 	if(it>=MAX_IT) return -1;

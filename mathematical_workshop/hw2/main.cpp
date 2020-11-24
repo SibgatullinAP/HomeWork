@@ -97,7 +97,7 @@ int main (int argc, const char *argv[])
 
   for (i = 0; i < thread_quantity; i++)
     {
-      if (status[i] != 0)
+      if (status[i] < 0)
         {
           aborted = true;
           if (status[i] == CANNOT_OPEN_FILE)

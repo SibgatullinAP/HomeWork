@@ -20,15 +20,27 @@ void *thread_func (void *arg)
   int i = 0;
   for (i = 0; i < thread_quantity; i++)
     {
-      if (status[i] != 0)
+      if (status[i] < 0 )
         return nullptr;
     }
 
   double avg_positive = 0;
+  int count = 0;
   for (i = 0; i < thread_quantity; i++)
-    avg_positive += avg_[i];
+    {
+      if (status[i] > 0)
+        {
+          avg_positive += avg_[i];
+          count++;
+        }
+    }
 
-  result[curr_thread] = counter (file_names[curr_thread], avg_positive / (double) thread_quantity);
+  if (count == 0)
+    return nullptr;
+
+  avg_positive /= (double) count;
+
+  result[curr_thread] = counter (file_names[curr_thread], avg_positive);
 
   pthread_barrier_wait (data -> barrier);
   return nullptr;

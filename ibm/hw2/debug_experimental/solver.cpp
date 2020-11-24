@@ -469,6 +469,66 @@ void set_block_vector (double *B, double *Block,int block_size,
     Bi[i] = Block[block_size * i];
 }
 
+void get_block_rem (double *A, int matrix_size, double *Block, int block_size,
+                    int i_, int j_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  int block_n_size = (j_ < dev ? block_size : rem_of_dev);
+
+  double *Block_i = Block;
+  double *Ai = A + (i_ * matrix_size + j_) * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    {
+      for (int j = 0; j < block_n_size; j++)
+        Block_i[j] = Ai[j];
+
+      Ai += matrix_size;
+      Block_i += block_size;
+    }
+}
+
+
+void set_block_rem (double *A, int matrix_size, double *Block, int block_size,
+                    int i_, int j_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  int block_n_size = (j_ < dev ? block_size : rem_of_dev);
+
+  double *Block_i = Block;
+  double *Ai = A + (i_ * matrix_size + j_) * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    {
+      for (int j = 0; j < block_n_size; j++)
+        Ai[j] = Block_i[j];
+
+      Ai += matrix_size;
+      Block_i += block_size;
+    }
+}
+
+void get_block_vector_rem (double *B, double *Block, int block_size,
+                           int i_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  double *Bi = B + i_ * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    Block[block_size * i] = Bi[i];
+}
+
+
+void set_block_vector_rem (double *B, double *Block,int block_size,
+                           int i_, int dev, int rem_of_dev)
+{
+  int block_m_size = (i_ < dev ? block_size : rem_of_dev);
+  double *Bi = B + i_ * block_size;
+
+  for (int i = 0; i < block_m_size; i++)
+    Bi[i] = Block[block_size * i];
+}
+
 int diagonalize_block (double *A, int matrix_size, int block_size, double *T, double eps)
 {
   double root, temp;
@@ -495,27 +555,27 @@ int diagonalize_block (double *A, int matrix_size, int block_size, double *T, do
             {
               T[i + k * matrix_size] = 1;
               T[k + i * matrix_size] = 0;
-
-              continue;
             }
-
-          cos_ = Ak[k] / root;
-          sin_ = - Aik / root;
-
-          T[i + k * matrix_size] = cos_;
-          T[k + i * matrix_size] = sin_;
-
-          Ak[k] = root;
-          for (j = k + 1; j < block_size; j++)
+          else
             {
-              buff_1 = Ak[j];
-              buff_2 = Ai[j];
+              cos_ = Ak[k] / root;
+              sin_ = - Aik / root;
 
-              Ak[j] = buff_1 * cos_ - buff_2 * sin_;
-              Ai[j] = buff_1 * sin_ + buff_2 * cos_;
+              T[i + k * matrix_size] = cos_;
+              T[k + i * matrix_size] = sin_;
+
+              Ak[k] = root;
+              for (j = k + 1; j < block_size; j++)
+                {
+                  buff_1 = Ak[j];
+                  buff_2 = Ai[j];
+
+                  Ak[j] = buff_1 * cos_ - buff_2 * sin_;
+                  Ai[j] = buff_1 * sin_ + buff_2 * cos_;
+                }
+
+              Ai[k] = 0;
             }
-
-          Ai[k] = 0;
         }
 
       if (Ak[k] < eps)
@@ -641,6 +701,7 @@ void zeroing_block (double *A, double *B, int matrix_size, int m_block_size, int
                   Ak[j] = buff_1 * cos_ - buff_2 * sin_;
                   Bi[j] = buff_1 * sin_ + buff_2 * cos_;
                 }
+
             }
           else
             {
@@ -653,6 +714,67 @@ void zeroing_block (double *A, double *B, int matrix_size, int m_block_size, int
     }
 }
 
+//void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_size, int n_block_size,
+//                             double *T, int shift)
+//{
+//  double buff_1, buff_2, cos_, sin_;
+//  double *Ak, *Bi;
+//  int i, j, k;
+//  int k_matrix_size;
+
+//  double buff_1_1, buff_1_2, buff_2_1, buff_2_2, buff_3_1, buff_3_2;
+
+//  for (k = 0; k < matrix_size; k++)
+//    {
+//      Ak = A + k * matrix_size;
+//      k_matrix_size = k * matrix_size;
+
+//      for (i = 0; i < m_block_size; i++)
+//        {
+//          Bi = B + i * matrix_size;
+
+//          cos_ = T[i + k_matrix_size];
+//          sin_ = T[shift + i + k_matrix_size];
+
+//          for (j = 0; j < n_block_size - 1; j += 2)
+//            {
+//              buff_1 = Ak[j];
+//              buff_2 = Bi[j];
+
+//              buff_1_1 = buff_1 * cos_;
+//              buff_1_2 = buff_2 * sin_;
+
+//              buff_1 *= sin_;
+//              buff_2 *= cos_;
+
+//              Ak[j] = buff_1_1 - buff_1_2;
+//              Bi[j] = buff_1 + buff_2;
+
+//              buff_2_1 = Ak[j + 1];
+//              buff_2_2 = Bi[j + 1];
+
+//              buff_3_1 = buff_2_1 * cos_;
+//              buff_3_2 = buff_2_2 * sin_;
+
+//              buff_2_1 *= sin_;
+//              buff_2_2 *= cos_;
+
+//              Ak[j + 1] = buff_3_1 - buff_3_2;
+//              Bi[j + 1] = buff_2_1 + buff_2_2;
+//            }
+
+//          if (j < n_block_size)
+//            {
+//              buff_1 = Ak[j];
+//              buff_2 = Bi[j];
+
+//              Ak[j] = buff_1 * cos_ - buff_2 * sin_;
+//              Bi[j] = buff_1 * sin_ + buff_2 * cos_;
+//            }
+//        }
+//    }
+//}
+
 void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_size, int n_block_size,
                              double *T, int shift)
 {
@@ -661,7 +783,7 @@ void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_
   int i, j, k;
   int k_matrix_size;
 
-  double buff_1_1, buff_1_2, buff_2_1, buff_2_2;
+  double buff_1_1, buff_1_2;
 
   for (k = 0; k < matrix_size; k++)
     {
@@ -675,7 +797,7 @@ void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_
           cos_ = T[i + k_matrix_size];
           sin_ = T[shift + i + k_matrix_size];
 
-          for (j = 0; j < n_block_size - 2; j += 3)
+          for (j = 0; j < n_block_size - 1; j += 2)
             {
               buff_1 = Ak[j];
               buff_2 = Bi[j];
@@ -688,12 +810,6 @@ void traverse_block_zeroing (double *A, double *B, int matrix_size, int m_block_
 
               Ak[j + 1] = buff_1_1 * cos_ - buff_1_2 * sin_;
               Bi[j + 1] = buff_1_1 * sin_ + buff_1_2 * cos_;
-
-              buff_2_1 = Ak[j + 2];
-              buff_2_2 = Bi[j + 2];
-
-              Ak[j + 2] = buff_2_1 * cos_ - buff_2_2 * sin_;
-              Bi[j + 2] = buff_2_1 * sin_ + buff_2_2 * cos_;
             }
 
           for (; j < n_block_size; j++)

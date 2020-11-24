@@ -29,10 +29,10 @@ int avg (const char *file_name, double *avg_)
 
   fclose (file);
   if (counter == 0)
-    return CANNOT_READ_FILE;
+    return 0;
 
   *avg_ = sum / (double) counter;
-  return 0;
+  return 1;
 }
 
 int counter (const char *file_name, double avg)

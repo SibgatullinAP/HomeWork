@@ -7,5 +7,5 @@ int get_count(void){ return count; }
 
 double f(double x){
 	count++;
-	return sin(x)*exp(x);
+	return x;
 }

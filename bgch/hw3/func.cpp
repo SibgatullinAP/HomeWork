@@ -9,12 +9,12 @@ double f_1 (double x)
 
 double f_2 (double x)
 {
-  return -1.0 * x * x + 1.0;
+  return -x * x + 1.0;
 }
 
 double f_3 (double x)
 {
-  return x * x * x - 2.0 * x * x + x;
+  return x * x * x - 2 * x * x + x;
 }
 
 double f_4 (double x)
@@ -57,4 +57,29 @@ double d_4 (double x)
 double d_5 (double x)
 {
   return -1.0 * (2.0 * x) / ((x * x + 1.0) * (x * x + 1.0));
+}
+
+double anti_d_1 (double x)
+{
+  return x * x / 2.0;
+}
+
+double anti_d_2 (double x)
+{
+  return - x * x * x / 3.0 + x;
+}
+
+double anti_d_3 (double x)
+{
+  return x * x * x * x / 4.0 - x * x * x * 2.0 / 3.0 + x * x / 2.0;
+}
+
+double anti_d_4 (double x)
+{
+  return (2.0 / 3.0) * pow(x, 1.5)  - 3.0 * x;
+}
+
+double anti_d_5 (double x)
+{
+  return atan (x);
 }

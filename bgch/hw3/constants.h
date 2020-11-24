@@ -9,7 +9,10 @@
 #include <math.h>
 
 #define MAX_PRINT 10
-#define MAX_ITTER 100000
+#define MAX_ITTER 1000000
+
+#define MAX_ITTER_INTEGRAL 32
+#define MAX_ITTER_CONV 100
 #define EPS 1e-16
 
 #define CANNOT_OPEN_FILE -1

@@ -3,7 +3,7 @@
 
 int solve( double (*x)(double), double (*y)(double), double a, double b, double e, double *r){
 	int i, it, n=1;
-	double h=fabs(b-a), s2,x1,x2,y1,y2, xa=x(a), xb=x(b), ya=y(a), yb=y(b), s=sqrt(pow(xa-xb,2)+pow(ya-yb,2));
+	double h=fabs(b-a), s2,x1,x2,y1,y2, xa=x(a), xb=x(b), ya=y(a), yb=y(b), s=sqrt(pow(xa-xb,2) + pow(ya-yb,2));
 
 	for(it=0; it<MAX_IT; it++){
 		s2=0;
