@@ -1,3 +1,4 @@
+
 #!/bin/sh
 all: build
 
@@ -23,33 +24,33 @@ build_1: main_1_1.o main_1_2.o main_1_3.o interpolations.o
 	printf "Tasks with interpolations were built succesfully\n"
 	@tput sgr0
 
-build_2: main_2_1.o main_2_2.o main_2_3.o main_2_4.o main_2_5.o main_2_7.o main_2_8.o main_2_9.o equations.o func.o
+build_2: main_2_1.o main_2_2.o main_2_3.o main_2_4.o main_2_5.o main_2_6.o main_2_7.o main_2_8.o main_2_9.o main_2_10.o equations.o func.o
 	$(CC) main_2_1.o equations.o func.o $(FLAGS) -o 2_1.out
 	$(CC) main_2_2.o equations.o func.o $(FLAGS) -o 2_2.out
 	$(CC) main_2_3.o equations.o func.o $(FLAGS) -o 2_3.out
 	$(CC) main_2_4.o equations.o func.o $(FLAGS) -o 2_4.out
 	$(CC) main_2_5.o equations.o func.o $(FLAGS) -o 2_5.out
-# 	$(CC) main_2_6.o equations.o func.o $(FLAGS) -o 2_6.out
+	$(CC) main_2_6.o equations.o func.o $(FLAGS) -o 2_6.out
 	$(CC) main_2_7.o equations.o func.o $(FLAGS) -o 2_7.out
 	$(CC) main_2_8.o equations.o func.o $(FLAGS) -o 2_8.out
 	$(CC) main_2_9.o equations.o func.o $(FLAGS) -o 2_9.out
-# 	$(CC) main_2_10.o equations.o func.o $(FLAGS) -o 2_10.out
+	$(CC) main_2_10.o equations.o func.o $(FLAGS) -o 2_10.out
 	@tput setaf 2
 	printf "Tasks with equations were built succesfully\n"
 	@tput sgr0
 
-build_3: main_3_1.o main_3_2.o main_3_5.o main_3_6.o main_3_7.o main_3_8.o main_3_9.o integrals.o func.o
+build_3: main_3_1.o main_3_2.o main_3_3.o main_3_4.o main_3_5.o main_3_6.o main_3_7.o main_3_8.o main_3_9.o integrals.o func.o
 	$(CC) main_3_1.o integrals.o func.o $(FLAGS) -o 3_1.out
 	$(CC) main_3_2.o integrals.o func.o $(FLAGS) -o 3_2.out
-# 	$(CC) main_3_3.o integrals.o func.o $(FLAGS) -o 3_3.out
-# 	$(CC) main_3_4.o integrals.o func.o $(FLAGS) -o 3_4.out
+	$(CC) main_3_3.o integrals.o func.o $(FLAGS) -o 3_3.out
+	$(CC) main_3_4.o integrals.o func.o $(FLAGS) -o 3_4.out
 	$(CC) main_3_5.o integrals.o func.o $(FLAGS) -o 3_5.out
 	$(CC) main_3_6.o integrals.o func.o $(FLAGS) -o 3_6.out
 	$(CC) main_3_7.o integrals.o func.o $(FLAGS) -o 3_7.out
 	$(CC) main_3_8.o integrals.o func.o $(FLAGS) -o 3_8.out
 	$(CC) main_3_9.o integrals.o func.o $(FLAGS) -o 3_9.out
 	@tput setaf 2
-	printf "Tasks with sortings were built succesfully\n"
+	printf "Tasks with integrals were built succesfully\n"
 	@tput sgr0
 
 

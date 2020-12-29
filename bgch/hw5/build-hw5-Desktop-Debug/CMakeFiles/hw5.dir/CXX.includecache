@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pam/HomeWork/bgch/hw5/hw5/common.h
+stdio.h
+-
+memory.h
+-
+
+/home/pam/HomeWork/bgch/hw5/hw5/student.cpp
+student.h
+/home/pam/HomeWork/bgch/hw5/hw5/student.h
+
+/home/pam/HomeWork/bgch/hw5/hw5/student.h
+common.h
+/home/pam/HomeWork/bgch/hw5/hw5/common.h
+

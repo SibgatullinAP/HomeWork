@@ -21,3 +21,5 @@ int max_auto_steps (double a, double b, double eps, double *answer, double (*fun
 int max_golden_secants (double a, double b, double eps, double *answer, double (*func)(double));
 
 int max_squared_interpolations (double a, double b, double eps, double *answer, double (*func)(double));
+
+double sign (double x);

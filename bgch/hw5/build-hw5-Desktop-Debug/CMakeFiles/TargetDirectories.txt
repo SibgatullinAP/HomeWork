@@ -1,0 +1,3 @@
+/home/pam/HomeWork/bgch/hw5/build-hw5-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/pam/HomeWork/bgch/hw5/build-hw5-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/pam/HomeWork/bgch/hw5/build-hw5-Desktop-Debug/CMakeFiles/hw5.dir

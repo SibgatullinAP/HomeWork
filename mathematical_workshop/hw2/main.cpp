@@ -76,35 +76,45 @@ int main (int argc, const char *argv[])
       result[i] = 0;
     }
 
-  pthread_t thread;
+  pthread_t *thread_arr = new pthread_t [thread_quantity];
+  if (thread_arr == nullptr)
+    {
+      printf ("[ERROR] Can't initialize barier\n");
+      delete [] data;
+      delete [] avg;
+      delete [] status;
+      delete [] result;
+      return -3;
+    }
+
   for (i = 1; i < thread_quantity; i++)
     {
-      ret = pthread_create (&thread, nullptr, thread_func, data + i);
+      ret = pthread_create (thread_arr + i, nullptr, thread_func, data + i);
       if (ret != 0)
         {
-          printf ("[ERROR] Can't initialize barier\n");
+          printf ("[ERROR] Can't initialize thread\n");
           delete [] data;
           delete [] avg;
           delete [] status;
           delete [] result;
+          delete [] thread_arr;
           return -4;
         }
     }
 
-  thread_func (data + 0);
-  pthread_barrier_destroy (&barrier);
-  bool aborted = false;
+  thread_func (data);
 
-  for (i = 0; i < thread_quantity; i++)
+  bool aborted = false;
+  for (i = 1; i < thread_quantity; i++)
     {
       if (status[i] < 0)
         {
           aborted = true;
           if (status[i] == CANNOT_OPEN_FILE)
-              printf ("[ERROR] Can't open %s\n", argv[i + 1]);
+            printf ("[ERROR] Can't open %s\n", argv[i + 1]);
 
           else if (status[i] == CANNOT_READ_FILE)
-              printf ("[ERROR] Can not read %s\n", argv[i + 1]);
+            printf ("[ERROR] Can not read %s\n", argv[i + 1]);
         }
     }
 
@@ -113,18 +123,21 @@ int main (int argc, const char *argv[])
     {
       answer = 0;
       for (i = 0; i < thread_quantity; i++)
-          answer += result[i];
+        answer += result[i];
 
       printf ("[OUTPUT] Answer: %d\n", answer);
     }
 
-    pthread_detach(thread);
-  pthread_join(thread, 0);
+  for (i = 1; i < thread_quantity; i++)
+    pthread_join (thread_arr[i], 0);
+
+  pthread_barrier_destroy (&barrier);
 
   delete [] data;
   delete [] avg;
   delete [] status;
   delete [] result;
+  delete [] thread_arr;
 
   return 0;
 }

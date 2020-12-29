@@ -1,5 +1,10 @@
 #include "integrals.h"
 
+double sign (double x)
+{
+  return (double) (x > 0) - (x < 0);
+}
+
 double integral_trapeze (double a, double b, int n, double (*func)(double))
 {
   double delta = (b - a) / n;
@@ -24,6 +29,63 @@ double integral_simpson (double a, double b, int n, double (*func)(double))
     }
 
   return (delta / 3.0) * (func (a) + 2.0 * sum_even + 4.0 * sum_odd + func (b));
+}
+
+
+double integral_squared (double a, double b, int n, double (*func)(double),
+                         double (*partitial)(double, double, double (*)(double)))
+{
+  if (!memcmp ((void*)&a, (void*)&b, sizeof (double)))
+    return 0;
+
+  double delta = (b - a) / n;
+
+  double answer = 0;
+  double left = a;
+  for (int i = 0; i < n; i++)
+    {
+      answer += partitial (left, left + delta, func);
+      left += delta;
+    }
+  return answer;
+}
+
+double partial_trapeze (double a, double b, double (*func)(double))
+{
+  double sum_1 = (func (b) - func (a)) / (b - a);
+  double sum_2 = func (b) - ((func (b) - func (a)) / (b - a)) * b;
+
+  double answer = (sqrt (fabs (b)) * fabs (b) - sqrt (fabs (a)) * fabs (a));
+  answer *= 2.0 / 3.0 * sum_1;
+  answer += 2.0 * sign (b) * sqrt (fabs (b)) * sum_2 - 2 * sign (a) * sqrt (fabs (a)) * sum_2;
+
+  return answer;
+}
+
+
+double partial_simpson (double a, double b, double (*func)(double))
+{
+  double x_1 = a;
+  double x_2 = (a + b) / 2.0;
+  double x_3 = b;
+
+  double f_1 = func (x_1);
+  double f_2 = func (x_2);
+  double f_3 = func (x_3);
+
+  double sum_1 = (f_3 - (x_3 * (f_2 - f_1) + x_2 * f_1 - x_1 * f_2) / (x_2 - x_1))
+      / (x_3 * (x_3 - x_1 - x_2) + x_1 * x_2);
+  double sum_2 = (f_2 - f_1) / (x_2 - x_1) - sum_1 * (x_1 + x_2);
+  double sum_3 = (x_2 * f_1 - x_1 * f_2) / (x_2 - x_1) + sum_1 * x_1 * x_2;
+
+  double answer = sum_1 * 2. / 5. * b * b * sqrt (fabs (b)) * sign (b)
+      + sum_2 * 2. / 3. * fabs (b) * sqrt (fabs (b))
+      + sum_3 * 2. * sqrt (fabs (b)) * sign (b)
+      - sum_1 * 2. / 5. * a * a * sqrt (fabs (a)) * sign (a)
+      - sum_2 * 2. / 3. * fabs (a) * sqrt (fabs (a))
+      - sum_3 * 2. * sqrt (fabs (a)) * sign (a);
+
+  return answer;
 }
 
 
@@ -163,20 +225,24 @@ int length (double a, double b, double eps, double *answer, double (*func_x)(dou
 
   int steps = 1;
   int i = 0;
-  for (i = 0; i < MAX_ITTER; i++)
+  for (i = 0; i < MAX_ITTER_INTEGRAL; i++)
     {
       x_left = func_x_left;
       y_left = func_y_left;
-      for (int j = 0; j < (steps << 1); j++)
+      len_temp = 0;
+      for (int j = 1; j < (steps << 1); j++)
         {
-          y_right = func_y (a + i * 0.5 * delta);
-          x_right = func_x (a + i * 0.5 * delta);
+          y_right = func_y (a + j * 0.5 * delta);
+          x_right = func_x (a + j * 0.5 * delta);
 
           len_temp += sqrt ((x_left - x_right) * (x_left - x_right) + (y_left - y_right) * (y_left - y_right));
 
           y_left = y_right;
           x_left = x_right;
         }
+
+      len_temp += sqrt ((x_left - func_x_right) * (x_left - func_x_right)
+                        + (y_left - func_y_right) * (y_left - func_y_right));
 
       if (fabs (len - len_temp) < eps)
         break;
@@ -186,7 +252,7 @@ int length (double a, double b, double eps, double *answer, double (*func_x)(dou
       steps <<= 1;
     }
 
-  if (i < MAX_ITTER)
+  if (i < MAX_ITTER_INTEGRAL)
     {
       *answer = len_temp;
       return steps << 1;

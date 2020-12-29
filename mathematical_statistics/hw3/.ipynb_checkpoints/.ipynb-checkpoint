@@ -1,0 +1,339 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<h1>Сибгатуллин Артур. 310 группа. ДЗ-3</h1>  "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "import seaborn as sns\n",
+    "from datetime import datetime\n",
+    "import pandas as pd\n",
+    "from scipy import stats\n",
+    "import PyNonpar\n",
+    "from PyNonpar import*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>reporting date</th>\n",
+       "      <th>location</th>\n",
+       "      <th>country</th>\n",
+       "      <th>gender</th>\n",
+       "      <th>age</th>\n",
+       "      <th>symptom_onset</th>\n",
+       "      <th>exposure_start</th>\n",
+       "      <th>exposure_end</th>\n",
+       "      <th>visiting Wuhan</th>\n",
+       "      <th>from Wuhan</th>\n",
+       "      <th>death</th>\n",
+       "      <th>recovered</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1/20/2020</td>\n",
+       "      <td>Shenzhen, Guangdong</td>\n",
+       "      <td>China</td>\n",
+       "      <td>male</td>\n",
+       "      <td>66.0</td>\n",
+       "      <td>01/03/20</td>\n",
+       "      <td>12/29/2019</td>\n",
+       "      <td>01/04/20</td>\n",
+       "      <td>1</td>\n",
+       "      <td>0.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1/20/2020</td>\n",
+       "      <td>Shanghai</td>\n",
+       "      <td>China</td>\n",
+       "      <td>female</td>\n",
+       "      <td>56.0</td>\n",
+       "      <td>1/15/2020</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>01/12/20</td>\n",
+       "      <td>0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>1/21/2020</td>\n",
+       "      <td>Zhejiang</td>\n",
+       "      <td>China</td>\n",
+       "      <td>male</td>\n",
+       "      <td>46.0</td>\n",
+       "      <td>01/04/20</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>01/03/20</td>\n",
+       "      <td>0</td>\n",
+       "      <td>1.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>1/21/2020</td>\n",
+       "      <td>Tianjin</td>\n",
+       "      <td>China</td>\n",
+       "      <td>female</td>\n",
+       "      <td>60.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>1</td>\n",
+       "      <td>0.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>1/21/2020</td>\n",
+       "      <td>Tianjin</td>\n",
+       "      <td>China</td>\n",
+       "      <td>male</td>\n",
+       "      <td>58.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  reporting date             location country  gender   age symptom_onset  \\\n",
+       "0      1/20/2020  Shenzhen, Guangdong   China    male  66.0      01/03/20   \n",
+       "1      1/20/2020             Shanghai   China  female  56.0     1/15/2020   \n",
+       "2      1/21/2020             Zhejiang   China    male  46.0      01/04/20   \n",
+       "3      1/21/2020              Tianjin   China  female  60.0           NaN   \n",
+       "4      1/21/2020              Tianjin   China    male  58.0           NaN   \n",
+       "\n",
+       "  exposure_start exposure_end  visiting Wuhan  from Wuhan death recovered  \n",
+       "0     12/29/2019     01/04/20               1         0.0     0         0  \n",
+       "1            NaN     01/12/20               0         1.0     0         0  \n",
+       "2            NaN     01/03/20               0         1.0     0         0  \n",
+       "3            NaN          NaN               1         0.0     0         0  \n",
+       "4            NaN          NaN               0         0.0     0         0  "
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "data = pd.read_csv(\"covid_short_data-5.csv\")\n",
+    "data.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "People younger than 60:  74\n",
+      "People older than 60:  11\n"
+     ]
+    }
+   ],
+   "source": [
+    "def to_date(date):\n",
+    "    if len(date.split('/')[-1])==2:\n",
+    "        return datetime.strptime(date, '%m/%d/%y').date()\n",
+    "    return datetime.strptime(date, '%m/%d/%Y').date()\n",
+    "def numOfDays(date1, date2): \n",
+    "    return (to_date(date2)-to_date(date1)).days \n",
+    "\n",
+    "def numOfDays1(date1, date2):\n",
+    "    if type(date1)==str and type(date2)==str:\n",
+    "        return (to_date(date2)-to_date(date1)).days\n",
+    "    return np.nan\n",
+    "\n",
+    "younger_60 = np.array([numOfDays(data['symptom_onset'][n],data['recovered'][n])\n",
+    "                           for n in range(len(data['symptom_onset']))\n",
+    "                           if type(data['symptom_onset'][n]) == str\n",
+    "                               and type(data['recovered'][n]) == str\n",
+    "                               and data['age'][n] < 60\n",
+    "                               and data['recovered'][n] != '0'\n",
+    "                               and data['recovered'][n] != '1'\n",
+    "                         ])\n",
+    "younger_60 = younger_60[younger_60 > 0]\n",
+    "print(\"People younger than 60: \",len(younger_60))\n",
+    "\n",
+    "older_60 = np.array([numOfDays(data['symptom_onset'][n],data['recovered'][n])\n",
+    "                           for n in range(len(data['symptom_onset']))\n",
+    "                           if type(data['symptom_onset'][n]) == str\n",
+    "                               and type(data['recovered'][n]) == str\n",
+    "                               and data['age'][n] >= 60\n",
+    "                               and data['recovered'][n] != '0'\n",
+    "                               and data['recovered'][n] != '1'\n",
+    "                        ])\n",
+    "older_60 = older_60[older_60 > 0]\n",
+    "print(\"People older than 60: \",len(older_60))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Shapiro for younger than 60: 0.2433023303747177\n",
+      "Shapiro for older than 60: 0.9952965974807739\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Shapiro for younger than 60:\",stats.shapiro(younger_60).pvalue)\n",
+    "print(\"Shapiro for older than 60:\",stats.shapiro(older_60).pvalue)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Так как p_value > 0.05, то нормальность не отвергается. Поэтому применим критерий Стьюдента, но сначала проверим совпадение дисперсий."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Test:  0.7937516737258155\n"
+     ]
+    }
+   ],
+   "source": [
+    "def Ftest_pvalue(d1,d2):\n",
+    "    df1 = len(d1) - 1\n",
+    "    df2 = len(d2) - 1\n",
+    "    F = d1.var(ddof=1) / d2.var(ddof=1)\n",
+    "    double_tailed_pval = 2 * stats.f.cdf(F,df1,df2) if F < 1 else 2 * (1 - stats.f.cdf(F,df1,df2))\n",
+    "    return double_tailed_pval\n",
+    "\n",
+    "\n",
+    "print(\"Test: \",Ftest_pvalue(older_60, younger_60))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Student's t-test:  0.6802848427428991\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Student's t-test: \",stats.ttest_ind(older_60, younger_60).pvalue)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "WilcoxonMannWhitneyResult(alternative='two.sided', statistic=0.4724672972646506, HodgesLehmann=1.0, lowerCI=-3, upperCI=5, pvalue=0.6365932788971675)"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "PyNonpar.twosample.wilcoxon_mann_whitney_test(list(younger_60), list(older_60), alternative=\"two.sided\", method = \"asymptotic\", alpha = 0.05)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}

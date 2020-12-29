@@ -1,0 +1,1 @@
+/usr/bin/g++  -O3 -DNDEBUG   CMakeFiles/hw5.dir/main.cpp.o CMakeFiles/hw5.dir/student.cpp.o CMakeFiles/hw5.dir/tree.cpp.o CMakeFiles/hw5.dir/tree_node.cpp.o CMakeFiles/hw5.dir/list2.cpp.o CMakeFiles/hw5.dir/list2_node.cpp.o  -o hw5 

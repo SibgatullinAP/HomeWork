@@ -1,8 +1,14 @@
 #include <math.h>
+#include <stdio.h>
+#include <stddef.h>
+#include <fenv.h>
 #include "h.h"
 
 int solve( double (*f)(double), int m, double *M,  double a, double b, double e, double *x){
 	int it=0, i, j, itmax;
+
+	  feenableexcept (FE_INVALID | FE_DIVBYZERO | FE_OVERFLOW | FE_UNDERFLOW);
+
 	double d, fd, ymax;
 
 	for(i=0; i<m+1; i++){
@@ -19,6 +25,7 @@ int solve( double (*f)(double), int m, double *M,  double a, double b, double e,
 				M[j+2*m+2]=( M[j+2*m+2]*(0-M[j-i])-M[j-1+2*m+2]*(0-M[j]) ) / (M[j]-M[j-i]);
 
 		d=M[3*m-2];
+		printf ("%lf", d);
 		fd=f(d);
 		if(fabs(fd)<e) break;
 

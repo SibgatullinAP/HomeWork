@@ -3,6 +3,12 @@
 double integral_trapeze (double a, double b, int n, double (*func)(double));
 double integral_simpson (double a, double b, int n, double (*func)(double));
 
+double integral_squared (double a, double b, int n, double (*func)(double),
+                         double (*partitial)(double, double, double (*)(double)));
+
+double partial_trapeze (double a, double b, double (*func)(double));
+double partial_simpson (double a, double b, double (*func)(double));
+
 int integral_trapeze_auto_steps (double a, double b, double eps, double *answer, double (*func)(double));
 int integral_simpson_auto_steps (double a, double b, double eps, double *answer, double (*func)(double));
 

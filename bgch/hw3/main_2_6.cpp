@@ -42,7 +42,7 @@ int main (int argc, char *argv[])
       return -1;
     }
 
-  double *d = (double *) malloc (3 * sizeof (double) + 1);
+  double *d = new double [3 * (interpolation_order + 1)];
   if (d == NULL)
     {
       printf ("[ERROR] Not enough memmory for array d !\n");
@@ -88,6 +88,6 @@ int main (int argc, char *argv[])
   printf ("[OUTPUT] Itteration quantity: %d\n", ret);
   printf ("[OUTPUT] Elapsed: %lf\n", time);
 
-  free (d);
+  delete [] d;
   return 0;
 }

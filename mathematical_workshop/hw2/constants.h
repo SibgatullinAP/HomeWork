@@ -5,9 +5,6 @@
 #include <string.h>
 #include <pthread.h>
 
-//#include <algorithm>
-//#include <new>
-
 #define CANNOT_OPEN_FILE -1
 #define CANNOT_READ_FILE -2
 
