@@ -1,0 +1,1408 @@
+------------------ONLY RESIDUAL AND TIME------------------
+=================== ../../../../data/small_SLU_tests/a.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a20.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a20.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a20.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a20.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a20.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a20.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a20.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a20.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/a20.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/a20.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/b.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/b.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/b.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/b.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/b.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/b.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/b.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/b.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/b.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/b.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/c.txt p = 6 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/c.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/d.txt p = 6 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/d.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/e.txt p = 6 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/e.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 1 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 2 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 3 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 4 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 5 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+=================== ../../../../data/small_SLU_tests/f.txt p = 6 ===================
+[ERROR] Can't open ../../../../data/small_SLU_tests/f.txt
+
+------------------------------------------------------------
+============== n = 3 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 7.401487e-17 elapsed = 0.00 for s = 1 n = 3 m = 3 p = 1
+============== n = 3 m = 3 s = 1 p = 2 ============== 
+
+./a.out : residual = 7.401487e-17 elapsed = 0.00 for s = 1 n = 3 m = 3 p = 1
+============== n = 3 m = 3 s = 1 p = 4 ============== 
+
+./a.out : residual = 7.401487e-17 elapsed = 0.00 for s = 1 n = 3 m = 3 p = 1
+============== n = 3 m = 3 s = 1 p = 8 ============== 
+
+./a.out : residual = 7.401487e-17 elapsed = 0.00 for s = 1 n = 3 m = 3 p = 1
+============== n = 3 m = 3 s = 1 p = 16 ============== 
+
+./a.out : residual = 7.401487e-17 elapsed = 0.00 for s = 1 n = 3 m = 3 p = 1
+============== n = 4 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.306145e-16 elapsed = 0.00 for s = 1 n = 4 m = 3 p = 1
+============== n = 4 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84733)
+  Write of size 1 at 0x5623b1a04870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x5623b1a04870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x5623b1a04870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84736, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84733)
+  Thread T1 (tid=84736, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.306145e-16 elapsed = 0.00 for s = 1 n = 4 m = 3 p = 2
+============== n = 4 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84748)
+  Write of size 1 at 0x55fbf1cc5870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55fbf1cc5870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55fbf1cc5870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84751, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84748)
+  Thread T1 (tid=84751, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.306145e-16 elapsed = 0.00 for s = 1 n = 4 m = 3 p = 2
+============== n = 4 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84763)
+  Write of size 1 at 0x557cff68f870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x557cff68f870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x557cff68f870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84766, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84763)
+  Thread T1 (tid=84766, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.306145e-16 elapsed = 0.00 for s = 1 n = 4 m = 3 p = 2
+============== n = 4 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84778)
+  Write of size 1 at 0x55776bf65870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55776bf65870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55776bf65870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84781, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84778)
+  Thread T1 (tid=84781, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.306145e-16 elapsed = 0.00 for s = 1 n = 4 m = 3 p = 2
+============== n = 5 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 2.775558e-17 elapsed = 0.00 for s = 1 n = 5 m = 3 p = 1
+============== n = 5 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84805)
+  Write of size 1 at 0x55c636531870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55c636531870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55c636531870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84808, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84805)
+  Thread T1 (tid=84808, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 2.775558e-17 elapsed = 0.00 for s = 1 n = 5 m = 3 p = 2
+============== n = 5 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84820)
+  Write of size 1 at 0x560aa0b96870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x560aa0b96870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x560aa0b96870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84823, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84820)
+  Thread T1 (tid=84823, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 2.775558e-17 elapsed = 0.00 for s = 1 n = 5 m = 3 p = 2
+============== n = 5 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84835)
+  Write of size 1 at 0x564c832ab870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x564c832ab870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x564c832ab870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84838, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84835)
+  Thread T1 (tid=84838, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 2.775558e-17 elapsed = 0.00 for s = 1 n = 5 m = 3 p = 2
+============== n = 5 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84850)
+  Write of size 1 at 0x55935e819870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55935e819870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55935e819870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84853, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84850)
+  Thread T1 (tid=84853, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 2.775558e-17 elapsed = 0.00 for s = 1 n = 5 m = 3 p = 2
+============== n = 6 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 3.108624e-16 elapsed = 0.00 for s = 1 n = 6 m = 3 p = 1
+============== n = 6 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84877)
+  Write of size 1 at 0x55e35118a870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55e35118a870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55e35118a870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84880, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84877)
+  Thread T1 (tid=84880, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 3.108624e-16 elapsed = 0.00 for s = 1 n = 6 m = 3 p = 2
+============== n = 6 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84892)
+  Write of size 1 at 0x56383765e870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x56383765e870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x56383765e870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84895, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84892)
+  Thread T1 (tid=84895, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 3.108624e-16 elapsed = 0.00 for s = 1 n = 6 m = 3 p = 2
+============== n = 6 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84907)
+  Write of size 1 at 0x55e1da64f870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55e1da64f870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55e1da64f870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84910, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84907)
+  Thread T1 (tid=84910, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 3.108624e-16 elapsed = 0.00 for s = 1 n = 6 m = 3 p = 2
+============== n = 6 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=84922)
+  Write of size 1 at 0x56310d93d870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x56310d93d870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x56310d93d870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=84925, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=84922)
+  Thread T1 (tid=84925, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 3.108624e-16 elapsed = 0.00 for s = 1 n = 6 m = 3 p = 2
+============== n = 6 m = 6 s = 1 p = 1 ============== 
+
+./a.out : residual = 2.398082e-16 elapsed = 0.00 for s = 1 n = 6 m = 6 p = 1
+============== n = 6 m = 6 s = 1 p = 2 ============== 
+
+./a.out : residual = 2.398082e-16 elapsed = 0.00 for s = 1 n = 6 m = 6 p = 1
+============== n = 6 m = 6 s = 1 p = 4 ============== 
+
+./a.out : residual = 2.398082e-16 elapsed = 0.00 for s = 1 n = 6 m = 6 p = 1
+============== n = 6 m = 6 s = 1 p = 8 ============== 
+
+./a.out : residual = 2.398082e-16 elapsed = 0.00 for s = 1 n = 6 m = 6 p = 1
+============== n = 6 m = 6 s = 1 p = 16 ============== 
+
+./a.out : residual = 2.398082e-16 elapsed = 0.00 for s = 1 n = 6 m = 6 p = 1
+============== n = 7 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 3 p = 1
+============== n = 7 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85009)
+  Write of size 1 at 0x55c3814f5870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55c3814f5870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55c3814f5870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85012, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85009)
+  Thread T1 (tid=85012, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 3 p = 2
+============== n = 7 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85024)
+  Write of size 1 at 0x55bde903e870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55bde903e870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55bde903e870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85027, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85024)
+  Thread T1 (tid=85027, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 3 p = 3
+============== n = 7 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85040)
+  Write of size 1 at 0x55ea54589870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55ea54589870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55ea54589870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85043, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85040)
+  Thread T1 (tid=85043, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 3 p = 3
+============== n = 7 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85056)
+  Write of size 1 at 0x5654bff9f870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x5654bff9f870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x5654bff9f870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85059, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85056)
+  Thread T1 (tid=85059, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 3 p = 3
+============== n = 7 m = 6 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 6 p = 1
+============== n = 7 m = 6 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85084)
+  Write of size 1 at 0x555d8ca31870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x555d8ca31870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x555d8ca31870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85087, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85084)
+  Thread T1 (tid=85087, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 6 p = 2
+============== n = 7 m = 6 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85099)
+  Write of size 1 at 0x5558e5001870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x5558e5001870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x5558e5001870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85102, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85099)
+  Thread T1 (tid=85102, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 6 p = 2
+============== n = 7 m = 6 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85114)
+  Write of size 1 at 0x55d158ed2870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55d158ed2870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55d158ed2870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85117, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85114)
+  Thread T1 (tid=85117, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 6 p = 2
+============== n = 7 m = 6 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85129)
+  Write of size 1 at 0x55b80b76b870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55b80b76b870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55b80b76b870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85132, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85129)
+  Thread T1 (tid=85132, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.935773e-16 elapsed = 0.00 for s = 1 n = 7 m = 6 p = 2
+============== n = 8 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.291896e-16 elapsed = 0.00 for s = 1 n = 8 m = 3 p = 1
+============== n = 8 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85156)
+  Write of size 1 at 0x5568b7d5e870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x5568b7d5e870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x5568b7d5e870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85159, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85156)
+  Thread T1 (tid=85159, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.291896e-16 elapsed = 0.00 for s = 1 n = 8 m = 3 p = 2
+============== n = 8 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85171)
+  Write of size 1 at 0x55eec7da1870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55eec7da1870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55eec7da1870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85174, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85171)
+  Thread T1 (tid=85174, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.291896e-16 elapsed = 0.00 for s = 1 n = 8 m = 3 p = 3
+============== n = 8 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85187)
+  Write of size 1 at 0x560b05fdb870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x560b05fdb870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x560b05fdb870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85190, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85187)
+  Thread T1 (tid=85190, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.291896e-16 elapsed = 0.00 for s = 1 n = 8 m = 3 p = 3
+============== n = 8 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85203)
+  Write of size 1 at 0x557dc8669870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x557dc8669870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x557dc8669870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85212, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85203)
+  Thread T1 (tid=85212, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.291896e-16 elapsed = 0.00 for s = 1 n = 8 m = 3 p = 3
+============== n = 8 m = 6 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.776357e-16 elapsed = 0.00 for s = 1 n = 8 m = 6 p = 1
+============== n = 8 m = 6 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85237)
+  Write of size 1 at 0x557bbd53b870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x557bbd53b870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x557bbd53b870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85240, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85237)
+  Thread T1 (tid=85240, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.776357e-16 elapsed = 0.00 for s = 1 n = 8 m = 6 p = 2
+============== n = 8 m = 6 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85252)
+  Write of size 1 at 0x55acefc2b870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55acefc2b870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55acefc2b870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85255, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85252)
+  Thread T1 (tid=85255, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.776357e-16 elapsed = 0.00 for s = 1 n = 8 m = 6 p = 2
+============== n = 8 m = 6 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85267)
+  Write of size 1 at 0x56078f0e7870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x56078f0e7870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x56078f0e7870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85270, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85267)
+  Thread T1 (tid=85270, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.776357e-16 elapsed = 0.00 for s = 1 n = 8 m = 6 p = 2
+============== n = 8 m = 6 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85282)
+  Write of size 1 at 0x55d3d3f5c870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55d3d3f5c870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55d3d3f5c870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85285, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85282)
+  Thread T1 (tid=85285, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.776357e-16 elapsed = 0.00 for s = 1 n = 8 m = 6 p = 2
+============== n = 9 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 3 p = 1
+============== n = 9 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85309)
+  Write of size 1 at 0x55b36646b870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55b36646b870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55b36646b870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85312, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85309)
+  Thread T1 (tid=85312, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 3 p = 2
+============== n = 9 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85324)
+  Write of size 1 at 0x55d628dd6870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55d628dd6870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55d628dd6870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85327, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85324)
+  Thread T1 (tid=85327, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 3 p = 3
+============== n = 9 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85340)
+  Write of size 1 at 0x5567d14e0870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x5567d14e0870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x5567d14e0870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85343, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85340)
+  Thread T1 (tid=85343, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 3 p = 3
+============== n = 9 m = 3 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85356)
+  Write of size 1 at 0x564263aaf870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x564263aaf870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x564263aaf870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85359, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85356)
+  Thread T1 (tid=85359, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 1 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 3 p = 3
+============== n = 9 m = 6 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 6 p = 1
+============== n = 9 m = 6 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85384)
+  Write of size 1 at 0x56452f3c2870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x56452f3c2870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x56452f3c2870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85387, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85384)
+  Thread T1 (tid=85387, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 6 p = 2
+============== n = 9 m = 6 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85399)
+  Write of size 1 at 0x559629d49870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x559629d49870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x559629d49870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85402, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85399)
+  Thread T1 (tid=85402, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 6 p = 2
+============== n = 9 m = 6 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85414)
+  Write of size 1 at 0x55696dc35870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55696dc35870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55696dc35870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85420, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85414)
+  Thread T1 (tid=85420, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 6 p = 2
+============== n = 9 m = 6 s = 1 p = 16 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85432)
+  Write of size 1 at 0x55cc2090d870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55cc2090d870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55cc2090d870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85435, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85432)
+  Thread T1 (tid=85435, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.489848e-16 elapsed = 0.00 for s = 1 n = 9 m = 6 p = 2
+============== n = 9 m = 9 s = 1 p = 1 ============== 
+
+./a.out : residual = 7.449238e-17 elapsed = 0.00 for s = 1 n = 9 m = 9 p = 1
+============== n = 9 m = 9 s = 1 p = 2 ============== 
+
+./a.out : residual = 7.449238e-17 elapsed = 0.00 for s = 1 n = 9 m = 9 p = 1
+============== n = 9 m = 9 s = 1 p = 4 ============== 
+
+./a.out : residual = 7.449238e-17 elapsed = 0.00 for s = 1 n = 9 m = 9 p = 1
+============== n = 9 m = 9 s = 1 p = 8 ============== 
+
+./a.out : residual = 7.449238e-17 elapsed = 0.00 for s = 1 n = 9 m = 9 p = 1
+============== n = 9 m = 9 s = 1 p = 16 ============== 
+
+./a.out : residual = 7.449238e-17 elapsed = 0.00 for s = 1 n = 9 m = 9 p = 1
+============== n = 10 m = 3 s = 1 p = 1 ============== 
+
+./a.out : residual = 1.516402e-16 elapsed = 0.00 for s = 1 n = 10 m = 3 p = 1
+============== n = 10 m = 3 s = 1 p = 2 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85519)
+  Write of size 1 at 0x55f3e290e870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x55f3e290e870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x55f3e290e870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85522, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85519)
+  Thread T1 (tid=85522, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.516402e-16 elapsed = 0.00 for s = 1 n = 10 m = 3 p = 2
+============== n = 10 m = 3 s = 1 p = 4 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85534)
+  Write of size 1 at 0x56019d409870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x56019d409870 by thread T3:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x56019d409870 (a.out+0x000000bac870)
+
+  Thread T3 (tid=85539, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+SUMMARY: ThreadSanitizer: data race (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x29926) in pthread_barrier_destroy
+==================
+==================
+WARNING: ThreadSanitizer: thread leak (pid=85534)
+  Thread T1 (tid=85537, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)
+
+  And 2 more similar thread leaks.
+
+SUMMARY: ThreadSanitizer: thread leak (/home/pam/HomeWork/5sem/ibm/hw3/production/debug/a.out+0x26c2b) in pthread_create
+==================
+ThreadSanitizer: reported 2 warnings
+
+./a.out : residual = 1.516402e-16 elapsed = 0.00 for s = 1 n = 10 m = 3 p = 4
+============== n = 10 m = 3 s = 1 p = 8 ============== 
+==================
+WARNING: ThreadSanitizer: data race (pid=85551)
+  Write of size 1 at 0x564108505870 by main thread:
+    #0 pthread_barrier_destroy <null> (a.out+0x29926)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:155:3 (a.out+0xb8ba3)
+
+  Previous read of size 1 at 0x564108505870 by thread T1:
+    #0 pthread_barrier_wait <null> (a.out+0x29a76)
+    #1 thread_func(void*) /home/pam/HomeWork/5sem/ibm/hw3/production/debug/thread_functions.cpp:69:3 (a.out+0xc41db)
+
+  Location is global 'main::barrier' of size 32 at 0x564108505870 (a.out+0x000000bac870)
+
+  Thread T1 (tid=85554, finished) created by main thread at:
+    #0 pthread_create <null> (a.out+0x26c2b)
+    #1 main /home/pam/HomeWork/5sem/ibm/hw3/production/debug/main.cpp:131:13 (a.out+0xb897a)

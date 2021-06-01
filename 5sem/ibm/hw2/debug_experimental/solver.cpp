@@ -919,13 +919,13 @@ int solve_optimized (int matrix_size, double *A, double *B, double *X,
       if (block_quantity_reminder != 0)
         {
 
-          get_block (A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
-          get_block (A, matrix_size, block_3, block_size, j, i, block_quantity_dev, block_quantity_reminder);
+//          get_block (A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
+//          get_block (A, matrix_size, block_3, block_size, j, i, block_quantity_dev, block_quantity_reminder);
 
-          zeroing_block (block_1, block_3, block_size, block_quantity_reminder, block_size, block_2, eps);
+//          zeroing_block (block_1, block_3, block_size, block_quantity_reminder, block_size, block_2, eps);
 
-          set_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
-          set_block(A, matrix_size, block_3, block_size, j, i, block_quantity_dev, block_quantity_reminder);
+//          set_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
+//          set_block(A, matrix_size, block_3, block_size, j, i, block_quantity_dev, block_quantity_reminder);
 
           for (k = i + 1; k < block_quantity_dev; k++)
             {
@@ -958,15 +958,22 @@ int solve_optimized (int matrix_size, double *A, double *B, double *X,
           set_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
           set_block_vector (B, block_3, block_size, j, block_quantity_dev, block_quantity_reminder);
         }
+
       if (fabs (A[i + i * matrix_size]) <= eps)
         return INCONSISTENT_SYSTEM;
+
     }
   if (block_quantity_reminder != 0)
     {
       get_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
 
       if(diagonalize_block(block_1, block_size, block_quantity_reminder, block_2, eps) < 0)
-        return INCONSISTENT_SYSTEM;
+        {
+          printf ("ASDASD\n");
+          return INCONSISTENT_SYSTEM;
+
+        }
+
 
       set_block(A, matrix_size, block_1, block_size, i, i, block_quantity_dev, block_quantity_reminder);
 
@@ -975,20 +982,20 @@ int solve_optimized (int matrix_size, double *A, double *B, double *X,
       set_block_vector (B, block_1, block_size, i, block_quantity_dev, block_quantity_reminder);
     }
 
-  double *Ak;
-  for (k = matrix_size - 1; k >= 0; k--)
-    {
-      Ak = A + k;
-      temp = Ak[k * matrix_size];
-      B[k] /= temp;
-      for (j = 0; j < k; j++)
-        {
-          temp = Ak[j * matrix_size];
-          B[j] -= B[k] * temp;
-        }
-    }
+    double *Ak;
+    for (k = matrix_size - 1; k >= 0; k--)
+      {
+        Ak = A + k;
+        temp = Ak[k * matrix_size];
+        B[k] /= temp;
+        for (j = 0; j < k; j++)
+          {
+            temp = Ak[j * matrix_size];
+            B[j] -= B[k] * temp;
+          }
+      }
 
-  memcpy (X, B, matrix_size * sizeof (double));
+    memcpy (X, B, matrix_size * sizeof (double));
 
   return 0;
 }

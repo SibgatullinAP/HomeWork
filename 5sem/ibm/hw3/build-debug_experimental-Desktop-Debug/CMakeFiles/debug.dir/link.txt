@@ -1,0 +1,1 @@
+/usr/bin/g++  -pthread -g   CMakeFiles/debug.dir/main.cpp.o CMakeFiles/debug.dir/solver.cpp.o CMakeFiles/debug.dir/matrix.cpp.o CMakeFiles/debug.dir/thread_functions.cpp.o  -o debug 

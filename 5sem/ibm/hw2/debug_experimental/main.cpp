@@ -203,8 +203,11 @@ int main (int argc, char *argv[])
   int ret = solve_optimized (matrix_size, A, B, X, block_size, block_1, block_2);
   elapsed  = (clock () - elapsed) / CLOCKS_PER_SEC;
 
-  //  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
-  //  print (A, matrix_size, matrix_size, print_size);
+  printf ("\x1b[32m[OUTPUT] \x1b[0mMatrix A:\n");
+  print (A, matrix_size, matrix_size, print_size);
+
+  printf ("[OUTPUT] Vector B:\n");
+  print (B, matrix_size, 1, print_size);
 
   if (ret == INCONSISTENT_SYSTEM)
     {

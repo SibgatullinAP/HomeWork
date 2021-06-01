@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2020-11-25T12:25:36. -->
+<!-- Written by QtCreator 4.13.2, 2021-04-27T13:49:32. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -354,7 +354,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.debug</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">debug</value>
-    <value type="QString" key="RunConfiguration.Arguments">20 10 10 4</value>
+    <value type="QString" key="RunConfiguration.Arguments">4 3 10 0 /home/pam/HomeWork/ibm/hw2/debug/small_tests/b.txt</value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>

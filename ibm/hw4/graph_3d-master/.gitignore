@@ -1,0 +1,15 @@
+.qmake.stash
+*.user*
+*.o
+Makefile
+moc*
+doc
+a.out
+*.gz
+*.pdf
+*.log
+*.fls
+*.fdb*
+*.aux
+*.so
+*.zip
