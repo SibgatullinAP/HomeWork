@@ -132,7 +132,7 @@ void approximation_draw_grid::enable_style ()
   glColorMaterial (GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
   glEnable (GL_COLOR_MATERIAL);
 
-  glColor4ub (150, 15, 15, 1);
+  glColor4ub (15, 15, 150, 1);
 }
 
 void residual_draw_grid::enable_style ()
@@ -140,6 +140,6 @@ void residual_draw_grid::enable_style ()
   glColorMaterial (GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
   glEnable (GL_COLOR_MATERIAL);
 
-  glColor4ub (15, 15, 150, 1);
+  glColor4ub (150, 15, 15, 1);
 }
 

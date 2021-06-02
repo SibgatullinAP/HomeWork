@@ -66,17 +66,17 @@ class approx_function
   int m_nx = 0;
   int m_ny = 0;
   domain m_rectangle = {};
-  const std::vector<double> *m_approx_answer = nullptr;
+  const double *m_approx_answer = nullptr;
 
 public:
   approx_function () = default;
   ~approx_function () = default;
 
-  void update (const domain &rectangle, int nx, int ny, const std::vector<double> *approx_answer);
+  void update (const domain &rectangle, int nx, int ny, const double *approx_answer);
   double basis_func (double x1, double y1, double x2, double y2, double x3, double y3, double x0, double y0) const;
-  int binar_search_for_x (double x0, double a, double b, double n) const;
-  int binar_search_for_y (double x0, double a, double b, double n) const;
-  double approx_func (double x0, double y0) const;
+  int find_x (double x, double a, double b, double n) const;
+  int find_y (double y, double a, double b, double n) const;
+  double approx_func (double x, double y) const;
   std::function <double(double, double)> get_func () const;
 };
 

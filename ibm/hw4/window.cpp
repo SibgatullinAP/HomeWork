@@ -39,7 +39,7 @@ Window::Window (QWidget *parent, cmd_line_arguments cmd_arguments, domain rectan
 
   m_func.set_domain (m_rectangle);
   m_func.set_func_type ((function_type) cmd_arguments.func_type);
-  m_approx_func.update (m_rectangle, m_nx, m_ny, &m_approx_answer);
+  m_approx_func.update (m_rectangle, m_nx, m_ny, m_approx_answer);
 
   m_common_data = new data_bus;
   m_solver = new kernel (m_thread_quantity, m_common_data);
@@ -48,6 +48,8 @@ Window::Window (QWidget *parent, cmd_line_arguments cmd_arguments, domain rectan
   function_drawer = std::make_unique<function_draw_grid> (function_draw_grid (m_rectangle, VISUALIZATION_NX, VISUALIZATION_NY, m_func.get_func ()));
   appproximation_drawer = std::make_unique<approximation_draw_grid> (approximation_draw_grid (m_rectangle, VISUALIZATION_NX, VISUALIZATION_NY));
   residual_drawer = std::make_unique<residual_draw_grid> (residual_draw_grid (m_rectangle, VISUALIZATION_NX, VISUALIZATION_NY));
+
+  m_max_val_func = find_max (m_func.get_func ());
 
   graphic_widget->set_domain_grid (domain_drawer.get ());
   graphic_widget->set_actual_grid (function_drawer.get ());
@@ -59,6 +61,7 @@ Window::~Window ()
 {
   delete m_solver;
   delete m_common_data;
+  delete [] m_approx_answer;
 }
 
 void Window::setup_ui ()
@@ -176,10 +179,10 @@ void Window::timer ()
 
   if (m_status == status::DONE)
     {
-
       pthread_mutex_lock (&(m_common_data->all));
-      m_status = m_common_data->m_status = status::FREE;
+      update_info ();
       from_bus ();
+      m_status = m_common_data->m_status = status::FREE;
       pthread_mutex_unlock (&(m_common_data->all));
 
       appproximation_drawer->update (VISUALIZATION_NX, VISUALIZATION_NY, m_approx_func.get_func ());
@@ -187,9 +190,7 @@ void Window::timer ()
       graphic_widget->update ();
       computational_buttons_state (true);
 
-      m_common_data->m_task = m_task = gui_task::NO_CHANGED;
-
-      m_max_val_appprox = find_max (m_approx_func.get_func ());
+      m_max_val_appprox = appproximation_drawer->get_max_val ();
       m_max_val_residual = find_max (residual (m_approx_func.get_func (), m_func.get_func ()));
 
       update_info ();
@@ -207,9 +208,10 @@ void Window::to_bus ()
 {
   m_common_data->m_nx = m_nx_new;
   m_common_data->m_ny = m_ny_new;
-  m_common_data->eps = m_eps;
+  m_common_data->m_eps = m_eps;
   m_common_data->m_func = m_func.get_func ();
   m_common_data->m_rectangle = m_rectangle;
+  m_common_data->m_task = m_task;
 }
 
 void Window::from_bus ()
@@ -217,21 +219,20 @@ void Window::from_bus ()
   m_itterations = m_common_data->m_iter;
   m_nx = m_nx_new;
   m_ny = m_ny_new;
-  m_approx_answer.resize ((m_nx + 1) * (m_ny + 1));
 
-  for (int i = 0; i < (m_nx + 1) * (m_ny + 1); i++)
-    m_approx_answer[i] = m_common_data->answer[i];
+  delete [] m_approx_answer;
+  m_approx_answer = m_common_data->answer;
+  m_common_data->answer = nullptr;
 
-  delete [] m_common_data->answer;
-  delete [] m_common_data->A;
-  delete [] m_common_data->I;
-  delete [] m_common_data->buff;
-  delete [] m_common_data->b;
-  delete [] m_common_data->r;
-  delete [] m_common_data->u;
-  delete [] m_common_data->v;
+  delete [] m_common_data->m_A;
+  delete [] m_common_data->m_I;
+  delete [] m_common_data->m_buff;
+  delete [] m_common_data->m_b;
+  delete [] m_common_data->m_r;
+  delete [] m_common_data->m_u;
+  delete [] m_common_data->m_v;
 
-  m_approx_func.update (m_rectangle, m_nx, m_ny, &m_approx_answer);
+  m_approx_func.update (m_rectangle, m_nx, m_ny, m_approx_answer);
 }
 
 double Window::find_max (std::function<double(double, double)> func)
@@ -244,10 +245,13 @@ double Window::find_max (std::function<double(double, double)> func)
   double hy = (a.m_y - c.m_y) / m_ny;
 
   double tmp_max = 0;
-  for (int i = 0; i < m_ny + 1; i++)
-    for (int j = 0; j < m_nx + 1; j++)
-      tmp_max = fabs (func (a.m_x + j * hx, c.m_y + i * hy)) > tmp_max
-                ?  fabs (func (a.m_x + j * hx, c.m_y + i * hy)) : tmp_max;
+  for (int i = 0; i < m_nx + 1; i++)
+    for (int j = 0; j < m_ny + 1; j++)
+      {
+        double func_x_y = fabs (func (a.m_x + j * hx, c.m_y + i * hy));
+        tmp_max = func_x_y > tmp_max ? func_x_y : tmp_max;
+      }
+
 
   return tmp_max;
 }
@@ -341,8 +345,8 @@ void Window::change_mode_handler ()
   if (m_first_execution)
     {
       pthread_mutex_lock (&(m_common_data->all));
+      m_task = gui_task::CHANGED_NXNY;
       to_bus ();
-      m_task = m_common_data->m_task = gui_task::CHANGED_FUNCTION;
       pthread_cond_broadcast (&(m_common_data->c_in));
       pthread_mutex_unlock (&(m_common_data->all));
 
@@ -379,10 +383,21 @@ void Window::change_func_handler ()
   function_type curr_type = m_func.get_func_type ();
   ++curr_type;
   m_func.set_func_type (curr_type);
+  m_task = gui_task::CHANGED_FUNCTION;
+
+  if (m_first_execution)
+    {
+      pthread_mutex_lock (&(m_common_data->all));
+      m_task = gui_task::CHANGED_NXNY;
+      to_bus ();
+      pthread_cond_broadcast (&(m_common_data->c_in));
+      pthread_mutex_unlock (&(m_common_data->all));
+
+      m_first_execution = false;
+    }
 
   pthread_mutex_lock (&(m_common_data->all));
   to_bus ();
-  m_task = m_common_data->m_task = gui_task::CHANGED_FUNCTION;
   pthread_cond_broadcast (&(m_common_data->c_in));
   pthread_mutex_unlock (&(m_common_data->all));
 
@@ -398,9 +413,10 @@ void Window::double_nxny_handler ()
   m_nx_new *= 2;
   m_ny_new *= 2;
 
+  m_task = gui_task::CHANGED_NXNY;
+
   pthread_mutex_lock (&(m_common_data->all));
   to_bus ();
-  m_task = m_common_data->m_task = gui_task::CHANGED_NXNY;
   pthread_cond_broadcast (&(m_common_data->c_in));
   pthread_mutex_unlock (&(m_common_data->all));
 
@@ -416,9 +432,10 @@ void Window::halve_nxny_handler ()
       m_nx_new /= 2;
       m_ny_new /= 2;
 
+      m_task = gui_task::CHANGED_NXNY;
+
       pthread_mutex_lock (&(m_common_data->all));
       to_bus ();
-      m_task = m_common_data->m_task = gui_task::CHANGED_NXNY;
       pthread_cond_broadcast (&(m_common_data->c_in));
       pthread_mutex_unlock (&(m_common_data->all));
     }
@@ -429,10 +446,10 @@ void Window::halve_nxny_handler ()
 void Window::add_pertrub_handler ()
 {
   m_func.increase_pertrub ();
+  m_task = gui_task::CHANGED_FUNCTION;
 
   pthread_mutex_lock (&(m_common_data->all));
   to_bus ();
-  m_task = m_common_data->m_task = gui_task::CHANGED_FUNCTION;
   pthread_cond_broadcast (&(m_common_data->c_in));
   pthread_mutex_unlock (&(m_common_data->all));
 
@@ -444,10 +461,10 @@ void Window::add_pertrub_handler ()
 void Window::sub_pertrub_handler ()
 {
   m_func.decrease_pertrub ();
+  m_task = gui_task::CHANGED_FUNCTION;
 
   pthread_mutex_lock (&(m_common_data->all));
   to_bus ();
-  m_task = m_common_data->m_task = gui_task::CHANGED_FUNCTION;
   pthread_cond_broadcast (&(m_common_data->c_in));
   pthread_mutex_unlock (&(m_common_data->all));
 

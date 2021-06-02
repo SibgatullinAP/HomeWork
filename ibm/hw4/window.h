@@ -52,7 +52,7 @@ private:
 
   bool m_first_execution = true;
 
-  std::vector<double> m_approx_answer = {};
+  const double *m_approx_answer = nullptr;
   data_bus *m_common_data = nullptr;
   kernel *m_solver = nullptr;
 

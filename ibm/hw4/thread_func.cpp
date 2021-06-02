@@ -2,10 +2,11 @@
 
 void * thread_func (void * ptr)
 {
-  kernel_data *data = (kernel_data *) ptr;
+  solver_unit *data = (solver_unit *) ptr;
   while (true)
     {
       pthread_mutex_lock (&(data->m_common_data->calc));
+
       while (data->m_common_data->m_task == gui_task::NO_CHANGED)
         pthread_cond_wait (&(data->m_common_data->c_in), &(data->m_common_data->calc));
 
@@ -20,79 +21,32 @@ void * thread_func (void * ptr)
           data->m_nx = data->m_common_data->m_nx;
           data->m_ny = data->m_common_data->m_ny;
           data->m_func = data->m_common_data->m_func;
+          data->m_eps = data->m_common_data->m_eps;
+          data->m_rectangle = data->m_common_data->m_rectangle;
 
-          int nx = data->m_nx;
-          int ny = data->m_ny;
-          data->m_eps = data->m_common_data->eps;
-
-          if (data->m_k == 0)
+          if (data->m_thread_id == 0)
             {
               pthread_mutex_lock (&(data->m_common_data->all));
-
-              data->m_common_data->first = false;
-              data->m_common_data->b = new double [(nx + 1) * (ny + 1)];
-              data->m_common_data->answer = new double [(nx + 1) * (ny + 1)];
-              data->m_common_data->r = new double [(nx + 1) * (ny + 1)];
-              data->m_common_data->u = new double [(nx + 1) * (ny + 1)];
-              data->m_common_data->v = new double [(nx + 1) * (ny + 1)];
-              data->m_common_data->A = new double [(nx + 1) * (ny + 1) + 1 + data->get_len (nx, ny)];
-              data->m_common_data->I = new int [(nx + 1) * (ny + 1) + 1 + data->get_len (nx, ny)];
-              data->m_common_data->buff = new double [data->m_thread_quantity];
-              data->allocate (data->m_common_data->A,
-                              data->m_common_data->b,
-                              data->m_common_data->I,
-                              data->m_nx,
-                              data->m_ny);
-
+              data->allocate ();
               pthread_mutex_unlock (&(data->m_common_data->all));
             }
 
-          data->m_rectangle = data->m_common_data->m_rectangle;
 
-          if (data->m_k == 0)
-            {
-              for (int u = 0; u < (nx + 1) * (ny + 1); u ++)
-                {
-                  data->m_common_data->answer[u] = 0.0;
-                  data->m_common_data->b[u] = 0.0;
-                  data->m_common_data->r[u] = 0.0;
-                  data->m_common_data->u[u] = 0.0;
-                  data->m_common_data->v[u] = 0.0;
-                }
-            }
+          reduce_sum (data->m_thread_number, 0, 1);
 
-          reduce_sum (data->m_thread_quantity, 0, 1);
+          data->calculate_matrix ();
+          data->calculate_rhs ();
 
-          data->calculate_matrix (data->m_common_data->A,
-                                  data->m_common_data->I,
-                                  data->m_nx,
-                                  data->m_ny,
-                                  data->m_thread_quantity,
-                                  data->m_k);
-          data->calculate_rhs (data->m_common_data->b,
-                               data->m_nx,
-                               data->m_ny,
-                               data->m_thread_quantity,
-                               data->m_k);
+          if (data->m_thread_id == 0)
+            data->normalization ();
 
-          if (data->m_k == 0)
-            data->normalization (data->m_common_data->A,
-                                 data->m_common_data->b,
-                                 data->m_nx,
-                                 data->m_ny,
-                                 data->m_thread_quantity,
-                                 data->m_k);
+          int ret = data->solver (SOLVER_MAX_ITTERTION);
 
-          int ret = data->solver (data->m_common_data->A, data->m_common_data->I,
-                                  (data->m_nx + 1) * (data->m_ny + 1), data->m_common_data->b,
-                                  data->m_common_data->answer, data->m_common_data->r,
-                                  data->m_common_data->u, data->m_common_data->v, data->m_eps,
-                                  1000, data->m_thread_quantity,
-                                  data->m_k, data->m_common_data->buff);
           if (ret < 0)
             printf ("[ERROR] Can't solve matrix\n");
 
-          reduce_sum (data->m_thread_quantity, 0, 1);
+          reduce_sum (data->m_thread_number, 0, 1);
+
           pthread_mutex_lock (&(data->m_common_data->all));
           data->m_common_data->m_task = gui_task::NO_CHANGED;
           data->m_common_data->m_status = status::DONE;
@@ -102,3 +56,54 @@ void * thread_func (void * ptr)
     }
   return 0;
 }
+
+void reduce_sum (int p, int * a, int n)
+{
+  static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
+  static pthread_cond_t c_in = PTHREAD_COND_INITIALIZER;
+  static pthread_cond_t c_out = PTHREAD_COND_INITIALIZER;
+  static int t_in = 0;
+  static int t_out = 0;
+  static int *p_a = 0;
+  int i = 0;
+  if (p <= 1)
+    return;
+
+  pthread_mutex_lock (&m);
+  if (p_a == nullptr)
+    p_a = a;
+
+  else
+    for (i = 0; i < n; i ++)
+      p_a [i] += a[i];
+
+
+  t_in ++;
+  if (t_in >= p)
+    {
+      t_out = 0;
+      pthread_cond_broadcast (&c_in);
+    }
+  else
+    while (t_in < p)
+      pthread_cond_wait (&c_in, &m);
+
+
+  if (p_a != a)
+    for (i = 0; i < n; i ++)
+      a [i] = p_a [i];
+
+  t_out++;
+  if (t_out >= p)
+    {
+      t_in = 0;
+      p_a = 0;
+      pthread_cond_broadcast (&c_out);
+    }
+  else
+    while (t_out < p)
+      pthread_cond_wait (&c_out, &m);
+
+  pthread_mutex_unlock (&m);
+}
+

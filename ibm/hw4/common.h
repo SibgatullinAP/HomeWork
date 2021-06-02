@@ -40,10 +40,11 @@
 
 #define EPS 1e-16
 #define BUFF_SIZE 1024
-#define SCALE_AREA_COEF 2
+#define SCALE_AREA_COEF 1.5
 #define VISUALIZATION_NX 64
 #define VISUALIZATION_NY 64
 #define VISUALIZATION_DOMAIN_NXNY 1
+#define SOLVER_MAX_ITTERTION 1000
 
 #include "point_3d.h"
 

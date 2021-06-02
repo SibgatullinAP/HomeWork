@@ -133,14 +133,14 @@ std::function<double(double, double)> function::get_func ()
   if (m_pertrub_need_to_recalculate)
     update_pertrub ();
 
-  return [&](double x, double y){
+  return [this](double x, double y){
       return m_func(x, y) + (m_func_max * 0.1 * m_pertrub_counter)
-          * (fabs (m_pertrub_center.m_x - x) < 1e-4/* * max_of_abs (x, m_pertrub_center.m_x)*/
-             && fabs (m_pertrub_center.m_y - y) < 1e-4/* * max_of_abs (y, m_pertrub_center.m_y)*/);
+          * (fabs (m_pertrub_center.m_x - x) < 1e-4
+             && fabs (m_pertrub_center.m_y - y) < 1e-4);
     };
 }
 
-void approx_function::update (const domain &rectangle, int nx, int ny, const std::vector<double> *approx_answer)
+void approx_function::update (const domain &rectangle, int nx, int ny, const double *approx_answer)
 {
   m_nx = nx;
   m_ny = ny;
@@ -154,10 +154,10 @@ double approx_function::basis_func (double x1, double y1, double x2, double y2, 
           (y0 - y1) * (x2 - x3)) / ((x3 - x1) * (y2 - y1) - (x2 -x1) * (y3 - y1)) + 1;
 }
 
-int approx_function::binar_search_for_x (double x0, double a, double b, double n) const
+int approx_function::find_x (double x, double a, double b, double n) const
 {
-  if (x0 <= a) return 0;
-  if (x0 >= b) return n;
+  if (x <= a) return 0;
+  if (x >= b) return n;
 
   int i = 0, j = n, z = 0;
   double h = (b - a) / n;
@@ -165,22 +165,19 @@ int approx_function::binar_search_for_x (double x0, double a, double b, double n
   while (i != j)
     {
       z = (i + j) / 2;
-      if (x0 <= a + z * h)
-        {
-          j = z;
-        }
+      if (x <= a + z * h)
+        j = z;
       else
-        {
-          i = z + 1;
-        }
+        i = z + 1;
     }
+
   return i;
 }
 
-int approx_function::binar_search_for_y (double x0, double a, double b, double n) const
+int approx_function::find_y (double y, double a, double b, double n) const
 {
-  if (x0 <= a) return 0;
-  if (x0 >= b) return n;
+  if (y <= a) return 0;
+  if (y >= b) return n;
 
   int i = 0, j = n, z = 0;
   double h = (b - a) / n;
@@ -188,34 +185,31 @@ int approx_function::binar_search_for_y (double x0, double a, double b, double n
   while (i != j)
     {
       z = (i + j) / 2;
-      if (x0 <= a + z * h)
-        {
-          j = z;
-        }
+      if (y <= a + z * h)
+        j = z;
       else
-        {
-          i = z + 1;
-        }
+        i = z + 1;
     }
+
   return i - 1;
 }
 
-double approx_function::approx_func (double x0, double y0) const
+double approx_function::approx_func (double x, double y) const
 {
   int i = 0, j = 0;
 
   double dx = (m_rectangle.get_d ().m_x -  m_rectangle.get_a ().m_x) / m_nx;
   double dy = (m_rectangle.get_a ().m_y - m_rectangle.get_d ().m_y) / m_ny;
 
-  i = binar_search_for_x (x0,  m_rectangle.get_a ().m_x, m_rectangle.get_d ().m_x, m_nx);
-  j = m_ny - binar_search_for_y (y0, m_rectangle.get_d ().m_y, m_rectangle.get_a ().m_y, m_ny);
+  i = find_x (x,  m_rectangle.get_a ().m_x, m_rectangle.get_d ().m_x, m_nx);
+  j = m_ny - find_y (y, m_rectangle.get_d ().m_y, m_rectangle.get_a ().m_y, m_ny);
 
-  if (fabs (y0 - (m_rectangle.get_a ().m_y - dy * j)) < EPS && fabs (x0 - ( m_rectangle.get_a ().m_x + dx * i)) < EPS)
+  if (fabs (y - (m_rectangle.get_a ().m_y - dy * j)) < EPS && fabs (x - ( m_rectangle.get_a ().m_x + dx * i)) < EPS)
     {
-      return (*m_approx_answer) [(m_ny - j) * (m_nx + 1) + i];
+      return m_approx_answer[(m_ny - j) * (m_nx + 1) + i];
     }
 
-  if (fabs (y0 - m_rectangle.get_a ().m_y) < EPS * max_of_abs (y0, m_rectangle.get_a ().m_y))
+  if (fabs (y - m_rectangle.get_a ().m_y) < EPS * max_of_abs (y, m_rectangle.get_a ().m_y))
     {
       double x1 =  m_rectangle.get_a ().m_x + dx * (i - 1);
       double y1 = m_rectangle.get_a ().m_y - dy * (j + 0);
@@ -226,12 +220,12 @@ double approx_function::approx_func (double x0, double y0) const
       double x3 =  m_rectangle.get_a ().m_x + dx * (i - 1);
       double y3 = m_rectangle.get_a ().m_y - dy * (j + 1);
 
-      double ans = (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x0, y0);
+      double ans = m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x, y) +
+                   m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x, y);
       return ans;
     }
 
-  if (fabs (y0 - m_rectangle.get_d ().m_y) < EPS /** max_of_abs (y0, m_rectangle.get_d ().m_y)*/)
+  if (fabs (y - m_rectangle.get_d ().m_y) < EPS /** max_of_abs (y0, m_rectangle.get_d ().m_y)*/)
     {
       double x1 =  m_rectangle.get_a ().m_x + dx * (i - 1);
       double y1 = m_rectangle.get_a ().m_y - dy * (j + 0);
@@ -242,12 +236,12 @@ double approx_function::approx_func (double x0, double y0) const
       double x3 =  m_rectangle.get_a ().m_x + dx * (i + 0);
       double y3 = m_rectangle.get_a ().m_y - dy * (j - 1);
 
-      double ans = (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x0, y0);
+      double ans = m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x, y) +
+                   m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x, y);
       return ans;
     }
 
-  if (fabs (x0 -  m_rectangle.get_a ().m_x) < EPS /** max_of_abs (x0, m_rectangle.get_a ().m_x)*/)
+  if (fabs (x -  m_rectangle.get_a ().m_x) < EPS /** max_of_abs (x0, m_rectangle.get_a ().m_x)*/)
     {
       double x1 =  m_rectangle.get_a ().m_x + dx * (i + 0);
       double y1 = m_rectangle.get_a ().m_y - dy * (j - 1);
@@ -258,12 +252,12 @@ double approx_function::approx_func (double x0, double y0) const
       double x3 =  m_rectangle.get_a ().m_x + dx * (i + 1);
       double y3 = m_rectangle.get_a ().m_y - dy * (j - 1);
 
-      double ans = (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x1, y1, x2, y2, x3, y3, x0, y0);
+      double ans = m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x, y) +
+                   m_approx_answer[(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x1, y1, x2, y2, x3, y3, x, y);
       return ans;
     }
 
-  if (fabs (x0 - m_rectangle.get_d ().m_x) < EPS /** max_of_abs (x0, m_rectangle.get_d ().m_x)*/)
+  if (fabs (x - m_rectangle.get_d ().m_x) < EPS /** max_of_abs (x0, m_rectangle.get_d ().m_x)*/)
     {
       double x1 =  m_rectangle.get_a ().m_x + dx * (i + 0);
       double y1 = m_rectangle.get_a ().m_y - dy * (j - 1);
@@ -274,8 +268,8 @@ double approx_function::approx_func (double x0, double y0) const
       double x3 =  m_rectangle.get_a ().m_x + dx * (i - 1);
       double y3 = m_rectangle.get_a ().m_y - dy * (j + 0);
 
-      double ans = (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x1, y1, x2, y2, x3, y3, x0, y0);
+      double ans = m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, x3, x, y) +
+                   m_approx_answer[(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x1, y1, x2, y2, x3, y3, x, y);
       return ans;
     }
 
@@ -291,21 +285,21 @@ double approx_function::approx_func (double x0, double y0) const
   double x4 =  m_rectangle.get_a ().m_x + dx * (i + 0);
   double y4 = m_rectangle.get_a ().m_y - dy * (j + 0);
 
-  double ro_1 = (x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0);
-  double ro_2 = (x4 - x0) * (x4 - x0) + (y4 - y0) * (y4 - y0);
+  double ro_1 = (x1 - x) * (x1 - x) + (y1 - y) * (y1 - y);
+  double ro_2 = (x4 - x) * (x4 - x) + (y4 - y) * (y4 - y);
 
   if (ro_1 < ro_2)
     {
-      double ans = (*m_approx_answer) [(m_ny - (j - 1)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, y3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x3, y3, x1, y1, x2, y2, x0, y0);
+      double ans = m_approx_answer[(m_ny - (j - 1)) * (m_nx + 1) + i - 1] * basis_func (x1, y1, x2, y2, x3, y3, x, y) +
+                   m_approx_answer[(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x1, y1, x3, y3, x, y) +
+                   m_approx_answer[(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x3, y3, x1, y1, x2, y2, x, y);
       return ans;
     }
   else
     {
-      double ans = (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x4, y4, x2, y2, x3, y3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x4, y4, x3, y3, x0, y0) +
-                   (*m_approx_answer) [(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x3, y3, x4, y4, x2, y2, x0, y0);
+      double ans = m_approx_answer [(m_ny - (j + 0)) * (m_nx + 1) + i + 0] * basis_func (x4, y4, x2, y2, x3, y3, x, y) +
+                   m_approx_answer [(m_ny - (j - 1)) * (m_nx + 1) + i + 0] * basis_func (x2, y2, x4, y4, x3, y3, x, y) +
+                   m_approx_answer [(m_ny - (j + 0)) * (m_nx + 1) + i - 1] * basis_func (x3, y3, x4, y4, x2, y2, x, y);
       return ans;
     }
 }

@@ -35,25 +35,25 @@ public :
   int m_nx = 0;
   int m_ny = 0;
   int m_iter = 0;
-  bool first = true;
   domain m_rectangle = {};
   std::function<double(double, double)> m_func = {};
-  double eps = 0;
+  double m_eps = 0;
 
   // for GUI and Kernel
   double *answer = nullptr;
 
   //for Kernel
-  double *b = nullptr;
-  double *u = nullptr;
-  double *v = nullptr;
-  double *r = nullptr;
-  double *A = nullptr;
-  double *buff = nullptr;
-  int *I = nullptr;
+  double *m_b = nullptr;
+  double *m_u = nullptr;
+  double *m_v = nullptr;
+  double *m_r = nullptr;
+  double *m_A = nullptr;
+  int *m_I = nullptr;
+  double *m_buff = nullptr;
+
   pthread_mutex_t all = PTHREAD_MUTEX_INITIALIZER;
-  pthread_mutex_t calc = PTHREAD_MUTEX_INITIALIZER; // ONLY FOR KERNEL !!!
-  pthread_cond_t c_in = PTHREAD_COND_INITIALIZER; // ONLY FOR KERNEL !!!
+  pthread_mutex_t calc = PTHREAD_MUTEX_INITIALIZER;
+  pthread_cond_t c_in = PTHREAD_COND_INITIALIZER;
 };
 
 #endif // DATA_BUS_H
