@@ -107,7 +107,8 @@ void drawable_grid::draw_lines ()
 drawable_grid::~drawable_grid ()
 {
 
-};
+}
+
 void drawable_grid::enable_style ()
 {
   (void) 0;

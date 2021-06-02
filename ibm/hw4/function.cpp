@@ -209,7 +209,7 @@ double approx_function::approx_func (double x, double y) const
       return m_approx_answer[(m_ny - j) * (m_nx + 1) + i];
     }
 
-  if (fabs (y - m_rectangle.get_a ().m_y) < EPS * max_of_abs (y, m_rectangle.get_a ().m_y))
+  if (fabs (y - m_rectangle.get_a ().m_y) < EPS/* * max_of_abs (y, m_rectangle.get_a ().m_y)*/)
     {
       double x1 =  m_rectangle.get_a ().m_x + dx * (i - 1);
       double y1 = m_rectangle.get_a ().m_y - dy * (j + 0);

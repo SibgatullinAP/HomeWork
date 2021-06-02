@@ -191,7 +191,7 @@ void Window::timer ()
       computational_buttons_state (true);
 
       m_max_val_appprox = appproximation_drawer->get_max_val ();
-      m_max_val_residual = find_max (residual (m_approx_func.get_func (), m_func.get_func ()));
+      m_max_val_residual = residual_drawer->get_max_val (); //find_max (residual (m_approx_func.get_func (), m_func.get_func ()));
 
       update_info ();
       update ();

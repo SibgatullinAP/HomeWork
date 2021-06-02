@@ -31,7 +31,6 @@ void * thread_func (void * ptr)
               pthread_mutex_unlock (&(data->m_common_data->all));
             }
 
-
           reduce_sum (data->m_thread_number, 0, 1);
 
           data->calculate_matrix ();
@@ -39,6 +38,8 @@ void * thread_func (void * ptr)
 
           if (data->m_thread_id == 0)
             data->normalization ();
+
+          reduce_sum (data->m_thread_number, 0, 1);
 
           int ret = data->solver (SOLVER_MAX_ITTERTION);
 

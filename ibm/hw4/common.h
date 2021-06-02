@@ -38,7 +38,7 @@
 #include <memory>
 #include <initializer_list>
 
-#define EPS 1e-16
+#define EPS 1e-14
 #define BUFF_SIZE 1024
 #define SCALE_AREA_COEF 1.5
 #define VISUALIZATION_NX 64
