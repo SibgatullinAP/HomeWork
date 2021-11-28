@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/common.h
+optional
+-
+string
+-
+vector
+-
+ranges
+-
+stdio.h
+-
+math.h
+-
+
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp
+io.h
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.h
+
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.h
+common.h
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/common.h
+

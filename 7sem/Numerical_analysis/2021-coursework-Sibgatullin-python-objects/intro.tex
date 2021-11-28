@@ -1,0 +1,72 @@
+\section{Введение}
+\subsection{Координатная запись}
+
+1 уравнение:
+$
+H_t + 0.5(V\hat{H}_{\mathring{x}} + (V\hat{H})_{\mathring{x}} + HV_{\mathring{x}}) = 0
+$\\
+Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
+$$
+\frac{H^{n+1}_m - H^n_m}{\tau} + \frac{V(\hat{H}_{m+1}^n - \hat{H}_{m-1}^n)}{4h} + \frac{(V\hat{H}^n_{m+1}) - (V\hat{H}^n_{m-1})}{2h} + \frac{H(V^n_{m+1} - V^n_{m-1})}{2h} = 0
+$$
+
+$
+H_{m-1}^{n+1}\left(-\frac{V}{4h} - \frac{V_{m-1}^n}{2h}\right) + H_{m}^{n+1}\left(\frac{1}{\tau}\right) + H_{m+1}^{n+1}\left(\frac{V}{4h} +\frac{V_{m+1}^n}{2h}\right) + V_{m-1}^{n+1}0 + V_{m}^{n+1}0 + V_{m+1}^{n+1}0 + H \left(\frac{(V_{m+1}^n - V_{m-1}^n)}{2h} - \frac{1}{\tau}\right)= 0
+$\\
+
+2 уравнение:\\
+$
+H_{t,0} + 0.5((V\hat{H})_{x,0} + H_0V_{x,0}) - 0.5h((HV)_{x\bar{x},1} - 0.5(HV)_{x\bar{x},2} + \\
++ H_0(V_{x\bar{x},1} - 0.5 V_{x\bar{x},2})) = 0
+$
+
+Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
+
+$
+\frac{H_0^{n+1} - H_0^n}{\tau} + 0.5\left(\frac{V_0^{n}H_1^{n+1} - V_0^nH_0^{n+1}}{h} + H_0^n\left(\frac{V_1^n-V_0^n}{h}\right)\right) - \\
+- \frac{h}{2}\left(\frac{H_0^nV_0^n-2H_1^nV_1^n + H_2^nV_2^n}{h^2} -\frac{1}{2}\left(\frac{H_1^nV_1^n-2H_2^nV_2^n + H_3^nV_3^n}{h^2}\right)\right) -\\
+- \frac{h}{2}\left(H_0\left(\frac{V_0^n-2V_1^n+V_2^n}{h^2} -\frac{1}{2}\left(\frac{V_1^n - 2V_2^n + V_3^n}{h^2}\right)\right)\right) = 0
+$\\
+
+$
+H_0^{n+1}\left(\frac{1}{\tau} - \frac{V_0^n}{2h}\right) + H_1^{n+1}\left(\frac{V_0^n}{2h}\right) + V_0^{n+1}0 + V_1^{n+1}0 -\frac{H_0^n}{\tau} + \frac{H_0^n(V_1^n-V_0^n)}{2h} - \\
+- \frac{h}{2}\left(\frac{H_0^nV_0^n-2H_1^nV_1^n + H_2^nV_2^n}{h^2} -\frac{1}{2}\left(\frac{H_1^nV_1^n-2H_2^nV_2^n + H_3^nV_3^n}{h^2}\right)\right) -\\
+- \frac{h}{2}\left(H_0\left(\frac{V_0^n-2V_1^n+V_2^n}{h^2} -\frac{1}{2}\left(\frac{V_1^n - 2V_2^n + V_3^n}{h^2}\right)\right)\right) = 0
+$\\
+
+3 уравнение:\\
+$
+H_{t,M} + 0.5((V\hat{H})_{x,M} + H_0V_{x,M}) - 0.5h((HV)_{x\bar{x},M-1} - 0.5(HV)_{x\bar{x},M-2} + \\
++ H_M(V_{x\bar{x},M-1} - 0.5 V_{x\bar{x},M-2})) = 0
+$
+
+Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
+
+$
+\frac{H_M^{n+1} - H_M^n}{\tau} + 0.5\left(\frac{V_M^{n}H_{M-1}^{n+1} - V_M^nH_M^{n+1}}{h} + H_M^n\left(\frac{V_{M-1}^n-V_M^n}{h}\right)\right) - \\
+- \frac{h}{2}\left(\frac{H_M^nV_M^n-2H_{M-1}^nV_{M-1}^n + H_{M-2}^nV_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-1}^nV_{M-1}^n-2H_{M-2}^nV_{M-2}^n + H_{M-3}^nV_{M-3}^n}{h^2}\right)\right) -\\
+- \frac{h}{2}\left(H_M\left(\frac{V_M^n-2V_{M-1}^n+V_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-1}^n - 2V_{M-2}^n + V_{M-3}^n}{h^2}\right)\right)\right) = 0
+$\\
+
+$
+H_M^{n+1}\left(\frac{1}{\tau} - \frac{V_M^n}{2h}\right) + H_{M-1}^{n+1}\left(\frac{V_M^n}{2h}\right) + V_M^{n+1}0 + V_{M-1}^{n+1}0 -\frac{H_M^n}{\tau} + \frac{H_M^n(V_{M-1}^n-V_M^n)}{2h} - \\
+- \frac{h}{2}\left(\frac{H_M^nV_M^n-2H_{M-1}^nV_{M-1}^n + H_{M-2}^nV_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-1}^nV_{M-1}^n-2H_{M-2}^nV_{M-2}^n + H_{M-3}^nV_{M-3}^n}{h^2}\right)\right) -\\
+- \frac{h}{2}\left(H_M\left(\frac{V_M^n-2V_{M-1}^n+V_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-1}^n - 2V_{M-2}^n + V_{M-3}^n}{h^2}\right)\right)\right) = 0
+$\\
+
+4 уравнение:\\
+$
+V_t + \frac{1}{3}(V\hat{V}_{\mathring{x}} + (V\hat{V})_{\mathring{x}}) + \frac{p(H)_{\mathring{x}}}{H} = \tilde{\mu}\hat{V}_{x\bar{x}} - \left(\tilde{\mu}-\frac{\mu}{H}\right)V_{x\bar{x}} + f
+$
+
+Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
+
+$
+\frac{V_m^{n+1} - V_m^n}{\tau} + \frac{1}{3}\left(V_m^n \frac{V_{m+1}^{n+1} - V_{m-1}^{n+1}}{2h} + \frac{V_{m+1}^nV_{m+1}^{n+1} - V_{m-1}^nV_{m-1}^{n+1}}{2h}\right) + \\ + \frac{p(H)_{m+1}^n - p(H)_{m-1}^n}{2h H_m^n} - \tilde{\mu}\frac{V_{m-1}^{n+1} - 2V_m^{n+1} + V_{m+1}^{n+1}}{h^2} + \left(\tilde{\mu} - \frac{\mu}{H_m^n}\right)\frac{V_{m-1}^n - 2V_m^n + V_{m+1}^n}{h^2} - f_m^n= 0
+$\\
+
+$
+V_{m-1}^{n+1}\left(-\frac{V_m^n + V_{m-1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right) + V_m^{n+1}\left(\frac{1}{\tau} + \frac{2\tilde{\mu}}{h^2}\right) + V_{m+1}^{n-1}\left(\frac{V_m^n - V_{m+1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right)  + \\
++ H_{m-1}^{n+1}0 + H_{m}^{n+1}0 + H_{m+1}^{n+1}0 - \\
+- \frac{v_m^n}{\tau} + \frac{p(H)_{m+1}^n - p(H)_{m-1}^n}{2hH_m^n} + \left(\tilde{\mu}-\frac{\mu}{H_m^n}\right)\frac{V_{m-1}^n - 2V_m^n + V_{m+1}^n }{h^2} - f_m^n = 0
+$

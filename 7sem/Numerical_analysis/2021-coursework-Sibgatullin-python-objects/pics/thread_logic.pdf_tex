@@ -1,0 +1,72 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'thread_logic.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{555.749993bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.55465587)%
+	\linespread{0.8}%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pics/thread_logic.pdf}}%
+    \put(0.09218913,0.299){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Код на Python}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pics/thread_logic.pdf}}%
+    \put(0.32924689,0.310){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Элемент}\\ \small{Workflow}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pics/thread_logic.pdf}}%
+    \put(0.56630464,0.310){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Поток}\\ \small{Python}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{pics/thread_logic.pdf}}%
+    \put(0.8033624,0.49685251){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Исполнение в}\\ \small{потоке Python}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{pics/thread_logic.pdf}}%
+    \put(0.91135538,0.0964883){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small {Исполнение в}\\ \small{потоке GUI}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{pics/thread_logic.pdf}}%
+    \put(0.7190752,0.0964883){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Исполнение в}\\ \small{потоке Kernel}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{pics/thread_logic.pdf}}%
+    \put(0.8033624,0.30852329){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{Запуск через}\\ \small{Parameter set} \end{tabular}}}}%
+  \end{picture}%
+\endgroup%
