@@ -59,12 +59,12 @@ public:
       return false;
     }
 
-    if (opening_mode == "w") {
-      fprintf(file_ptr, "\\documentstyle{article}\n");
-      fprintf(file_ptr, "\\begin{document}\n");
-      fprintf(file_ptr, "\\begin{center}\n");
-    }
+//    if (opening_mode == "w") {
+//      fprintf(file_ptr, "\\documentstyle{article}\n");
+//      fprintf(file_ptr, "\\begin{document}\n");
+//    }
 
+    fprintf(file_ptr, "\\begin{center}\n");
     fprintf(file_ptr, "%s\n", m_table_name.c_str());
     fprintf(file_ptr, "\\\\[2.0ex]  \n");
     fprintf(file_ptr, "  \n");
@@ -87,10 +87,11 @@ public:
     }
 
     fprintf(file_ptr, "\n\\end{tabular}\\\\[20pt]\n");
-    if (opening_mode == "w") {
-      fprintf(file_ptr, "\\end{center}\n");
-      fprintf(file_ptr, "\\end{document}\n");
-    }
+    fprintf(file_ptr, "\\end{center}\n");
+
+//    if (opening_mode == "w") {
+//      fprintf(file_ptr, "\\end{document}\n");
+//    }
     fclose(file_ptr);
 
     return true;

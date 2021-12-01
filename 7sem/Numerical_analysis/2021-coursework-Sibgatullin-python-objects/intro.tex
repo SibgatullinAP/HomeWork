@@ -7,11 +7,11 @@ H_t + 0.5(V\hat{H}_{\mathring{x}} + (V\hat{H})_{\mathring{x}} + HV_{\mathring{x}
 $\\
 Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
 $$
-\frac{H^{n+1}_m - H^n_m}{\tau} + \frac{V(\hat{H}_{m+1}^n - \hat{H}_{m-1}^n)}{4h} + \frac{(V\hat{H}^n_{m+1}) - (V\hat{H}^n_{m-1})}{2h} + \frac{H(V^n_{m+1} - V^n_{m-1})}{2h} = 0
+\frac{H^{n+1}_m - H^n_m}{\tau} + \frac{V(\hat{H}_{m+1}^n - \hat{H}_{m-1}^n)}{4h} + \frac{(V\hat{H})^n_{m+1} - (V\hat{H})^n_{m-1}}{4h} + \frac{H(V^n_{m+1} - V^n_{m-1})}{4h} = 0
 $$
 
 $
-H_{m-1}^{n+1}\left(-\frac{V}{4h} - \frac{V_{m-1}^n}{2h}\right) + H_{m}^{n+1}\left(\frac{1}{\tau}\right) + H_{m+1}^{n+1}\left(\frac{V}{4h} +\frac{V_{m+1}^n}{2h}\right) + V_{m-1}^{n+1}0 + V_{m}^{n+1}0 + V_{m+1}^{n+1}0 + H \left(\frac{(V_{m+1}^n - V_{m-1}^n)}{2h} - \frac{1}{\tau}\right)= 0
+H_{m-1}^{n+1}\left(-\frac{(V_m^n + V_{m-1}^n)}{4h}\right) + H_{m}^{n+1}\left(\frac{1}{\tau}\right) + H_{m+1}^{n+1}\left(\frac{V_m^n + V_{m+1}^n}{4h}\right) = H_m^n\left(\frac{1}{\tau} - \frac{(V_{m+1}^n - V_{m-1}^n)}{4h} \right)
 $\\
 
 2 уравнение:\\
@@ -23,35 +23,35 @@ $
 Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
 
 $
-\frac{H_0^{n+1} - H_0^n}{\tau} + 0.5\left(\frac{V_0^{n}H_1^{n+1} - V_0^nH_0^{n+1}}{h} + H_0^n\left(\frac{V_1^n-V_0^n}{h}\right)\right) - \\
+\frac{H_0^{n+1} - H_0^n}{\tau} + 0.5\left(\frac{V_1^{n}H_1^{n+1} - V_0^nH_0^{n+1}}{h} + H_0^n\left(\frac{V_1^n-V_0^n}{h}\right)\right) - \\
 - \frac{h}{2}\left(\frac{H_0^nV_0^n-2H_1^nV_1^n + H_2^nV_2^n}{h^2} -\frac{1}{2}\left(\frac{H_1^nV_1^n-2H_2^nV_2^n + H_3^nV_3^n}{h^2}\right)\right) -\\
 - \frac{h}{2}\left(H_0\left(\frac{V_0^n-2V_1^n+V_2^n}{h^2} -\frac{1}{2}\left(\frac{V_1^n - 2V_2^n + V_3^n}{h^2}\right)\right)\right) = 0
 $\\
 
 $
-H_0^{n+1}\left(\frac{1}{\tau} - \frac{V_0^n}{2h}\right) + H_1^{n+1}\left(\frac{V_0^n}{2h}\right) + V_0^{n+1}0 + V_1^{n+1}0 -\frac{H_0^n}{\tau} + \frac{H_0^n(V_1^n-V_0^n)}{2h} - \\
-- \frac{h}{2}\left(\frac{H_0^nV_0^n-2H_1^nV_1^n + H_2^nV_2^n}{h^2} -\frac{1}{2}\left(\frac{H_1^nV_1^n-2H_2^nV_2^n + H_3^nV_3^n}{h^2}\right)\right) -\\
-- \frac{h}{2}\left(H_0\left(\frac{V_0^n-2V_1^n+V_2^n}{h^2} -\frac{1}{2}\left(\frac{V_1^n - 2V_2^n + V_3^n}{h^2}\right)\right)\right) = 0
+H_0^{n+1}\left(\frac{1}{\tau} - \frac{V_0^n}{2h}\right) + H_1^{n+1}\left(\frac{V_1^n}{2h}\right) = \frac{H_0^n}{\tau} - \frac{H_0^n(V_1^n-V_0^n)}{2h} + \\
++ \frac{h}{2}\left(\frac{H_0^nV_0^n-2H_1^nV_1^n + H_2^nV_2^n}{h^2} -\frac{1}{2}\left(\frac{H_1^nV_1^n-2H_2^nV_2^n + H_3^nV_3^n}{h^2}\right)\right) +\\
++ \frac{h}{2}\left(H_0\left(\frac{V_0^n-2V_1^n+V_2^n}{h^2} -\frac{1}{2}\left(\frac{V_1^n - 2V_2^n + V_3^n}{h^2}\right)\right)\right) = 0
 $\\
 
 3 уравнение:\\
 $
-H_{t,M} + 0.5((V\hat{H})_{x,M} + H_0V_{x,M}) - 0.5h((HV)_{x\bar{x},M-1} - 0.5(HV)_{x\bar{x},M-2} + \\
+H_{t,M} + 0.5((V\hat{H})_{\bar{x},M} + H_MV_{\bar{x},M}) + 0.5h((HV)_{x\bar{x},M-1} - 0.5(HV)_{x\bar{x},M-2} + \\
 + H_M(V_{x\bar{x},M-1} - 0.5 V_{x\bar{x},M-2})) = 0
 $
 
 Распишем его в приведенных выше обозначениях, и выделим коэффиценты при $H\,$ и $V$ на $n + 1$ временном слое:
 
 $
-\frac{H_M^{n+1} - H_M^n}{\tau} + 0.5\left(\frac{V_M^{n}H_{M-1}^{n+1} - V_M^nH_M^{n+1}}{h} + H_M^n\left(\frac{V_{M-1}^n-V_M^n}{h}\right)\right) - \\
-- \frac{h}{2}\left(\frac{H_M^nV_M^n-2H_{M-1}^nV_{M-1}^n + H_{M-2}^nV_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-1}^nV_{M-1}^n-2H_{M-2}^nV_{M-2}^n + H_{M-3}^nV_{M-3}^n}{h^2}\right)\right) -\\
-- \frac{h}{2}\left(H_M\left(\frac{V_M^n-2V_{M-1}^n+V_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-1}^n - 2V_{M-2}^n + V_{M-3}^n}{h^2}\right)\right)\right) = 0
+\frac{H_M^{n+1} - H_M^n}{\tau} + 0.5\left(\frac{V_M^{n}H_{M}^{n+1} - V_{M-1}^nH_{M-1}^{n+1}}{h} + H_M^n\left(\frac{V_{M}^n-V_{M-1}^n}{h}\right)\right) + \\
++ \frac{h}{2}\left(\frac{H_{M-2}^nV_{M-2}^n-2H_{M-1}^nV_{M-1}^n + H_{M}^nV_{M}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-3}^nV_{M-3}^n-2H_{M-2}^nV_{M-2}^n + H_{M-1}^nV_{M-1}^n}{h^2}\right)\right) +\\
++ \frac{h}{2}\left(H_M\left(\frac{V_{M-2}^n-2V_{M-1}^n+V_{M}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-3}^n - 2V_{M-2}^n + V_{M-1}^n}{h^2}\right)\right)\right)
 $\\
 
 $
-H_M^{n+1}\left(\frac{1}{\tau} - \frac{V_M^n}{2h}\right) + H_{M-1}^{n+1}\left(\frac{V_M^n}{2h}\right) + V_M^{n+1}0 + V_{M-1}^{n+1}0 -\frac{H_M^n}{\tau} + \frac{H_M^n(V_{M-1}^n-V_M^n)}{2h} - \\
-- \frac{h}{2}\left(\frac{H_M^nV_M^n-2H_{M-1}^nV_{M-1}^n + H_{M-2}^nV_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-1}^nV_{M-1}^n-2H_{M-2}^nV_{M-2}^n + H_{M-3}^nV_{M-3}^n}{h^2}\right)\right) -\\
-- \frac{h}{2}\left(H_M\left(\frac{V_M^n-2V_{M-1}^n+V_{M-2}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-1}^n - 2V_{M-2}^n + V_{M-3}^n}{h^2}\right)\right)\right) = 0
+H_M^{n+1}\left(\frac{1}{\tau} + \frac{V_M^n}{2h}\right) + H_{M-1}^{n+1}\left(-\frac{V_{M-1}^n}{2h}\right) = \frac{H_M^n}{\tau} - \frac{H_M^n(V_{M}^n-V_{M-1}^n)}{2h} - \\
+- \frac{h}{2}\left(\frac{H_{M-2}^nV_{M-2}^n-2H_{M-1}^nV_{M-1}^n + H_{M}^nV_{M}^n}{h^2} -\frac{1}{2}\left(\frac{H_{M-3}^nV_{M-3}^n-2H_{M-2}^nV_{M-2}^n + H_{M-1}^nV_{M-1}^n}{h^2}\right)\right) -\\
+- \frac{h}{2}\left(H_M\left(\frac{V_{M-2}^n-2V_{M-1}^n+V_{M}^n}{h^2} -\frac{1}{2}\left(\frac{V_{M-3}^n - 2V_{M-2}^n + V_{M-1}^n}{h^2}\right)\right)\right)
 $\\
 
 4 уравнение:\\
@@ -66,7 +66,18 @@ $
 $\\
 
 $
-V_{m-1}^{n+1}\left(-\frac{V_m^n + V_{m-1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right) + V_m^{n+1}\left(\frac{1}{\tau} + \frac{2\tilde{\mu}}{h^2}\right) + V_{m+1}^{n-1}\left(\frac{V_m^n - V_{m+1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right)  + \\
-+ H_{m-1}^{n+1}0 + H_{m}^{n+1}0 + H_{m+1}^{n+1}0 - \\
-- \frac{v_m^n}{\tau} + \frac{p(H)_{m+1}^n - p(H)_{m-1}^n}{2hH_m^n} + \left(\tilde{\mu}-\frac{\mu}{H_m^n}\right)\frac{V_{m-1}^n - 2V_m^n + V_{m+1}^n }{h^2} - f_m^n = 0
+V_{m-1}^{n+1}\left(-\frac{V_m^n + V_{m-1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right) + V_m^{n+1}\left(\frac{1}{\tau} + \frac{2\tilde{\mu}}{h^2}\right) + V_{m+1}^{n-1}\left(\frac{V_m^n + V_{m+1}^n}{6h} - \frac{\tilde{\mu}}{h^2}\right)  = \\
+\frac{V_m^n}{\tau} - \frac{p(H)_{m+1}^n - p(H)_{m-1}^n}{2hH_m^n} - \left(\tilde{\mu}-\frac{\mu}{H_m^n}\right)\frac{V_{m-1}^n - 2V_m^n + V_{m+1}^n }{h^2} + f_m^n = 0
 $
+
+\newpage
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/Times.tex}
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_C_norms.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_L2_norms.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_W21_norms.tex}
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_C_norms.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_L2_norms.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_W21_norms.tex}

@@ -40,9 +40,35 @@ sys/sysinfo.h
 pthread.h
 /home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/pthread.h
 
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/main.cpp
+constants.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/constants.h
+data_bus.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/data_bus.h
+thread_functions.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/thread_functions.h
+solver.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/solver.h
+matrix.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/matrix.h
+
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/matrix.cpp
+matrix.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/matrix.h
+constants.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/constants.h
+
 /home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/matrix.h
 pthread.h
 /home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/pthread.h
+
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/solver.cpp
+solver.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/solver.h
+constants.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/constants.h
+matrix.h
+/home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/matrix.h
 
 /home/pam/HomeWork/5sem/ibm/hw3/debug_experimental/solver.h
 
