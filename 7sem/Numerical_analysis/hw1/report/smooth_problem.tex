@@ -15,39 +15,79 @@
 \begin{equation}
 	\begin{array}{lc}
 		\frac{\partial\tilde{\rho}}{\partial t} + \frac{\partial\tilde{\rho}\tilde{u}}{\partial x} = f_0,\\
-		\tilde{\rho}\frac{\partial\tilde{u}}{\partial t} + \tilde{u}\tilde{\rho}\frac{\partial\tilde{u}}{\partial x} + \frac{\partial p}{\partial x} = \mu\frac{\partial^2\tilde{u}}{\partial x^2} + f
+		\tilde{\rho}\frac{\partial\tilde{u}}{\partial t} + \tilde{u}\tilde{\rho}\frac{\partial\tilde{u}}{\partial x} + \frac{\partial p}{\partial x} = \mu\frac{\partial^2\tilde{u}}{\partial x^2} + \tilde{\rho}f
+	\end{array}
+\end{equation}
+
+\begin{equation}
+	\begin{array}{lc}
+		\frac{\partial\tilde{\rho}}{\partial t}  = e^t(cos(3\pi x) + 1.5), \\
+		\frac{\partial\tilde{\rho}\tilde{u}}{\partial t}  = \pi e^t cos(2\pi t) * (4(cos(3\pi x) + 1.5) cos (4\pi x) - 3sin(3\pi x )sin(4\pi x)), \\
+		
+		\frac{\partial\tilde{u}}{\partial t} = -2\pi
 	\end{array}
 \end{equation}
 
 \subsection{Численные эксперименты}
+\subsubsection{Обычная сетка}
 
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/Times.tex}
+\input{../tables/Times.tex}
 \newpage
 
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C1.000_gamma1.400.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C1.000_gamma1.400.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C1.000_gamma1.400.tex}
+\input{../tables/H_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables/H_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables/H_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C1.000_gamma1.400.tex}
 
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C1.000_gamma1.400.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C1.000_gamma1.400.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C100.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C10.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C1.000_gamma1.000.tex}
-\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C1.000_gamma1.400.tex}
+\input{../tables/V_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables/V_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables/V_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables/V_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\newpage
+\subsubsection{Вложенная сетка}
+\input{../tables_grf/Times.tex}
+
+\input{../tables_grf/H_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables_grf/H_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables_grf/H_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\input{../tables_grf/V_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables_grf/V_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables_grf/V_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_grf/V_norms_mu0.100_C1.000_gamma1.400.tex}
 
 \subsection{Выводы}

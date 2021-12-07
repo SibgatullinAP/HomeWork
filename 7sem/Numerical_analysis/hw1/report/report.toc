@@ -1,12 +1,14 @@
-\babel@toc {russian}{}
-\contentsline {section}{\numberline {1.\hskip 1em}Введение}{2}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1.\hskip 1em}Постановка задачи}{2}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2.\hskip 1em}Основные обозначения}{3}{subsection.0.1.2}%
-\contentsline {section}{\numberline {2.\hskip 1em}Разностная схема}{4}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1.\hskip 1em}Описание схемы}{4}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2.\hskip 1em}Координатная запись}{4}{subsection.0.2.2}%
-\contentsline {section}{\numberline {3.\hskip 1em}Отладочный тест}{7}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1.\hskip 1em}Постановка задачи}{7}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2.\hskip 1em}Численные эксперименты}{7}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3.\hskip 1em}Выводы}{19}{subsection.0.3.3}%
-\contentsline {chapter}{\cyrillictext \CYRS \cyrp \cyri \cyrs \cyro \cyrk \ \cyrl \cyri \cyrt \cyre \cyrr \cyra \cyrt \cyru \cyrr \cyrery }{20}{chapter*.3}%
+\select@language {russian}
+\contentsline {section}{\numberline {1.\hskip 1em}\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{2}{section.0.1}
+\contentsline {subsection}{\numberline {1.1.\hskip 1em}\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyra } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri }}{2}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {1.2.\hskip 1em}\IeC {\CYRO }\IeC {\cyrs }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyro }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrz }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{3}{subsection.0.1.2}
+\contentsline {section}{\numberline {2.\hskip 1em}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyrs }\IeC {\cyrh }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }}{4}{section.0.2}
+\contentsline {subsection}{\numberline {2.1.\hskip 1em}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyrh }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyrery }}{4}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2.\hskip 1em}\IeC {\CYRK }\IeC {\cyro }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrd }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrsftsn }}{4}{subsection.0.2.2}
+\contentsline {section}{\numberline {3.\hskip 1em}\IeC {\CYRO }\IeC {\cyrt }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrt }}{7}{section.0.3}
+\contentsline {subsection}{\numberline {3.1.\hskip 1em}\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyrk }\IeC {\cyra } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri }}{7}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2.\hskip 1em}\IeC {\CYRCH }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrerev }\IeC {\cyrk }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyrery }}{7}{subsection.0.3.2}
+\contentsline {subsubsection}{\IeC {\CYRO }\IeC {\cyrb }\IeC {\cyrery }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyrs }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyra }}{7}{section*.3}
+\contentsline {subsubsection}{\IeC {\CYRV }\IeC {\cyrl }\IeC {\cyro }\IeC {\cyrzh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyrs }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyra }}{20}{section*.4}
+\contentsline {subsection}{\numberline {3.3.\hskip 1em}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyrery }}{32}{subsection.0.3.3}
+\contentsline {chapter}{\cyrillictext \CYRS \cyrp \cyri \cyrs \cyro \cyrk \ \cyrl \cyri \cyrt \cyre \cyrr \cyra \cyrt \cyru \cyrr \cyrery }{33}{chapter*.5}

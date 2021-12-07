@@ -1,13 +1,13 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#include<math.h>
 #include <optional>
 #include <algorithm>
-#include <execution>
-#include <numbers>
+//#include <numbers>
 #include <string>
 #include <vector>
-#include <ranges>
+//#include <ranges>
 #include <stdio.h>
 #include <math.h>
 #include <stdarg.h>

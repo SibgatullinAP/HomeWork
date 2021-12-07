@@ -7,6 +7,15 @@ const math_vec &CDS_solver::get_answer_H() {
       m_answer_H = {};
   }
 
+  if (m_grid.m_grf && *m_grid.m_grf)
+    {
+      math_vec tmp ((m_grid.m_nx / (2<<*m_grid.m_grf)) + 1);
+      for (int i = 0 ; i < tmp.size (); i++)
+        tmp[i] = m_answer_H[i * 2<<*m_grid.m_grf];
+
+      m_answer_H = tmp;
+    }
+
   return m_answer_H;
 }
 
@@ -16,6 +25,15 @@ const math_vec &CDS_solver::get_answer_V() {
     if (!solve())
       m_answer_V = {};
   }
+
+  if (m_grid.m_grf && *m_grid.m_grf)
+    {
+      math_vec tmp ((m_grid.m_nx / (2<<*m_grid.m_grf)) + 1);
+      for (int i = 0 ; i < tmp.size (); i++)
+        tmp[i] = m_answer_V[i * 2<<*m_grid.m_grf];
+
+      m_answer_V = tmp;
+    }
 
   return m_answer_V;
 }
@@ -146,10 +164,10 @@ bool CDS_solver::solve() {
                             + H_prev[dim - 1] * ((V_prev[dim - 1] - 2 * V_prev[dim - 2] + V_prev[dim - 3])
                                         - 0.5 * ((V_prev[dim - 2] - 2 * V_prev[dim - 3] + V_prev[dim - 4])))) + f_0 ((timestep) * m_grid.dt(), m_grid.m_X_max);
 
-      preconditioner(H_L);
-      preconditioner(H_D);
-      preconditioner(H_R);
-      preconditioner(H_rhs);
+//      preconditioner(H_L);
+//      preconditioner(H_D);
+//      preconditioner(H_R);
+//      preconditioner(H_rhs);
 
 
       double H_max = H_prev[0];
@@ -177,17 +195,17 @@ bool CDS_solver::solve() {
       V_L[dim - 2] = 0;
       V_rhs[dim - 1] = 0;
 
-      preconditioner(V_L);
-      preconditioner(V_D);
-      preconditioner(V_R);
-      preconditioner(V_rhs);
+//      preconditioner(V_L);
+//      preconditioner(V_D);
+//      preconditioner(V_R);
+//      preconditioner(V_rhs);
+
+            dump_matrix(H_L, H_D, H_R, H_rhs);
+            dump_matrix(V_L, V_D, V_R, V_rhs);
 
       //Solving matrix
       V_prev = solve_3diag_matrix(V_L, V_D, V_R, V_rhs);
       H_prev = solve_3diag_matrix(H_L, H_D, H_R, H_rhs);
-
-//      dump_matrix(H_L, H_D, H_R, H_rhs);
-//      dump_matrix(V_L, V_D, V_R, V_rhs);
 
       dummy ();
     }
@@ -269,19 +287,44 @@ bool problem_info::parse_cmd_line (int argc, const char *argv[])
 std::vector<std::pair<PDE_gas_info, domain_grid_info>> problem_info::get_problem_infos ()
 {
   std::vector<std::pair<PDE_gas_info, domain_grid_info>> result;
-  unsigned int nt = m_N0;
-  for (int time_ref = 0; time_ref < m_n_max; time_ref++)
-    {
-      unsigned int nx = m_M0;
-      for (int domain_ref = 0; domain_ref < m_m_max; domain_ref++)
-        {
-          PDE_gas_info curr_gas_info (m_mu, m_C, m_gamma);
-          domain_grid_info curr_grid_info (m_X, nx, m_T, nt);
 
-          result.push_back(std::make_pair(curr_gas_info, curr_grid_info));
-          nx *= m_k_dr;
+  if (m_gr_factor)
+    {
+      int row_limit = *m_gr_factor + 1;
+      int col_limit = m_m_max;
+
+      //Filling Solvers
+      unsigned int gr_k = 0;
+      for (int row = 0; row < row_limit; row++)
+        {
+          unsigned int nx = m_M0;
+          for (int col = 0; col < col_limit; col++)
+            {
+              PDE_gas_info curr_gas_info(m_mu, m_C, m_gamma);
+              domain_grid_info curr_grid_info(m_X, nx, m_T, nx, gr_k);
+
+              result.push_back(std::make_pair(curr_gas_info, curr_grid_info));
+              nx *= m_k_dr;
+            }
+          gr_k ++;
         }
-      nt *= m_k_dr;
+    }
+  else
+    {
+      unsigned int nt = m_N0;
+      for (int time_ref = 0; time_ref < m_n_max; time_ref++)
+        {
+          unsigned int nx = m_M0;
+          for (int domain_ref = 0; domain_ref < m_m_max; domain_ref++)
+            {
+              PDE_gas_info curr_gas_info (m_mu, m_C, m_gamma);
+              domain_grid_info curr_grid_info (m_X, nx, m_T, nt);
+
+              result.push_back(std::make_pair(curr_gas_info, curr_grid_info));
+              nx *= m_k_dr;
+            }
+          nt *= m_k_dr;
+        }
     }
 
   return result;
