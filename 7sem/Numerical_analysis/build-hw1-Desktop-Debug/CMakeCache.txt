@@ -37,8 +37,8 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-10
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-10
 
-//No help, variable specified on the command line.
-CMAKE_CXX_FLAGS:STRING=-fopenmp -lpthread
+//Flags used by the CXX compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -195,7 +195,7 @@ QT_QMAKE_EXECUTABLE:STRING=
 hw_1_BINARY_DIR:STATIC=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug
 
 //Value Computed by CMake
-hw_1_SOURCE_DIR:STATIC=/home/pam/HomeWork/7sem/Numerical_analysis/hw1
+hw_1_SOURCE_DIR:STATIC=/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
 
 
 ########################
@@ -266,7 +266,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/pam/HomeWork/7sem/Numerical_analysis/hw1
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

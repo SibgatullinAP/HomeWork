@@ -63,7 +63,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1
+CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release

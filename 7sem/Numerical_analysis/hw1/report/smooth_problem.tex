@@ -1,0 +1,53 @@
+\section{Отладочный тест}
+\subsection{Постановка задачи}
+
+Рассмотрим $Q = [0;1] x [0;1]$\\
+
+Зададим функции $\tilde{\rho}(t, x)$ и $\tilde{u}(t, x)$ так, чтобы они являлись гладким решением задачи $(1)$.
+\begin{equation}
+	\begin{array}{lc}
+		\tilde{\rho}(t, x) = e^t(cos(3\pi x) + 1.5),\\
+		\tilde{u}(t, x) = cos(2\pi t)sin(4\pi x)\\
+	\end{array}
+\end{equation}
+
+Теперь определим функции $f_0$ и $f$, так, чтобы они удовлетворяли уравнениям:
+\begin{equation}
+	\begin{array}{lc}
+		\frac{\partial\tilde{\rho}}{\partial t} + \frac{\partial\tilde{\rho}\tilde{u}}{\partial x} = f_0,\\
+		\tilde{\rho}\frac{\partial\tilde{u}}{\partial t} + \tilde{u}\tilde{\rho}\frac{\partial\tilde{u}}{\partial x} + \frac{\partial p}{\partial x} = \mu\frac{\partial^2\tilde{u}}{\partial x^2} + f
+	\end{array}
+\end{equation}
+
+\subsection{Численные эксперименты}
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/Times.tex}
+\newpage
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/H_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/V_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\subsection{Выводы}

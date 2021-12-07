@@ -62,7 +62,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1
+CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug
@@ -77,69 +77,69 @@ include CMakeFiles/hw_1.dir/progress.make
 include CMakeFiles/hw_1.dir/flags.make
 
 CMakeFiles/hw_1.dir/main.cpp.o: CMakeFiles/hw_1.dir/flags.make
-CMakeFiles/hw_1.dir/main.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/main.cpp
+CMakeFiles/hw_1.dir/main.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw_1.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/main.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/main.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp
 
 CMakeFiles/hw_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_1.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/main.cpp > CMakeFiles/hw_1.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp > CMakeFiles/hw_1.dir/main.cpp.i
 
 CMakeFiles/hw_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_1.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/main.cpp -o CMakeFiles/hw_1.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp -o CMakeFiles/hw_1.dir/main.cpp.s
 
 CMakeFiles/hw_1.dir/problem_info.cpp.o: CMakeFiles/hw_1.dir/flags.make
-CMakeFiles/hw_1.dir/problem_info.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/problem_info.cpp
+CMakeFiles/hw_1.dir/problem_info.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw_1.dir/problem_info.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/problem_info.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/problem_info.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/problem_info.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp
 
 CMakeFiles/hw_1.dir/problem_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_1.dir/problem_info.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/problem_info.cpp > CMakeFiles/hw_1.dir/problem_info.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp > CMakeFiles/hw_1.dir/problem_info.cpp.i
 
 CMakeFiles/hw_1.dir/problem_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_1.dir/problem_info.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/problem_info.cpp -o CMakeFiles/hw_1.dir/problem_info.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp -o CMakeFiles/hw_1.dir/problem_info.cpp.s
 
 CMakeFiles/hw_1.dir/io.cpp.o: CMakeFiles/hw_1.dir/flags.make
-CMakeFiles/hw_1.dir/io.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp
+CMakeFiles/hw_1.dir/io.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hw_1.dir/io.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/io.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/io.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.cpp
 
 CMakeFiles/hw_1.dir/io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_1.dir/io.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp > CMakeFiles/hw_1.dir/io.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.cpp > CMakeFiles/hw_1.dir/io.cpp.i
 
 CMakeFiles/hw_1.dir/io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_1.dir/io.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp -o CMakeFiles/hw_1.dir/io.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.cpp -o CMakeFiles/hw_1.dir/io.cpp.s
 
 CMakeFiles/hw_1.dir/tex_table.cpp.o: CMakeFiles/hw_1.dir/flags.make
-CMakeFiles/hw_1.dir/tex_table.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/tex_table.cpp
+CMakeFiles/hw_1.dir/tex_table.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hw_1.dir/tex_table.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/tex_table.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/tex_table.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/tex_table.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.cpp
 
 CMakeFiles/hw_1.dir/tex_table.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_1.dir/tex_table.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/tex_table.cpp > CMakeFiles/hw_1.dir/tex_table.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.cpp > CMakeFiles/hw_1.dir/tex_table.cpp.i
 
 CMakeFiles/hw_1.dir/tex_table.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_1.dir/tex_table.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/tex_table.cpp -o CMakeFiles/hw_1.dir/tex_table.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.cpp -o CMakeFiles/hw_1.dir/tex_table.cpp.s
 
 CMakeFiles/hw_1.dir/math_alg.cpp.o: CMakeFiles/hw_1.dir/flags.make
-CMakeFiles/hw_1.dir/math_alg.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/math_alg.cpp
+CMakeFiles/hw_1.dir/math_alg.cpp.o: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hw_1.dir/math_alg.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/math_alg.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/math_alg.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw_1.dir/math_alg.cpp.o -c /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.cpp
 
 CMakeFiles/hw_1.dir/math_alg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_1.dir/math_alg.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/math_alg.cpp > CMakeFiles/hw_1.dir/math_alg.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.cpp > CMakeFiles/hw_1.dir/math_alg.cpp.i
 
 CMakeFiles/hw_1.dir/math_alg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_1.dir/math_alg.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/math_alg.cpp -o CMakeFiles/hw_1.dir/math_alg.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.cpp -o CMakeFiles/hw_1.dir/math_alg.cpp.s
 
 # Object files for target hw_1
 hw_1_OBJECTS = \
@@ -172,6 +172,6 @@ CMakeFiles/hw_1.dir/clean:
 .PHONY : CMakeFiles/hw_1.dir/clean
 
 CMakeFiles/hw_1.dir/depend:
-	cd /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pam/HomeWork/7sem/Numerical_analysis/hw1 /home/pam/HomeWork/7sem/Numerical_analysis/hw1 /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hw_1.dir/depend
 

@@ -1,0 +1,54 @@
+\documentclass[specialist, subf, href, colorlinks=true, 14pt, times, mtpro, final]{disser}
+
+\usepackage[english, russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage [utf8] {inputenc}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage {wrapfig}
+\usepackage {enumitem}  
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{pdfpages}
+
+
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage[noend]{algpseudocode}
+\usepackage[a4paper, mag=1000, includefoot, left=3cm, right=1.5cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm]{geometry}
+\usepackage{floatrow}
+\usepackage{tikz}
+\usetikzlibrary{graphs}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Определение}[section]
+\newtheorem{example}{Пример}[section]
+\newtheorem{state}{Утверждение}[section]
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{lemma}{Лемма}[section]
+\newtheorem{axiom}{Аксиома}[section]
+\newtheorem{consequence}{Следствие}[section]
+
+\begin{document}
+	\input{title.tex}
+	
+	\tableofcontents
+	\newpage
+	
+	\input{intro.tex}
+	
+	\input{cds_scheme.tex}
+	
+	\input{smooth_problem.tex}
+	
+
+	\newpage
+	\begin{thebibliography}{100}
+		\bibitem{Практикум} Численное моделирование нестационарного одномерного течения газа с использованием неявных разностных схем, \emph{Попов А.В., 2021}
+
+	\end{thebibliography}
+
+
+\end{document}

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/io.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/io.cpp.o"
-  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/main.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/main.cpp.o"
-  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/math_alg.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/math_alg.cpp.o"
-  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/problem_info.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/problem_info.cpp.o"
-  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tex_table.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/tex_table.cpp.o"
+  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/io.cpp.o"
+  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/main.cpp.o"
+  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/math_alg.cpp.o"
+  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/problem_info.cpp.o"
+  "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.cpp" "/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Debug/CMakeFiles/hw_1.dir/tex_table.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

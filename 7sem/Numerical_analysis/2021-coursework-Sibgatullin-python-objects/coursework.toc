@@ -1,3 +1,0 @@
-\babel@toc {russian}{}
-\contentsline {section}{\numberline {1.\hskip 1em}Введение}{2}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1.\hskip 1em}Координатная запись}{2}{subsection.0.1.1}%

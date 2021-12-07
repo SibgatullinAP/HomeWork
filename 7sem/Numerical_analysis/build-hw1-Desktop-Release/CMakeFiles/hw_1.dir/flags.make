@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -fopenmp -lpthread -O3 -DNDEBUG -std=gnu++2a
+CXX_FLAGS = -fopenmp -O3 -DNDEBUG -std=gnu++2a
 
