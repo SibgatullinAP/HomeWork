@@ -1,475 +1,504 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/TeX Live for SUSE Linux) (preloaded format=pdflatex 2021.4.2)  7 DEC 2021 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 - Flatpak) (preloaded format=pdflatex 2021.10.11)  10 DEC 2021 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texmf/tex/latex/disser/disser.cls
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/app/texlive/texmf-dist/tex/latex/disser/disser.cls
 Document Class: disser 2017/03/03 1.4.1 Document class for dissertations
-(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/app/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-(/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/app/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texmf/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/app/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/app/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(/usr/share/texmf/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/share/texmf/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-(/usr/share/texmf/tex/latex/base/ifthen.sty
+(/app/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(/app/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf/tex/latex/textcase/textcase.sty
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+(/app/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 )
-(/usr/share/texmf/tex/latex/extsizes/size14.clo
+(/app/texlive/texmf-dist/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 )
-(/usr/share/texmf/tex/latex/base/exscale.sty
-Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+(/app/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen102
+\big@size=\dimen138
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\chapterindent=\skip41
-\schapterindent=\skip42
-\abovecaptionskip=\skip43
-\belowcaptionskip=\skip44
-\footnoteindent=\skip45
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\chapterindent=\skip47
+\schapterindent=\skip48
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\footnoteindent=\skip51
 
-(/usr/share/texmf/tex/latex/disser/titledefs.rtx
+(/app/texlive/texmf-dist/tex/latex/disser/titledefs.rtx
 File: titledefs.rtx 
-\fieldhshift=\skip46
+\fieldhshift=\skip52
 )
-\bibindent=\dimen103
-\bibsep=\skip47
+\bibindent=\dimen139
+\bibsep=\skip53
 
-(/usr/share/texmf/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/app/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(/usr/share/texmf/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen104
-\captionmargin@=\dimen105
-\captionwidth=\dimen106
-\caption@tempdima=\dimen107
-\caption@indent=\dimen108
-\caption@parindent=\dimen109
-\caption@hangindent=\dimen110
+(/app/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen140
+\captionmargin@=\dimen141
+\captionwidth=\dimen142
+\caption@tempdima=\dimen143
+\caption@indent=\dimen144
+\caption@parindent=\dimen145
+\caption@hangindent=\dimen146
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p \sbox \@tempboxa {{\captionlabelfont #1\captionlabeldelim } {\captionfont #2}
 }\ifdim \wd \@tempboxa >\hsize {{\captionlabelfont #1\captionlabeldelim } {\cap
 tionfont #2}}\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@te
-mpboxa \hfil }\fi \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count88
-) (/usr/share/texmf/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count89
-\c@subtable=\count90
+mpboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1139.
 )
-(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(/usr/share/texmf/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
 
-
-(/usr/share/texmf/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package hobsub Info: Skipping package `etexcmds' (already loaded).
-Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+\c@caption@flags=\count188
+\c@continuedfloat=\count189
+) (/app/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count190
+\c@subtable=\count191
 )
-Package pdftexcmds Info: LuaTeX not detected.
+(/app/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/app/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/app/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+(/app/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+(/app/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/share/texmf/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+(/app/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texmf/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+(/app/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen111
-\Hy@linkcounter=\count91
-\Hy@pagecounter=\count92
+(/app/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen147
+\Hy@linkcounter=\count192
+\Hy@pagecounter=\count193
 
-(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+(/app/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count93
+(/app/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(/app/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/app/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count194
 
-(/usr/share/texmf/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+(/app/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
-Package hyperref Info: Option `final' set `true' on input line 4374.
-Package hyperref Info: Option `unicode' set `true' on input line 4374.
-
-(/usr/share/texmf/tex/latex/hyperref/puenc.def
-File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
-)
-Package hyperref Info: Hyper figures OFF on input line 4498.
-Package hyperref Info: Link nesting OFF on input line 4503.
-Package hyperref Info: Hyper index ON on input line 4506.
-Package hyperref Info: Plain pages OFF on input line 4513.
-Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `final' set `true' on input line 4073.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count94
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count195
 
-(/usr/share/texmf/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
+(/app/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen112
-\Fld@menulength=\count95
-\Field@Width=\dimen113
-\Fld@charsize=\dimen114
-Package hyperref Info: Hyper figures OFF on input line 6358.
-Package hyperref Info: Link nesting OFF on input line 6363.
-Package hyperref Info: Hyper index ON on input line 6366.
-Package hyperref Info: backreferencing OFF on input line 6373.
-Package hyperref Info: Link coloring ON on input line 6376.
-Package hyperref Info: Link coloring with OCG OFF on input line 6383.
-Package hyperref Info: PDF/A mode OFF on input line 6388.
-LaTeX Info: Redefining \ref on input line 6428.
-LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen148
+
+(/app/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/app/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
+))
+\Fld@menulength=\count196
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring ON on input line 6093.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
 
-Package hyperref Message: Driver: hpdftex.
+(/app/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count197
+\c@Item=\count198
+\c@Hfootnote=\count199
+)
+Package hyperref Info: Driver: hpdftex.
 
-(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+(/app/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 
-(/usr/share/texmf/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+(/app/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count266
+\c@bookmark@seq@number=\count267
+
+(/app/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/app/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+86.
 )
-\Hy@SectionHShift=\skip48
+\Hy@SectionHShift=\skip54
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 1453.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 1453.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 1453
 .
 
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/app/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(/app/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/graphics-cfg/graphics.cfg
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/share/texmf/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-\Gread@gobject=\count101
+(/app/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
 )
-(/usr/share/texmf/tex/latex/cmap/cmap.sty
-Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+(/app/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
 ))
-(/usr/share/texmf/tex/latex/disser/specialist.rtx
+(/app/texlive/texmf-dist/tex/latex/disser/specialist.rtx
 File: specialist.rtx 
 )
-(/usr/share/texmf/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+(/app/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
-(/usr/share/texmf/tex/latex/ucs/utf8x.def
+(/app/texlive/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-(/usr/share/texmf/tex/latex/ucs/ucs.sty
+(/app/texlive/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-(/usr/share/texmf/tex/latex/ucs/data/uni-global.def
+(/app/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count102
-\uc@combtoks=\toks17
-\uc@combtoksb=\toks18
-\uc@temptokena=\toks19
+\uc@secondtry=\count268
+\uc@combtoks=\toks18
+\uc@combtoksb=\toks19
+\uc@temptokena=\toks20
 )
-(/usr/share/texmf/tex/generic/babel/babel.sty
-Package: babel 2017/05/19 3.10 The Babel package
+(/app/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/03/24 3.56 The Babel package
 
-(/usr/share/texmf/tex/generic/babel-english/english.ldf
+(/app/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+\babel@savecnt=\count269
+\U@D=\dimen153
+\l@babelnohyphens=\language87
+
+(/app/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count270
+
+(/app/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texmf/tex/generic/babel/babel.def
-File: babel.def 2017/05/19 3.10 Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen117
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-)
-(/usr/share/texmf/tex/generic/babel-russian/russianb.ldf
-Language: russianb 2017/01/12 1.3i Russian support for the Babel system
+(/app/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
 
 
 Package babel Warning: No Cyrillic font encoding has been loaded so far.
 (babel)                A font encoding should be declared before babel.
-(babel)                Default `T2A' encoding will be loaded  on input line 69.
+(babel)                Default `T2A' encoding will be loaded  on input line 78.
 
 
-(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
+(/app/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 )
-Package babel Info: Making " an active character on input line 111.
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
-(/usr/share/texmf/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/app/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+12.
 
-(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
-File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
-LaTeX Font Info:    Redeclaring font encoding T2A on input line 42.
-)
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
-
-
-(/usr/share/texmf/tex/latex/cyrillic/t2acmr.fd
+(/app/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip49
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen118
+\@emptytoks=\toks21
+\ex@=\dimen154
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen119
+\pmbraise@=\dimen155
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count104
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count105
-\leftroot@=\count106
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count107
-\DOTSCASE@=\count108
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen120
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count109
-\c@MaxMatrixCols=\count110
-\dotsspace@=\muskip11
-\c@parentequation=\count111
-\dspbrk@lvl=\count112
-\tag@help=\toks21
-\row@=\count113
-\column@=\count114
-\maxfields@=\count115
-\andhelp@=\toks22
-\eqnshift@=\dimen121
-\alignsep@=\dimen122
-\tagshift@=\dimen123
-\tagwidth@=\dimen124
-\totwidth@=\dimen125
-\lineht@=\dimen126
-\@envbody=\toks23
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+\inf@bad=\count271
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count272
+\leftroot@=\count273
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count274
+\DOTSCASE@=\count275
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen156
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count276
+\c@MaxMatrixCols=\count277
+\dotsspace@=\muskip17
+\c@parentequation=\count278
+\dspbrk@lvl=\count279
+\tag@help=\toks22
+\row@=\count280
+\column@=\count281
+\maxfields@=\count282
+\andhelp@=\toks23
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks24
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
-(/usr/share/texmf/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
-\thm@preskip=\skip52
-\thm@postskip=\skip53
-\thm@headsep=\skip54
-\dth@everypar=\toks30
+(/app/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks31
 )
-(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/app/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+(/app/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen127
-\WF@size=\dimen128
-\c@WF@wrappedlines=\count116
-\WF@box=\box28
-\WF@everypar=\toks31
+(/app/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen163
+\WF@size=\dimen164
+\c@WF@wrappedlines=\count283
+\WF@box=\box49
+\WF@everypar=\toks32
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texmf/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip55
-\enit@outerparindent=\dimen129
-\enit@toks=\toks32
-\enit@inbox=\box29
-\enitdp@description=\count117
+(/app/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen165
+\enit@toks=\toks33
+\enit@inbox=\box50
+\enit@count@id=\count284
+\enitdp@description=\count285
 )
-(/usr/share/texmf/tex/latex/tools/multicol.sty
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count118
-\mult@box=\box30
-\multicol@leftmargin=\dimen130
-\c@unbalance=\count119
-\c@collectmore=\count120
-\doublecol@number=\count121
-\multicoltolerance=\count122
-\multicolpretolerance=\count123
-\full@width=\dimen131
-\page@free=\dimen132
-\premulticols=\dimen133
-\postmulticols=\dimen134
-\multicolsep=\skip56
-\multicolbaselineskip=\skip57
-\partial@page=\box31
-\last@line=\box32
-\maxbalancingoverflow=\dimen135
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
-\@tempa=\box40
-\@tempa=\box41
-\@tempa=\box42
-\@tempa=\box43
-\@tempa=\box44
-\@tempa=\box45
-\@tempa=\box46
-\@tempa=\box47
-\@tempa=\box48
-\@tempa=\box49
-\@tempa=\box50
-\@tempa=\box51
-\@tempa=\box52
-\@tempa=\box53
-\c@columnbadness=\count124
-\c@finalcolumnbadness=\count125
-\last@try=\dimen136
-\multicolovershoot=\dimen137
-\multicolundershoot=\dimen138
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\mc@col@check@num=\count126
+(/app/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count286
+\mult@box=\box51
+\multicol@leftmargin=\dimen166
+\c@unbalance=\count287
+\c@collectmore=\count288
+\doublecol@number=\count289
+\multicoltolerance=\count290
+\multicolpretolerance=\count291
+\full@width=\dimen167
+\page@free=\dimen168
+\premulticols=\dimen169
+\postmulticols=\dimen170
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen171
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@gfirstbox=\box56
+\mult@firstbox=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count292
+\c@columnbadness=\count293
+\c@finalcolumnbadness=\count294
+\last@try=\dimen172
+\multicolovershoot=\dimen173
+\multicolundershoot=\dimen174
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count295
 )
-(/usr/share/texmf/tex/latex/jknapltx/mathrsfs.sty
+(/app/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+(/app/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texmf/tex/latex/graphics-cfg/color.cfg
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -483,377 +512,401 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen139
-\pgfutil@tempdimb=\dimen140
+(/app/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/app/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/app/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen175
+\pgfutil@tempdimb=\dimen176
 
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box56
-
-(/usr/share/texmf/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box97
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/app/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/app/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
 ))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
-
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
-))
-\pgf@x=\dimen141
-\pgf@y=\dimen142
-\pgf@xa=\dimen143
-\pgf@ya=\dimen144
-\pgf@xb=\dimen145
-\pgf@yb=\dimen146
-\pgf@xc=\dimen147
-\pgf@yc=\dimen148
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
 \w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count127
-\c@pgf@countb=\count128
-\c@pgf@countc=\count129
-\c@pgf@countd=\count130
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
+\r@pgf@reada=\read3
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count300
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count131
-\pgfsyssoftpath@bigbuffer@items=\count132
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
 )
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+(/app/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen149
-\pgfmath@count=\count133
-\pgfmath@box=\box57
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count303
+\pgfmath@box=\box98
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code
-.tex))) (/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count134
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen150
-\pgf@picmaxx=\dimen151
-\pgf@picminy=\dimen152
-\pgf@picmaxy=\dimen153
-\pgf@pathminx=\dimen154
-\pgf@pathmaxx=\dimen155
-\pgf@pathminy=\dimen156
-\pgf@pathmaxy=\dimen157
-\pgf@xx=\dimen158
-\pgf@xy=\dimen159
-\pgf@yx=\dimen160
-\pgf@yy=\dimen161
-\pgf@zx=\dimen162
-\pgf@zy=\dimen163
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen164
-\pgf@path@lasty=\dimen165
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen166
-\pgf@shorten@start@additional=\dimen167
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box58
-\pgf@hbox=\box59
-\pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count135
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen168
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen169
-\pgf@pt@y=\dimen170
-\pgf@pt@temp=\dimen171
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen172
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen173
-\pgf@sys@shading@range@num=\count136
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.co
+de.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
 
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box61
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.
+tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmeti
+cs.code.tex)))
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count304
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.t
+ex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box99
+\pgf@hbox=\box100
+\pgf@layerbox@main=\box101
+\pgf@picture@serial@count=\count305
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.te
+x
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen262
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code
+.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.
+tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen266
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count306
+\pgf@shadingcount=\count307
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box102
+))
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.te
+x
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/app/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box62
+(/app/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box103
 )
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+(/app/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen174
-\pgf@nodesepend=\dimen175
+(/app/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+(/app/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (/app/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/app/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/app/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/app/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(/app/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
 ))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+(/app/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen176
-\pgffor@skip=\dimen177
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
-))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count137
-\pgfplotmarksize=\dimen178
+(/app/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen179
-\tikz@lasty=\dimen180
-\tikz@lastxsaved=\dimen181
-\tikz@lastysaved=\dimen182
-\tikzleveldistance=\dimen183
-\tikzsiblingdistance=\dimen184
-\tikz@figbox=\box63
-\tikz@figbox@bg=\box64
-\tikz@tempbox=\box65
-\tikz@tempbox@bg=\box66
-\tikztreelevel=\count138
-\tikznumberofchildren=\count139
-\tikznumberofcurrentchild=\count140
-\tikz@fig@count=\count141
-
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count142
-\pgfmatrixcurrentcolumn=\count143
-\pgf@matrix@numberofcolumns=\count144
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikz@lastmovetox=\dimen277
+\tikz@lastmovetoy=\dimen278
+\tikzleveldistance=\dimen279
+\tikzsiblingdistance=\dimen280
+\tikz@figbox=\box104
+\tikz@figbox@bg=\box105
+\tikz@tempbox=\box106
+\tikz@tempbox@bg=\box107
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
+ (/app/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
 )
-\tikz@expandcount=\count145
+\tikz@expandcount=\count316
 
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
-hs.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (/usr/share/texmf/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+(/app/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/app/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
 
-(/usr/share/texmf/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count146
-\calc@Bcount=\count147
-\calc@Adimen=\dimen185
-\calc@Bdimen=\dimen186
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
+(/app/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count317
+\calc@Bcount=\count318
+\calc@Adimen=\dimen281
+\calc@Bdimen=\dimen282
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count148
-\calc@Cskip=\skip60
+\calc@Ccount=\count319
+\calc@Cskip=\skip66
 )
-(/usr/share/texmf/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+(/app/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen283
+\ESO@tempdimb=\dimen284
 )
-\AM@pagewidth=\dimen187
-\AM@pageheight=\dimen188
+\AM@pagewidth=\dimen285
+\AM@pageheight=\dimen286
+\AM@fboxrule=\dimen287
 
-(/usr/share/texmf/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+(/app/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box67
-\AM@global@opts=\toks45
-\AM@toc@title=\toks46
-\c@AM@survey=\count149
-\AM@templatesizebox=\box68
+\pdfpages@includegraphics@status=\count320
+\AM@pagebox=\box108
+\AM@global@opts=\toks46
+\AM@pagecnt=\count321
+\AM@toc@title=\toks47
+\c@AM@survey=\count322
+\AM@templatesizebox=\box109
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
-ations.pathreplacing.code.tex
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
-ations.code.tex
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen189
-\pgfdecoratedremainingdistance=\dimen190
-\pgfdecoratedinputsegmentcompleteddistance=\dimen191
-\pgfdecoratedinputsegmentremainingdistance=\dimen192
-\pgf@decorate@distancetomove=\dimen193
-\pgf@decorate@repeatstate=\count150
-\pgfdecorationsegmentamplitude=\dimen194
-\pgfdecorationsegmentlength=\dimen195
+(/app/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibra
+rydecorations.pathreplacing.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibra
+rydecorations.code.tex
+(/app/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen288
+\pgfdecoratedremainingdistance=\dimen289
+\pgfdecoratedinputsegmentcompleteddistance=\dimen290
+\pgfdecoratedinputsegmentremainingdistance=\dimen291
+\pgf@decorate@distancetomove=\dimen292
+\pgf@decorate@repeatstate=\count323
+\pgfdecorationsegmentamplitude=\dimen293
+\pgfdecorationsegmentlength=\dimen294
 )
-\tikz@lib@dec@box=\box69
+\tikz@lib@dec@box=\box110
 )
-(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
-athreplacing.code.tex))
-(/usr/share/texmf/tex/latex/algorithmicx/algpseudocode.sty
+(/app/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecora
+tions.pathreplacing.code.tex))
+(/app/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 
-(/usr/share/texmf/tex/latex/algorithmicx/algorithmicx.sty
+(/app/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count151
-\c@ALG@rem=\count152
-\c@ALG@nested=\count153
-\ALG@tlm=\skip61
-\ALG@thistlm=\skip62
-\c@ALG@Lnr=\count154
-\c@ALG@blocknr=\count155
-\c@ALG@storecount=\count156
-\c@ALG@tmpcounter=\count157
-\ALG@tmplength=\skip63
+\c@ALG@line=\count324
+\c@ALG@rem=\count325
+\c@ALG@nested=\count326
+\ALG@tlm=\skip67
+\ALG@thistlm=\skip68
+\c@ALG@Lnr=\count327
+\c@ALG@blocknr=\count328
+\c@ALG@storecount=\count329
+\c@ALG@tmpcounter=\count330
+\ALG@tmplength=\skip69
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texmf/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count158
-\Gm@cntv=\count159
-\c@Gm@tempcnt=\count160
-\Gm@bindingoffset=\dimen196
-\Gm@wd@mp=\dimen197
-\Gm@odd@mp=\dimen198
-\Gm@even@mp=\dimen199
-\Gm@layoutwidth=\dimen256
-\Gm@layoutheight=\dimen257
-\Gm@layouthoffset=\dimen258
-\Gm@layoutvoffset=\dimen259
-\Gm@dimlist=\toks47
+) (/app/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/app/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-(/usr/share/texmf/tex/latex/floatrow/floatrow.sty
+\Gm@cnth=\count331
+\Gm@cntv=\count332
+\c@Gm@tempcnt=\count333
+\Gm@bindingoffset=\dimen295
+\Gm@wd@mp=\dimen296
+\Gm@odd@mp=\dimen297
+\Gm@even@mp=\dimen298
+\Gm@layoutwidth=\dimen299
+\Gm@layoutheight=\dimen300
+\Gm@layouthoffset=\dimen301
+\Gm@layoutvoffset=\dimen302
+\Gm@dimlist=\toks48
+)
+(/app/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count161
-\float@exts=\toks48
-\float@box=\box70
-\@floatcapt=\box71
+\c@float@type=\count334
+\float@exts=\toks49
+\float@box=\box111
+\@floatcapt=\box112
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks49
+\FR@everyfloat=\toks50
 \flrow@foot=\insert252
-\FB@wd=\dimen260
-\FBo@wd=\dimen261
-\FBc@wd=\dimen262
-\FBo@ht=\skip64
-\FBc@ht=\skip65
-\FBf@ht=\skip66
-\FBo@max=\skip67
-\FBc@max=\skip68
-\FBf@max=\skip69
-\c@FBl@b=\count162
-\floatbox@depth=\count163
-\c@FRobj=\count164
-\c@FRsobj=\count165
-\Xhsize=\skip70
-\sXhsize=\skip71
-\Zhsize=\skip72
-\sZhsize=\skip73
-\flrow@rowbox=\box72
-\FR@Zunitlength=\dimen263
-\c@FBcnt=\count166
-\FPOScnt=\count167
-\LTleft=\skip74
-\LTright=\skip75
-\LTleft=\skip76
-\LTright=\skip77
-\flrow@types=\toks50
+\FB@wd=\dimen303
+\FBo@wd=\dimen304
+\FBc@wd=\dimen305
+\FBo@ht=\skip70
+\FBc@ht=\skip71
+\FBf@ht=\skip72
+\FBo@max=\skip73
+\FBc@max=\skip74
+\FBf@max=\skip75
+\c@FBl@b=\count335
+\floatbox@depth=\count336
+\c@FRobj=\count337
+\c@FRsobj=\count338
+\Xhsize=\skip76
+\sXhsize=\skip77
+\Zhsize=\skip78
+\sZhsize=\skip79
+\flrow@rowbox=\box113
+\FR@Zunitlength=\dimen306
+\c@FBcnt=\count339
+\FPOScnt=\count340
+\LTleft=\skip80
+\LTright=\skip81
+\LTleft=\skip82
+\LTright=\skip83
+\flrow@types=\toks51
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibra
-rygraphs.code.tex
-File: tikzlibrarygraphs.code.tex 2015/06/05 v3.0.1a (rcs-revision 1.44)
-\tikz@lib@auto@number=\count168
-\tikz@qnode@count=\count169
+(/app/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/ti
+kzlibrarygraphs.code.tex
+File: tikzlibrarygraphs.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\tikz@lib@auto@number=\count341
+\tikz@qnode@count=\count342
 )
-\c@defn=\count170
-\c@example=\count171
-\c@state=\count172
-\c@theorem=\count173
-\c@lemma=\count174
-\c@axiom=\count175
-\c@consequence=\count176
+\c@defn=\count343
+\c@example=\count344
+\c@state=\count345
+\c@theorem=\count346
+\c@lemma=\count347
+\c@axiom=\count348
+\c@consequence=\count349
 
+(/app/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count350
+\l__pdf_internal_box=\box114
+)
 
 LaTeX Warning: Unused global option(s):
     [times,mtpro].
@@ -863,11 +916,13 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -880,69 +935,64 @@ LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: floatrow package is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box73
 Package hyperref Info: Link coloring OFF on input line 34.
- (/usr/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/app/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(/usr/share/texmf/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+(/app/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-\c@section@level=\count177
+(/app/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count351
 )
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
- (./report.out)
-(./report.out)
+
+(./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
- (/usr/share/texmf/tex/context/base/mkii/supp-pdf.mkii
+
+(/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
-\scratchdimen=\dimen264
-\scratchbox=\box74
-\nofMPsegments=\count179
-\nofMParguments=\count180
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count181
-\MPscratchDim=\dimen265
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
-\everyMPtoPDFconversion=\toks52
-) (/usr/share/texmf/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texmf/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
+\scratchcounter=\count352
+\scratchdimen=\dimen307
+\scratchbox=\box115
+\nofMPsegments=\count353
+\nofMParguments=\count354
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen308
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
+\everyMPtoPDFconversion=\toks53
+) (/app/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 
-(/usr/share/texmf/tex/latex/latexconfig/epstopdf-sys.cfg
+(/app/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(/usr/share/texmf/tex/latex/ucs/ucsencs.def
+(/app/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-ABD: EveryShipout initializing macros
-(/usr/share/texmf/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+LaTeX Info: Redefining \th on input line 34.
 
-(/usr/share/texmf/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+(/app/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/app/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
@@ -955,14 +1005,14 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includefoot 
 * h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=469.47049pt
-* \textheight=702.7831pt
+* \textheight=759.68861pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-57.81723pt
+* \topmargin=-86.26999pt
 * \headheight=14.0pt
 * \headsep=28.45274pt
 * \topskip=14.0pt
@@ -980,33 +1030,36 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./title.tex (/usr/share/texmf/tex/latex/ucs/data/uni-4.def
+(./title.tex (/app/texlive/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )
 <pics/mmlogo.png, id=24, 143.53625pt x 167.62625pt>
 File: pics/mmlogo.png Graphic file (type png)
- <use pics/mmlogo.png>
-Package pdftex.def Info: pics/mmlogo.png used on input line 13.
+<use pics/mmlogo.png>
+Package pdftex.def Info: pics/mmlogo.png  used on input line 13.
 (pdftex.def)             Requested size: 56.9055pt x 66.4559pt.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+
+(/app/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+
+(/app/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 19.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 19
+.
 
-(/usr/share/texmf/tex/latex/jknapltx/ursfs.fd
+(/app/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pics/mmlogo.png>]) (./re
-port.toc)
+{/app/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./pics/mmlogo.png
+>]) (./report.toc)
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
@@ -1026,7 +1079,7 @@ Z$ \T2A/cmr/m/n/14.4 и ско^^?рость $\OML/cmm/m/it/14.4 u$ \T2A/cmr/m/n/14.4 так
 
 [2
 
-] [3]) (./cds_scheme.tex
+]) (./cds_scheme.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
@@ -1036,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
-
+[3]
 Overfull \hbox (9.48116pt too wide) in paragraph at lines 31--34
 []$\OML/cmm/m/it/14.4 H[] [] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 H[] [] \OT1
 /cmr/m/n/14.4 + \OML/cmm/m/it/14.4 H[] [] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.
@@ -1053,7 +1106,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 41--46
 
  []
@@ -1083,17 +1136,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-[5] [6]) (./smooth_problem.tex
+[5]) (./smooth_problem.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-(../tables/Times.tex) [7] (../tables/H_norms_mu0.001_C100.000_gamma1.000.tex
+[6] (../tables/Times.tex) (../tables/H_norms_mu0.001_C100.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1110,401 +1163,6 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.001_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.001_C1.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[8]) (../tables/H_norms_mu0.001_C1.000_gamma1.400.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.010_C100.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[9]) (../tables/H_norms_mu0.010_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.010_C1.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[10]) (../tables/H_norms_mu0.010_C1.000_gamma1.400.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.100_C100.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[11]) (../tables/H_norms_mu0.100_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.100_C1.000_gamma1.000.tex [12]
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/H_norms_mu0.100_C1.000_gamma1.400.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -1529,6 +1187,36 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[7]) (../tables/H_norms_mu0.001_C10.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1548,17 +1236,87 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
+) (../tables/V_norms_mu0.001_C10.000_gamma1.000.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
 
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[8]) (../tables/H_norms_mu0.001_C1.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+) (../tables/V_norms_mu0.001_C1.000_gamma1.000.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[9]) (../tables/H_norms_mu0.001_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-[13]) (../tables/V_norms_mu0.001_C10.000_gamma1.000.tex
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1570,21 +1328,6 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/V_norms_mu0.001_C1.000_gamma1.000.tex [14]
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -1663,7 +1406,77 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
+[10]) (../tables/H_norms_mu0.010_C100.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
 ) (../tables/V_norms_mu0.010_C100.000_gamma1.000.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[11]) (../tables/H_norms_mu0.010_C10.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1673,63 +1486,60 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
+) (../tables/V_norms_mu0.010_C10.000_gamma1.000.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[12]) (../tables/H_norms_mu0.010_C1.000_gamma1.000.tex)
+(../tables/V_norms_mu0.010_C1.000_gamma1.000.tex [13])
+(../tables/H_norms_mu0.010_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
 
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[15]) (../tables/V_norms_mu0.010_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/V_norms_mu0.010_C1.000_gamma1.000.tex [16]
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -1784,6 +1594,11 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
  []
 
 
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[14]) (../tables/H_norms_mu0.100_C100.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1794,82 +1609,56 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
 ) (../tables/V_norms_mu0.100_C100.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $nan$
+ []
+
+[15]) (../tables/H_norms_mu0.100_C10.000_gamma1.000.tex)
+(../tables/V_norms_mu0.100_C10.000_gamma1.000.tex [16])
+(../tables/H_norms_mu0.100_C1.000_gamma1.000.tex)
+(../tables/V_norms_mu0.100_C1.000_gamma1.000.tex [17])
+(../tables/H_norms_mu0.100_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[17]) (../tables/V_norms_mu0.100_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables/V_norms_mu0.100_C1.000_gamma1.000.tex [18]
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -1904,36 +1693,6 @@ Underfull \hbox (badness 4328) in paragraph at lines 7--7
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
 Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -1943,17 +1702,12 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
+[18])
 
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
+LaTeX Warning: Command \CYRS invalid in math mode on input line 66.
 
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) [19] (../tables_grf/Times.tex)
+Missing character: There is no С in font cmr12!
+[19] (../tables_grf/Times.tex)
 (../tables_grf/H_norms_mu0.001_C100.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
@@ -2009,641 +1763,6 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-) (../tables_grf/H_norms_mu0.001_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[20]) (../tables_grf/H_norms_mu0.001_C1.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.001_C1.000_gamma1.400.tex [21]
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.010_C100.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.010_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[22]) (../tables_grf/H_norms_mu0.010_C1.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.010_C1.000_gamma1.400.tex [23]
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.100_C100.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.100_C10.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-[24]) (../tables_grf/H_norms_mu0.100_C1.000_gamma1.000.tex
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-) (../tables_grf/H_norms_mu0.100_C1.000_gamma1.400.tex [25]
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 6--6
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 7--7
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 8--8
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 9--9
-[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
- []
-
 ) (../tables_grf/V_norms_mu0.001_C100.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
@@ -2656,6 +1775,56 @@ Underfull \hbox (badness 4328) in paragraph at lines 6--6
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[20]) (../tables_grf/H_norms_mu0.001_C10.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -2749,7 +1918,7 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-[26]) (../tables_grf/V_norms_mu0.001_C1.000_gamma1.000.tex
+[21]) (../tables_grf/H_norms_mu0.001_C1.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -2794,7 +1963,52 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-) (../tables_grf/V_norms_mu0.001_C1.000_gamma1.400.tex [27]
+) (../tables_grf/V_norms_mu0.001_C1.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[22]) (../tables_grf/H_norms_mu0.001_C1.000_gamma1.400.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -2856,6 +2070,141 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+) (../tables_grf/V_norms_mu0.001_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[23]) (../tables_grf/H_norms_mu0.010_C100.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -2886,6 +2235,56 @@ Underfull \hbox (badness 4328) in paragraph at lines 6--6
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[24]) (../tables_grf/H_norms_mu0.010_C10.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -2979,7 +2378,7 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-[28]) (../tables_grf/V_norms_mu0.010_C1.000_gamma1.000.tex
+[25]) (../tables_grf/H_norms_mu0.010_C1.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -3024,7 +2423,52 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-) (../tables_grf/V_norms_mu0.010_C1.000_gamma1.400.tex [29]
+) (../tables_grf/V_norms_mu0.010_C1.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[26]) (../tables_grf/H_norms_mu0.010_C1.000_gamma1.400.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -3086,6 +2530,141 @@ Underfull \hbox (badness 4328) in paragraph at lines 8--8
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+) (../tables_grf/V_norms_mu0.010_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[27]) (../tables_grf/H_norms_mu0.100_C100.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -3116,6 +2695,56 @@ Underfull \hbox (badness 4328) in paragraph at lines 6--6
 
 
 Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[28]) (../tables_grf/H_norms_mu0.100_C10.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
@@ -3209,7 +2838,7 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-[30]) (../tables_grf/V_norms_mu0.100_C1.000_gamma1.000.tex
+[29]) (../tables_grf/H_norms_mu0.100_C1.000_gamma1.000.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -3254,7 +2883,52 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-) (../tables_grf/V_norms_mu0.100_C1.000_gamma1.400.tex [31]
+) (../tables_grf/V_norms_mu0.100_C1.000_gamma1.000.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[30]) (../tables_grf/H_norms_mu0.100_C1.000_gamma1.400.tex
 Underfull \hbox (badness 4328) in paragraph at lines 6--6
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
@@ -3334,42 +3008,181 @@ Underfull \hbox (badness 4328) in paragraph at lines 9--9
 []$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
  []
 
-)) [32]
+) (../tables_grf/V_norms_mu0.100_C1.000_gamma1.400.tex
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 6--6
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 7--7
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 8--8
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 9--9
+[]$\OML/cmm/m/it/14.4 nan$ $\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 nan$
+ []
+
+[31])) [32]
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\CYRS' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrp' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyri' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrs' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyro' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrk' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrl' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyri' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrt' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyre' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrr' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyra' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrt' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyru' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrr' on input line 48.
+
+
+Package hyperref Warning: Glyph not defined in PU encoding,
+(hyperref)                removing `\cyrery' on input line 48.
+
 
 LaTeX Warning: Empty `thebibliography' environment on input line 51.
 
 [33
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
- (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: C12CD6D5854BD22C592297EECC55334F;701.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+(rerunfilecheck)             Checksum: F8119AB4B915F562A5627C69573557CB;573.
  ) 
 Here is how much of TeX's memory you used:
- 26568 strings out of 492995
- 469080 string characters out of 6141054
- 540007 words of memory out of 5000000
- 29465 multiletter control sequences out of 15000+600000
- 11613 words of font info for 34 fonts, out of 8000000 for 9000
+ 27520 strings out of 478994
+ 497359 string characters out of 5859688
+ 809304 words of memory out of 5000000
+ 44283 multiletter control sequences out of 15000+600000
+ 411403 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,65p,500b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf
-/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/tex
-mf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on report.pdf (34 pages, 233600 bytes).
+ 87i,13n,88p,640b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/app/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</app/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></app/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb></app/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></app/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></app/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></app/texlive/texmf-dist/fonts/type1/public/c
+m-super/sfbx1440.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1
+728.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></app
+/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on report.pdf (34 pages, 236998 bytes).
 PDF statistics:
  271 PDF objects out of 1000 (max. 8388607)
  212 compressed objects within 3 object streams

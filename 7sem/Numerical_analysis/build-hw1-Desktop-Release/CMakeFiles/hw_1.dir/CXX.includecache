@@ -7,19 +7,15 @@
 #IncludeRegexTransform: 
 
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/common.h
+math.h
+-
 optional
 -
 algorithm
 -
-execution
--
-numbers
--
 string
 -
 vector
--
-ranges
 -
 stdio.h
 -
@@ -28,29 +24,17 @@ math.h
 stdarg.h
 -
 
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.h
-common.h
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/common.h
-
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/main.cpp
-io.h
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/io.h
-problem_info.h
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.h
-tex_table.h
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.h
-
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.h
 common.h
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/common.h
+
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.cpp
+problem_info.h
+/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.h
 
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/problem_info.h
 common.h
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/common.h
 math_alg.h
 /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/math_alg.h
-
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/tex_table.h
-common.h
-/home/pam/HomeWork/7sem/Numerical_analysis/hw1/program/common.h
 

@@ -1,7 +1,7 @@
 \section{Отладочный тест}
 \subsection{Постановка задачи}
 
-Рассмотрим $Q = [0;1] x [0;1]$\\
+Рассмотрим $Q = [0;1]$x$[0;1]$\\
 
 Зададим функции $\tilde{\rho}(t, x)$ и $\tilde{u}(t, x)$ так, чтобы они являлись гладким решением задачи $(1)$.
 \begin{equation}
@@ -24,70 +24,72 @@
 		\frac{\partial\tilde{\rho}}{\partial t}  = e^t(cos(3\pi x) + 1.5), \\
 		\frac{\partial\tilde{\rho}\tilde{u}}{\partial t}  = \pi e^t cos(2\pi t) * (4(cos(3\pi x) + 1.5) cos (4\pi x) - 3sin(3\pi x )sin(4\pi x)), \\
 		
-		\frac{\partial\tilde{u}}{\partial t} = -2\pi
+		\frac{\partial\tilde{u}}{\partial t} = -2\pi sin(2\pi t)sin(4\pi x),\\				\frac{\partial\tilde{u}}{\partial x} = 4\pi cos(2\pi t)cos(4\pi x),\\
+		\frac{\partial^2\tilde{u}}{\partial x^2} = -16\pi^2 cos(2\pi t)sin(4\pi x),\\
+		\frac{\partial\tilde{ru}}{\partial x} = \pi e^t cos(2\pi t) (4(cos(3\pi x) + 1.5)cos(4\pi x) - 3sin(3\pi x)sin(4\pi x)),\\
+		\frac{\partial\tilde{p}}{\partial x} = C\gamma \rho^{\gamma - 1} \frac{\partial \rho}{\partial x}		
 	\end{array}
 \end{equation}
+\newpage
 
 \subsection{Численные эксперименты}
 \subsubsection{Обычная сетка}
 
 \input{../tables/Times.tex}
-\newpage
 
 \input{../tables/H_norms_mu0.001_C100.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.001_C10.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.001_C1.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.001_C1.000_gamma1.400.tex}
-\input{../tables/H_norms_mu0.010_C100.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.010_C10.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.010_C1.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.010_C1.000_gamma1.400.tex}
-\input{../tables/H_norms_mu0.100_C100.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.100_C10.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.100_C1.000_gamma1.000.tex}
-\input{../tables/H_norms_mu0.100_C1.000_gamma1.400.tex}
-
 \input{../tables/V_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C10.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C1.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.001_C1.000_gamma1.400.tex}
 \input{../tables/V_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables/H_norms_mu0.010_C100.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C10.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C1.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.010_C1.000_gamma1.400.tex}
 \input{../tables/V_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables/H_norms_mu0.100_C100.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C10.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C1.000_gamma1.000.tex}
 \input{../tables/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables/H_norms_mu0.100_C1.000_gamma1.400.tex}
 \input{../tables/V_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\subsection{Выводы}
+По результатам численного эксперимента можно сделать вывод, что схема является условно сходящейся. Также, обратим внимание на то, что сходимость сильно зависит от $C$, $\gamma$, $\mu$. Худшая сходимость при больших $С$ и маленьких $\mu$. Обратим внимание на то, что при $\tau < h$ невзяки наименьшие. Сходимость схемы порядка $\tau + h^2$
 
 \newpage
 \subsubsection{Вложенная сетка}
 \input{../tables_grf/Times.tex}
 
 \input{../tables_grf/H_norms_mu0.001_C100.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.001_C10.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.400.tex}
-\input{../tables_grf/H_norms_mu0.010_C100.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.010_C10.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.400.tex}
-\input{../tables_grf/H_norms_mu0.100_C100.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.100_C10.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.000.tex}
-\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.400.tex}
-
 \input{../tables_grf/V_norms_mu0.001_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C10.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.001_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.001_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.001_C1.000_gamma1.400.tex}
 \input{../tables_grf/V_norms_mu0.001_C1.000_gamma1.400.tex}
+\input{../tables_grf/H_norms_mu0.010_C100.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.010_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C10.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.010_C1.000_gamma1.400.tex}
 \input{../tables_grf/V_norms_mu0.010_C1.000_gamma1.400.tex}
+\input{../tables_grf/H_norms_mu0.100_C100.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.100_C100.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C10.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.000.tex}
 \input{../tables_grf/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_grf/H_norms_mu0.100_C1.000_gamma1.400.tex}
 \input{../tables_grf/V_norms_mu0.100_C1.000_gamma1.400.tex}
-
-\subsection{Выводы}

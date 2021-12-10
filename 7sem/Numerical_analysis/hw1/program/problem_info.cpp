@@ -10,7 +10,7 @@ const math_vec &CDS_solver::get_answer_H() {
   if (m_grid.m_grf && *m_grid.m_grf)
     {
       math_vec tmp ((m_grid.m_nx / (2<<*m_grid.m_grf)) + 1);
-      for (int i = 0 ; i < tmp.size (); i++)
+      for (unsigned int i = 0 ; i < tmp.size (); i++)
         tmp[i] = m_answer_H[i * 2<<*m_grid.m_grf];
 
       m_answer_H = tmp;
@@ -29,7 +29,7 @@ const math_vec &CDS_solver::get_answer_V() {
   if (m_grid.m_grf && *m_grid.m_grf)
     {
       math_vec tmp ((m_grid.m_nx / (2<<*m_grid.m_grf)) + 1);
-      for (int i = 0 ; i < tmp.size (); i++)
+      for (unsigned int i = 0 ; i < tmp.size (); i++)
         tmp[i] = m_answer_V[i * 2<<*m_grid.m_grf];
 
       m_answer_V = tmp;
@@ -91,123 +91,150 @@ bool CDS_solver::solve() {
 
   V_prev[0] = V_prev[dim - 1] = 0;
 
-  auto f = [this] (double t, double x)
-  {
-     return (r(t, x) * du_dt(t, x) + r(t, x) * u(t, x) * du_dx(t, x) + dp_dr(r(t, x)) * dr_dx(t, x) - m_pde_info.m_mu * d2u_dxdx(t, x)) / r(t, x);
-      //return du_dt(t, x) + (1./3.) * (u(t, x) * du_dx(t, x) + du2_dx(t, x)) + (1./r(t, x)) * (dp_dr(r(t, x)) * dr_dx(t, x)) - (m_pde_info.m_mu / r(t, x)) * d2u_dxdx(t, x);
+  auto f = [this](double t, double x) -> double {
+    return (r(t, x) * du_dt(t, x) + r(t, x) * u(t, x) * du_dx(t, x) + dp_dr(r(t, x)) * dr_dx(t, x) - m_pde_info.m_mu * d2u_dxdx(t, x)) / r(t, x);
+
+    //     return (-exp(timestep * tau) * (cos(M_PI * h * m / 10.) + 1.5) * 2. *
+    //     M_PI *
+    //                 sin(2. * M_PI * timestep * tau) * sin(M_PI * m * m * h *
+    //                 h / 100.) +
+    //             exp(timestep * tau) * (cos(M_PI * m * h / 10.) + 1.5) *
+    //                 sin(M_PI * m * m * h * h / 100.) * cos(2. * M_PI *
+    //                 timestep * tau) * cos(2. * M_PI * timestep * tau) * (M_PI
+    //                 * h * m / 50.) * cos(M_PI * m * m * h * h / 100.) -
+    //             p(M_PI / 10.) * exp(timestep * tau) * sin(M_PI * h * m / 10.)
+    //             - m_pde_info.m_mu * cos(2. * M_PI * timestep * tau) *
+    //                 ((M_PI / 50.) * cos(M_PI * m * h * m * h / 100.) -
+    //                  (M_PI * M_PI * m * m * h * h / 2500) *
+    //                      sin(M_PI * m * h * m * h / 100.))) /
+    //            (exp(timestep * tau) * (cos(M_PI * m * h / 10.) + 1.5));
   };
 
-  auto f_0 = [this] (double t, double x)
-  {
-      return dr_dt(t, x) + dru_dx(t, x);
-      //return dr_dt(t, x) + 0.5 * (u(t, x) * dr_dt(t, x) + dru_dx(t,x) + r(t, x) * du_dx(t, x));
+  auto f_0 = [this](double t, double x) -> double {
+    return dr_dt(t, x) + dru_dx(t, x);
+    //       return exp(timestep * tau) * (cos(M_PI * m * h / 10.) + 1.5) +
+    //              exp(timestep * tau) * cos(2. * M_PI * timestep * tau) *
+    //                  (-M_PI * sin(M_PI * h * m / 10.) *
+    //                       sin(M_PI * h * h * m * m / 100.) / 10. +
+    //                   (M_PI * m * h / 50.) * cos(M_PI * h * m * h * m / 100.)
+    //                   *
+    //                       (cos(M_PI * h * m / 10.) + 1.5));
   };
 
-  auto dummy = [] () {};
+//  auto dump_matrix = [](const math_vec &L, const math_vec &D, const math_vec &R,
+//                        const math_vec &rhs) {
+//    printf("\n\n");
+//    unsigned int dim = D.size();
 
-  auto dump_matrix = [] (const math_vec &L, const math_vec &D, const math_vec &R, const math_vec &rhs)
-  {
-      printf("\n\n");
-      unsigned int dim  = D.size();
+//    for (unsigned int i = 0; i < dim; i++) {
+//      for (unsigned int j = 0; j < dim; j++) {
+//        if (i == j)
+//          printf("%10.3e ", D[i]);
+//        else if (i == j - 1)
+//          printf("%10.3e ", R[i]);
+//        else if (i == j + 1)
+//          printf("%10.3e ", L[i - 1]);
+//        else
+//          printf("%10.3e ", 0.);
+//      }
+//      printf(" | %10.3e\n", rhs[i]);
+//    }
 
-      for (unsigned int i = 0; i < dim; i++)
-        {
-          for (unsigned int j = 0; j < dim; j++)
-            {
-               if (i == j)
-                 printf ("%10.3e ", D[i]);
-               else if (i == j - 1)
-                 printf ("%10.3e ", R[i]);
-               else if (i == j + 1)
-                 printf ("%10.3e ", L[i - 1]);
-               else
-                 printf ("%10.3e ", 0.);
-            }
-          printf (" | %10.3e\n", rhs[i]);
-        }
+//    printf("\n\n");
+//  };
 
-      printf("\n\n");
-  };
-
-  auto preconditioner = [this] (math_vec &vec)
-  {
+  auto preconditioner = [this](math_vec &vec) {
     for (auto &i : vec)
       i *= (m_grid.dt() * m_grid.dx());
   };
 
-  for (int timestep = 0; timestep < timesteps; timestep ++)
-    {
-      //fill H begin
-      H_D[0] = (1. / tau);
-      H_R[0] = V_prev[1] / (2. * h);
-      H_rhs[0] = H_prev[0] / tau - (H_prev[0] * (V_prev[1] - V_prev[0])) / (2. * h)
-                + (1. / (2. * h)) * ((H_prev[2] * V_prev[2] - 2 * H_prev[1] * V_prev[1] + H_prev[0] * V_prev[0])
-                            - 0.5 * ((H_prev[3] * V_prev[3] - 2 * H_prev[2] * V_prev[2] + H_prev[1] * V_prev[1]))
-                            + H_prev[0] * ((V_prev[2] - 2 * V_prev[1] + V_prev[0])
-                                        - 0.5 * ((V_prev[3] - 2 * V_prev[2] + V_prev[1])))) + f_0 ((timestep) * m_grid.dt(), 0);
+  for (int timestep = 0; timestep < timesteps; timestep++) {
+    // fill H begin
+    H_D[0] = (1. / tau);
+    H_R[0] = V_prev[1] / (2. * h);
+    H_rhs[0] =
+        H_prev[0] / tau - (H_prev[0] * (V_prev[1] - V_prev[0])) / (2. * h) +
+        (1. / (2. * h)) *
+            ((H_prev[2] * V_prev[2] - 2 * H_prev[1] * V_prev[1] +
+              H_prev[0] * V_prev[0]) -
+             0.5 * ((H_prev[3] * V_prev[3] - 2 * H_prev[2] * V_prev[2] +
+                     H_prev[1] * V_prev[1])) +
+             H_prev[0] * ((V_prev[2] - 2 * V_prev[1] + V_prev[0]) -
+                          0.5 * ((V_prev[3] - 2 * V_prev[2] + V_prev[1])))) +
+        f_0(timestep * m_grid.dt(), 0.);
 
-      for (int m = 1; m < dim - 1; m++)
-        {
-          //fill internal part H
-          H_L[m - 1] = -(V_prev[m] + V_prev[m - 1]) / (4. * h);
-          H_D[m] = 1. / tau;
-          H_R[m] = (V_prev[m] + V_prev[m + 1]) / (4. * h);
+    for (int m = 1; m < dim - 1; m++) {
+      // fill internal part H
+      H_L[m - 1] = -(V_prev[m] + V_prev[m - 1]) / (4. * h);
+      H_D[m] = 1. / tau;
+      H_R[m] = (V_prev[m] + V_prev[m + 1]) / (4. * h);
 
-          H_rhs[m] = H_prev[m] * ((1 / tau) - (V_prev[m + 1] - V_prev[m - 1]) / (4 * h)) + f_0 ((timestep) * m_grid.dt(), m * m_grid.dx());
-        }
-      //fill end H
-      H_D[dim - 1] = 1. / tau + V_prev[dim - 1] / (2. * h);
-      H_L[dim - 2] = -V_prev[dim - 2] / (2. * h);
-      H_rhs[dim - 1] = H_prev[dim - 1] / tau - (H_prev[dim - 1] * (V_prev[dim - 1] - V_prev[dim - 2])) / (2. * h)
-                - (1 / (2. * h)) * ((H_prev[dim - 1] * V_prev[dim - 1] - 2 * H_prev[dim - 2] * V_prev[dim - 2] + H_prev[dim - 3] * V_prev[dim - 3])
-                            - 0.5 * ((H_prev[dim - 2] * V_prev[dim - 2] - 2 * H_prev[dim - 3] * V_prev[dim - 3] + H_prev[dim - 4] * V_prev[dim - 4]))
-                            + H_prev[dim - 1] * ((V_prev[dim - 1] - 2 * V_prev[dim - 2] + V_prev[dim - 3])
-                                        - 0.5 * ((V_prev[dim - 2] - 2 * V_prev[dim - 3] + V_prev[dim - 4])))) + f_0 ((timestep) * m_grid.dt(), m_grid.m_X_max);
+      H_rhs[m] =
+          H_prev[m] * ((1 / tau) - (V_prev[m + 1] - V_prev[m - 1]) / (4. * h)) +
+          f_0(timestep * m_grid.dt(), m * m_grid.dx());
+    }
 
-//      preconditioner(H_L);
-//      preconditioner(H_D);
-//      preconditioner(H_R);
-//      preconditioner(H_rhs);
+    // fill end H
+    H_D[dim - 1] = 1. / tau + V_prev[dim - 1] / (2. * h);
+    H_L[dim - 2] = -V_prev[dim - 2] / (2. * h);
+    H_rhs[dim - 1] =
+        H_prev[dim - 1] / tau -
+        (H_prev[dim - 1] * (V_prev[dim - 1] - V_prev[dim - 2])) / (2. * h) -
+        (1 / (2. * h)) *
+            ((H_prev[dim - 1] * V_prev[dim - 1] -
+              2 * H_prev[dim - 2] * V_prev[dim - 2] +
+              H_prev[dim - 3] * V_prev[dim - 3]) -
+             0.5 * (H_prev[dim - 2] * V_prev[dim - 2] -
+                    2 * H_prev[dim - 3] * V_prev[dim - 3] +
+                    H_prev[dim - 4] * V_prev[dim - 4]) +
+             H_prev[dim - 1] *
+                 ((V_prev[dim - 1] - 2 * V_prev[dim - 2] + V_prev[dim - 3]) -
+                  0.5 * (V_prev[dim - 2] - 2 * V_prev[dim - 3] +
+                         V_prev[dim - 4]))) +
+        f_0(timestep * m_grid.dt(), (dim - 1) * m_grid.dx());
 
+    preconditioner(H_L);
+    preconditioner(H_D);
+    preconditioner(H_R);
+    preconditioner(H_rhs);
 
-      double H_max = H_prev[0];
-      for (const auto &h : H_prev)
-        H_max = h > H_max ? h : H_max;
+    double tilde_mu = 1. / H_prev[0];
+    for (const auto &h : H_prev)
+      tilde_mu = 1. / h > tilde_mu ? 1. / h : tilde_mu;
 
-      double tilde_mu = m_pde_info.m_mu / H_max;
+    tilde_mu *= m_pde_info.m_mu;
 
-      //fill V begin
-      V_D[0] = 1;
-      V_R[0] = 0;
-      V_rhs[0] = 0;
-      for (int m = 1; m < dim - 1; m++)
-        {
+    // fill V begin
+    V_D[0] = 1;
+    V_R[0] = 0;
+    V_rhs[0] = 0;
+    for (int m = 1; m < dim - 1; m++) {
 
-          //fill internal part V
-          V_L[m - 1] = - (V_prev[m] + V_prev[m - 1]) / (6. * h) - tilde_mu / (h * h);
-          V_D[m] = 1. / tau + (2 * tilde_mu) / (h * h);
-          V_R[m] = (V_prev[m] + V_prev[m + 1]) / (6. * h) - tilde_mu / (h * h);
+      // fill internal part V
+      V_L[m - 1] = -(V_prev[m] + V_prev[m - 1]) / (6. * h) - tilde_mu / (h * h);
+      V_D[m] = 1. / tau + (2 * tilde_mu) / (h * h);
+      V_R[m] = (V_prev[m] + V_prev[m + 1]) / (6. * h) - tilde_mu / (h * h);
 
-          V_rhs[m] = V_prev[m] / tau - (p(H_prev[m + 1]) - p(H_prev[m - 1])) / (2 * h * H_prev[m]) - (tilde_mu - m_pde_info.m_mu / H_prev[m]) * ((V_prev[m - 1] - 2 * V_prev[m] + V_prev[m + 1]) / (h * h)) + f((timestep) * m_grid.dt(), m * m_grid.dx());
-        }
-      //fill end V
-      V_D[dim - 1] = 1;
-      V_L[dim - 2] = 0;
-      V_rhs[dim - 1] = 0;
+      V_rhs[m] =
+          V_prev[m] / tau -
+          (p(H_prev[m + 1]) - p(H_prev[m - 1])) / (2. * h * H_prev[m]) -
+          (tilde_mu - m_pde_info.m_mu / H_prev[m]) *
+              ((V_prev[m - 1] - 2 * V_prev[m] + V_prev[m + 1]) / (h * h)) +
+          f(timestep * m_grid.dt(), m * m_grid.dx());
+    }
+    // fill end V
+    V_D[dim - 1] = 1;
+    V_L[dim - 2] = 0;
+    V_rhs[dim - 1] = 0;
 
-//      preconditioner(V_L);
-//      preconditioner(V_D);
-//      preconditioner(V_R);
-//      preconditioner(V_rhs);
+    preconditioner(V_L);
+    preconditioner(V_D);
+    preconditioner(V_R);
+    preconditioner(V_rhs);
 
-            dump_matrix(H_L, H_D, H_R, H_rhs);
-            dump_matrix(V_L, V_D, V_R, V_rhs);
-
-      //Solving matrix
-      V_prev = solve_3diag_matrix(V_L, V_D, V_R, V_rhs);
-      H_prev = solve_3diag_matrix(H_L, H_D, H_R, H_rhs);
-
-      dummy ();
+    // Solving matrix
+    H_prev = solve_3diag_matrix(H_L, H_D, H_R, H_rhs);
+    V_prev = solve_3diag_matrix(V_L, V_D, V_R, V_rhs);
     }
 
   m_answer_H = std::move(H_prev);

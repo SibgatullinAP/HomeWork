@@ -38,7 +38,7 @@
 					"fragment" : "-fopenmp -O3 -DNDEBUG"
 				},
 				{
-					"fragment" : "-std=gnu++2a"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"language" : "CXX",

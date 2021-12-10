@@ -65,10 +65,12 @@ public:
   const math_vec get_ethalon_H() const;
   const math_vec get_ethalon_V() const;
 
+//  double r (double t, double x) const {return std::exp(t) * (std::cos(M_PI * x / 10.) + 1.5);}
   double r (double t, double x) const {return std::exp(t) * (std::cos(3. * M_PI * x) + 1.5);}
   double dr_dt (double t, double x) const {return r(t, x);}
   double dr_dx (double t, double x) const {return -3. * M_PI * std::exp(t) * std::sin(3. * M_PI * x);}
 
+//  double u (double t, double x) const {return std::cos(2. * M_PI * t) * std::sin(M_PI * x * x / 100.);}
   double u (double t, double x) const {return std::cos(2. * M_PI * t) * std::sin(4. * M_PI * x);}
   double du_dt (double t, double x) const {return -2. * M_PI * std::sin(2. * M_PI * t) * std::sin(4. * M_PI * x);}
   double du_dx (double t, double x) const {return 4. * M_PI * std::cos(2. * M_PI * t) * std::cos(4. * M_PI * x);}

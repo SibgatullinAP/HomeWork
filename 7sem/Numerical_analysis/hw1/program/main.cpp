@@ -74,7 +74,7 @@ int main(int argc, const char *argv[]) {
   //Tables filling
   tex_table table_time (col_limit + 1, row_limit + 1, "Table of times.");
   tex_table H_table (col_limit + 1, row_limit + 1, string_format("Table of norms for H. $\\mu = %1.4lf$ \\, $C = %1.4lf$, $\\gamma = %1.4lf$", problem.m_mu, problem.m_C, problem.m_gamma));
-  tex_table V_table (col_limit + 1, row_limit + 1, string_format("Table of norms for H. $\\mu = %1.4lf$ \\, $C = %1.4lf$, $\\gamma = %1.4lf$", problem.m_mu, problem.m_C, problem.m_gamma));
+  tex_table V_table (col_limit + 1, row_limit + 1, string_format("Table of norms for V. $\\mu = %1.4lf$ \\, $C = %1.4lf$, $\\gamma = %1.4lf$", problem.m_mu, problem.m_C, problem.m_gamma));
   std::string path_to_tables;
 
   init_table_metadata(table_time);
@@ -122,12 +122,12 @@ int main(int argc, const char *argv[]) {
               math_vec diff_H = vec_diffs(ethalon_H, answer_H);
               math_vec diff_V = vec_diffs(ethalon_V, answer_V);
 
-              fill_table_value (H_table, row + 1, col + 1, norm_c(diff_H), norm_l2(diff_H, solver.m_grid.dx()), norm_w21(diff_H, solver.m_grid.dx()));
-              fill_table_value (V_table, row + 1, col + 1, norm_c(diff_V), norm_l2(diff_V, solver.m_grid.dx()), norm_w21(diff_V, solver.m_grid.dx()));
+              fill_table_value (H_table, row + 1, col + 1, norm_c(diff_H), norm_l2(diff_H, solver_ethalon.m_grid.dx()), norm_w21(diff_H, solver_ethalon.m_grid.dx()));
+              fill_table_value (V_table, row + 1, col + 1, norm_c(diff_V), norm_l2(diff_V, solver_ethalon.m_grid.dx()), norm_w21(diff_V, solver_ethalon.m_grid.dx()));
             }
         }
 
-      path_to_tables = "/home/artur.sibgatullin/HomeWork/7sem/Numerical_analysis/hw1/tables_grf/";
+      path_to_tables = "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables_grf/";
     }
   else
     {
@@ -154,7 +154,7 @@ int main(int argc, const char *argv[]) {
             }
         }
 
-      path_to_tables = "/home/artur.sibgatullin/HomeWork/7sem/Numerical_analysis/hw1/tables/";
+      path_to_tables = "/home/pam/HomeWork/7sem/Numerical_analysis/hw1/tables/";
     }
 
   std::string h_filename = string_format("H_norms_mu%1.3lf_C%1.3lf_gamma%1.3lf.tex", problem.m_mu, problem.m_C, problem.m_gamma);
