@@ -1,0 +1,267 @@
+\newpage
+\section{Негладкие начальные данные}
+\subsection{Постановка задачи}
+
+Пусть $\Omega_x=[0;10]$, тогда для системы $(1)$ зададим две задачи, начальные условия которых, определяются следующим образом.
+
+\begin{equation}
+	\begin{cases}
+		\begin{array}{l}
+			\rho(0, x) = 1, x \notin [4.5;5.5], \\
+			\rho(0, x) = 2, x \in [4.5;5.5], \\
+			u(0, x) \equiv 0, x\in [0;10]\\
+			u(t, 0) = u(t, 10) = 0
+		\end{array}
+	\end{cases}
+\end{equation}
+
+\begin{equation}
+	\begin{cases}
+		\begin{array}{l}
+			\rho(0, x) = 1, x \in [0;10]\\
+			u(0, x) = 0, x \notin [4.5;5.5], \\
+			u(0, x) = 1, x \in [4.5;5.5], \\
+			u(t, 0) = u(t, 10) = 0
+		\end{array}
+	\end{cases}
+\end{equation}
+
+Функции $f$ и $f_0$ из гладкой задачи положим равными $f \equiv f_0 \equiv 0$. Вычисление будем проводить до времени $T_{st}$, при котором решение выходит на стационар. Выходом на стационар будем считать выполнение условия:
+$$
+\Vert (H^n, V^n) - (\tilde{H^n}, \tilde{V^n}) \Vert_C \leq \varepsilon
+$$
+
+\subsection{Численные эксперименты}
+В качестве измельчения сетки возьмем $\tau = 10^{-3} \, h = 10^{-2}$. Эксперементальным путем было подобрано значение $\varepsilon = 10^{-3}$. Ввиду того, что при $C = 100$ и $\mu = 0.001$ сходимость схемы плохая, данные параметры не будем расссматривать при расчете различных вариантов начальных условий.
+
+\subsubsection{Первая негладкая задача}
+Ниже приведены таблицы времени стабилизации в зависимости от разных параметров $\mu$, $C$, $\gamma$
+
+За $k$ обозначим степень разбиения сетки, т.е в строках таблиц будут находится результаты вычислений с измельчениями по $T$ и $X$, $\frac{\tau}{2^k}$ и $\frac{h}{2^k}$ соотвественно.
+
+\newpage
+\input{../tables_nonsmooth_1/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/V_norms_mu0.010_C1.000_gamma1.400.tex}
+
+\newpage
+\input{../tables_nonsmooth_1/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/V_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\newpage
+Теперь рассмотрим динамику процесса на графиках затухания и временных срезах для различных значений параметров. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.010_C10.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.010_C10.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.010_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.010_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.010_C1.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.010_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.010_C1.000_gamma1.400.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.010_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.100_C10.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.100_C10.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.100_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.100_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.100_C1.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_H_mu0.100_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/value/Graph_V_mu0.100_C1.000_gamma1.400.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_H_mu0.100_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_1/slices/Graph_V_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+Период колебаний не зависит от $\mu$, однако при увеличении $C$ и $\gamma$ частота колебаний увеличивается. Однако при уменьшении $\mu$ увеличивается время стабилизации процесса.
+
+
+\newpage
+Приведем также графики норм для различных начальных параметров.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/norms/Graph_V_norms_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+\newpage
+Далее приведены значения $\Delta m(n)$ на измельченных и обычных сетках. А также их графическое представление.
+
+\input{../tables_nonsmooth_1/Mass_loss_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/Mass_loss_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/Mass_loss_mu0.100_C1.000_gamma1.400.tex}
+\input{../tables_nonsmooth_1/Mass_loss_mu0.010_C10.000_gamma1.000.tex}
+
+\newpage
+\input{../tables_nonsmooth_1/Mass_loss_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_1/Mass_loss_mu0.010_C1.000_gamma1.400.tex}
+
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_1/mass/Graph_mass_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+Как можно заметить по таблицам потери массы составляют меньше 1-2\%, из чего можно заключить, что закон сохранения массы выполняется. \\
+
+\newpage
+\subsubsection{Вторая негладкая задача}
+Ниже приведены таблицы времени стабилизации в зависимости от разных параметров $\mu$, $C$, $\gamma$
+
+За $k$ обозначим степень разбиения сетки, т.е в строках таблиц будут находится результаты вычислений с измельчениями по $T$ и $X$, $\frac{\tau}{2^k}$ и $\frac{h}{2^k}$ соотвественно.
+
+\input{../tables_nonsmooth_2/V_norms_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/V_norms_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/V_norms_mu0.010_C1.000_gamma1.400.tex}
+
+\newpage
+\input{../tables_nonsmooth_2/V_norms_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/V_norms_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/V_norms_mu0.100_C1.000_gamma1.400.tex}
+
+\newpage
+Теперь рассмотрим динамику процесса на графиках затухания и временных срезах для различных значений параметров. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.010_C10.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.010_C10.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.010_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.010_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.010_C1.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.010_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.010_C1.000_gamma1.400.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.010_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.100_C10.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.100_C10.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.100_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.100_C1.000_gamma1.000.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.100_C1.000_gamma1.000.png}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_H_mu0.100_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/value/Graph_V_mu0.100_C1.000_gamma1.400.png}	
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_H_mu0.100_C1.000_gamma1.400.png}
+	\includegraphics[scale=0.5]{../graphs_data_nonsmooth_2/slices/Graph_V_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+Период колебаний не зависит от $\mu$, однако при увеличении $C$ и $\gamma$ частота колебаний увеличивается. Однако при уменьшении $\mu$ увеличивается время стабилизации процесса.
+
+
+\newpage
+Приведем также графики невязок для различных параметров.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/norms/Graph_V_norms_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+\newpage
+Далее приведены значения $\Delta m(n)$ на измельченных и обычных сетках. А также их граффическое представление
+
+\input{../tables_nonsmooth_2/Mass_loss_mu0.100_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/Mass_loss_mu0.100_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/Mass_loss_mu0.100_C1.000_gamma1.400.tex}
+\input{../tables_nonsmooth_2/Mass_loss_mu0.010_C10.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/Mass_loss_mu0.010_C1.000_gamma1.000.tex}
+\input{../tables_nonsmooth_2/Mass_loss_mu0.010_C1.000_gamma1.400.tex}
+
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.100_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.100_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.100_C1.000_gamma1.400.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.010_C10.000_gamma1.000.png}
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.010_C1.000_gamma1.000.png}	
+	\includegraphics[scale=0.65]{../graphs_data_nonsmooth_2/mass/Graph_mass_mu0.010_C1.000_gamma1.400.png}
+\end{figure}
+
+Как можно заметить по таблицам потери массы составляют меньше 1-2\%, из чего можно заключить, что закон сохранения массы также выполняется. \\
+
+

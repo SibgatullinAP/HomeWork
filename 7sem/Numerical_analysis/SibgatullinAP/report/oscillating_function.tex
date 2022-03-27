@@ -1,0 +1,62 @@
+\section{Задача о стабилизации осцилирующей функции}
+\subsection{Постановка задачи}
+
+Пусть $\Omega_x=[0;1]$, тогда для системы $(1)$ зададим две задачи, начальные условия которых, определяются следующим образом.
+
+\begin{equation}
+	\begin{cases}
+		\begin{array}{l}
+			\rho(0, x) = 2 + sin(N\pi x)\\
+			u(0, x) = 0,\\
+			u(t, 0) = u(t, 1) = 0, t \in [0; T]
+		\end{array}
+	\end{cases}
+\end{equation}
+
+\begin{equation}
+	\begin{cases}
+		\begin{array}{l}
+			\rho(0, x) = 1\\
+			u(0, x) = sin(N\pi x), \\
+			u(t, 0) = u(t, 1) = 0, t \in [0; T]
+		\end{array}
+	\end{cases}
+\end{equation}
+
+Функции $f$ и $f_0$ из гладкой задачи положим равными $f \equiv f_0 \equiv 0$. Вычисление будем проводить до времени $T_{st}$, при котором решение выходит на стационар. Выходом на стационар будем считать выполнение условия:
+$$
+\Vert (H^n, V^n) - (\tilde{H^n}, \tilde{V^n}) \Vert_C \leq \varepsilon
+$$
+
+Число $N$ будем брать исходя из неравенства $10Nh \leq 1$.
+
+\newpage
+\subsection{Численные эксперименты}
+В качестве измельчения сетки возьмем $\tau = 10^{-4} \, h = 10^{-2}$. Эксперементальным путем было подобрано значение $\varepsilon = 10^{-4}$. Ввиду того, что при $C = 100$ и $\mu = 0.001$ сходимость схемы плохая, данные параметры не будем расссматривать при расчете различных вариантов начальных условий.
+
+\subsection{Первая задача}
+
+Приведем таблицы времени стабилизации в зависимости от различных $\mu$, $C$, $\gamma$.
+
+\input{../tables_oscilating_1/Time0.010_C10.000_gamma1.000.tex}
+\input{../tables_oscilating_1/Time0.010_C1.000_gamma1.000.tex}
+\input{../tables_oscilating_1/Time0.010_C1.000_gamma1.400.tex}
+\input{../tables_oscilating_1/Time0.100_C10.000_gamma1.000.tex}
+\input{../tables_oscilating_1/Time0.100_C1.000_gamma1.000.tex}
+\input{../tables_oscilating_1/Time0.100_C1.000_gamma1.400.tex}
+
+Вывод: при нечетных $N$ сходимость на порядок быстрее чем при четных, при уменьшении $\mu$ также возрастает время стабилизации. От $C$ сходимость практически не зависит.
+
+\subsection{Вторая задача}
+Приведем таблицы времени стабилизации в зависимости от различных $\mu$, $C$, $\gamma$.
+
+\input{../tables_oscilating_2/Time0.010_C10.000_gamma1.000.tex}
+\input{../tables_oscilating_2/Time0.010_C1.000_gamma1.000.tex}
+\input{../tables_oscilating_2/Time0.010_C1.000_gamma1.400.tex}
+\input{../tables_oscilating_2/Time0.100_C10.000_gamma1.000.tex}
+\input{../tables_oscilating_2/Time0.100_C1.000_gamma1.000.tex}
+\input{../tables_oscilating_2/Time0.100_C1.000_gamma1.400.tex}
+
+Вывод: при нечетных $N$ сходимость на порядок быстрее чем при четных, при уменьшении $\mu$ также возрастает время стабилизации. От $C$ сходимость практически не зависит.
+
+\newpage 

@@ -1,1 +1,0 @@
-/usr/bin/clang++-12 -g CMakeFiles/ref.dir/main.cpp.o -o ref 

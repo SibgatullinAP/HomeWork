@@ -1,0 +1,60 @@
+\section{Введение}
+\subsection{Постановка задачи}
+
+Рассмотрим систему уравнений, описывающую нестационарное одномерное движение вязкого баротропного газа:
+
+\begin{equation} \label{eq:task}
+	\begin{cases}
+		\begin{array}{l}
+			\frac{\partial\rho}{\partial t} + \frac{\partial \rho u}{\partial x} = \rho f_0 \\
+			\rho \frac{\partial u}{\partial t} + \rho u \frac{\partial u}{\partial x} + \frac{\partial p}{\partial x} = \mu \frac{\partial^2u}{\partial x^2} + \rho \\
+			p = p(\rho)
+		\end{array}
+	\end{cases}
+\end{equation}
+
+Через $\mu$ обозначен коэффициент вязкости газа, который будем считать известной положительной
+константой. Известными также будем считать функцию давления газа $p$ (в данной работе будем рассматривать $p(\rho) = C\rho$, где $C$ - положительная константа) и вектор внешних сил $f$. $f$ - функция переменных Эйлера: $(t, \, x) \in Q = \Omega_t \times \Omega_x = [0; \, T] \times [0; \, X]$.
+
+Неизвестные функции: плотность $\rho$ и скорость $u$ также являются функциями переменных Эйлера.
+
+Перепишем систему $(1)$ в эквивалентный вид, при условии того, что $\rho$ и $u$ гладкие: 
+
+\begin{equation} \label{eq:task_reformulate}
+	\begin{cases}
+		\begin{array}{l}
+			\frac{\partial \rho}{\partial t} + \frac{1}{2}\left(u\frac{\partial \rho}{\partial x} + \frac{\partial \rho u}{\partial x} + \rho \frac{\partial u}{\partial x}\right) = 0\\
+			\frac{\partial u}{\partial t} + \frac{1}{3}\left(u\frac{\partial u}{\partial x} + \frac{\partial u^2}{\partial x}\right) +\frac{1}{\rho}\frac{\partial p}{\partial x} = \frac{\mu}{\rho}\frac{\partial^2 u}{\partial x^2} + f			
+		\end{array}
+	\end{cases}
+\end{equation}
+
+Система \eqref{eq:task} дополнена граничными условиями:
+\begin{equation} \label{eq:terms}
+	\begin{array}{lc}
+		(\rho, \, u)|_{t = 0} = (\rho_0, \, u_0), &\quad x \in [0; \, X] \\
+		u (t, \, 0) = u (t, \, X) = 0, &\quad t \in [0; \, T]
+	\end{array}
+\end{equation}
+
+\subsection{Основные обозначения}
+Введем на $\Omega_x$ и $\Omega_t$ сетки:
+\begin{equation}
+	\begin{array}{lc}
+		\omega_x = \{mh: m = 0, \dots, M\}, h = \frac{X}{M}\\
+		\omega_t = \{n\tau: n = 0, \dots, N\}, \tau = \frac{T}{N}\\
+	\end{array}
+\end{equation}
+
+Для сокращения записи значение для произвольной функции f в узле $(n,m)$ сетки $\omega_x x \omega_t$ обозначим за $f_m^n$. Введем следующие обозначения:
+\begin{equation}
+	\begin{array}{lc}
+		\hat{f} = f_m^{n+1}\\
+		f_t = \frac{f_m^{n+1} - f_m^n}{\tau}\\
+		f_x = \frac{f_{m+1}^n - f^n_m}{h}\\
+		f_{\bar{x}} = \frac{f_m^n - f^n_{m-1}}{h}\\
+		f_{\mathring{x}} = \frac{f_{m+1}^n - f^n_{m-1}}{2h}\\
+		f_{x\bar{x}} = \frac{f^n_{m-1} - 2f_m^n + f^n_{m+1}}{h^2}\\
+	\end{array}
+\end{equation}
+	

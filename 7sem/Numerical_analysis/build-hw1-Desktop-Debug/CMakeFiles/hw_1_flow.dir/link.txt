@@ -1,0 +1,1 @@
+/usr/bin/clang++-12 -g CMakeFiles/hw_1_flow.dir/main.cpp.o CMakeFiles/hw_1_flow.dir/problem_info.cpp.o CMakeFiles/hw_1_flow.dir/io.cpp.o CMakeFiles/hw_1_flow.dir/tex_table.cpp.o CMakeFiles/hw_1_flow.dir/math_alg.cpp.o -o hw_1_flow 

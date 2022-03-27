@@ -1,4 +1,4 @@
-# Install script for directory: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
+# Install script for directory: /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program_flow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -67,7 +67,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
+CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program_flow
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hw_1
+# Target rules for targets named hw_1_flow
 
 # Build rule for target.
-hw_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw_1
-.PHONY : hw_1
+hw_1_flow: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw_1_flow
+.PHONY : hw_1_flow
 
 # fast build rule for target.
-hw_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/build
-.PHONY : hw_1/fast
+hw_1_flow/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/build
+.PHONY : hw_1_flow/fast
 
 io.o: io.cpp.o
 
@@ -148,7 +148,7 @@ io.o: io.cpp.o
 
 # target to build an object file
 io.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/io.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/io.cpp.o
 .PHONY : io.cpp.o
 
 io.i: io.cpp.i
@@ -157,7 +157,7 @@ io.i: io.cpp.i
 
 # target to preprocess a source file
 io.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/io.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/io.cpp.i
 .PHONY : io.cpp.i
 
 io.s: io.cpp.s
@@ -166,7 +166,7 @@ io.s: io.cpp.s
 
 # target to generate assembly for a file
 io.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/io.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/io.cpp.s
 .PHONY : io.cpp.s
 
 main.o: main.cpp.o
@@ -175,7 +175,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -184,7 +184,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -193,7 +193,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 math_alg.o: math_alg.cpp.o
@@ -202,7 +202,7 @@ math_alg.o: math_alg.cpp.o
 
 # target to build an object file
 math_alg.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/math_alg.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/math_alg.cpp.o
 .PHONY : math_alg.cpp.o
 
 math_alg.i: math_alg.cpp.i
@@ -211,7 +211,7 @@ math_alg.i: math_alg.cpp.i
 
 # target to preprocess a source file
 math_alg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/math_alg.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/math_alg.cpp.i
 .PHONY : math_alg.cpp.i
 
 math_alg.s: math_alg.cpp.s
@@ -220,7 +220,7 @@ math_alg.s: math_alg.cpp.s
 
 # target to generate assembly for a file
 math_alg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/math_alg.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/math_alg.cpp.s
 .PHONY : math_alg.cpp.s
 
 problem_info.o: problem_info.cpp.o
@@ -229,7 +229,7 @@ problem_info.o: problem_info.cpp.o
 
 # target to build an object file
 problem_info.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/problem_info.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/problem_info.cpp.o
 .PHONY : problem_info.cpp.o
 
 problem_info.i: problem_info.cpp.i
@@ -238,7 +238,7 @@ problem_info.i: problem_info.cpp.i
 
 # target to preprocess a source file
 problem_info.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/problem_info.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/problem_info.cpp.i
 .PHONY : problem_info.cpp.i
 
 problem_info.s: problem_info.cpp.s
@@ -247,7 +247,7 @@ problem_info.s: problem_info.cpp.s
 
 # target to generate assembly for a file
 problem_info.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/problem_info.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/problem_info.cpp.s
 .PHONY : problem_info.cpp.s
 
 tex_table.o: tex_table.cpp.o
@@ -256,7 +256,7 @@ tex_table.o: tex_table.cpp.o
 
 # target to build an object file
 tex_table.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/tex_table.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/tex_table.cpp.o
 .PHONY : tex_table.cpp.o
 
 tex_table.i: tex_table.cpp.i
@@ -265,7 +265,7 @@ tex_table.i: tex_table.cpp.i
 
 # target to preprocess a source file
 tex_table.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/tex_table.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/tex_table.cpp.i
 .PHONY : tex_table.cpp.i
 
 tex_table.s: tex_table.cpp.s
@@ -274,7 +274,7 @@ tex_table.s: tex_table.cpp.s
 
 # target to generate assembly for a file
 tex_table.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/tex_table.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/tex_table.cpp.s
 .PHONY : tex_table.cpp.s
 
 # Help Target
@@ -285,7 +285,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hw_1"
+	@echo "... hw_1_flow"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"

@@ -63,7 +63,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program
+CMAKE_SOURCE_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/hw1/program_flow
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release
@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hw_1.dir/all
+all: CMakeFiles/hw_1_flow.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hw_1.dir/clean
+clean: CMakeFiles/hw_1_flow.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hw_1.dir
+# Target rules for target CMakeFiles/hw_1_flow.dir
 
 # All Build rule for target.
-CMakeFiles/hw_1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target hw_1"
-.PHONY : CMakeFiles/hw_1.dir/all
+CMakeFiles/hw_1_flow.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target hw_1_flow"
+.PHONY : CMakeFiles/hw_1_flow.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hw_1.dir/rule: cmake_check_build_system
+CMakeFiles/hw_1_flow.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hw_1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hw_1_flow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pam/HomeWork/7sem/Numerical_analysis/build-hw1-Desktop-Release/CMakeFiles 0
-.PHONY : CMakeFiles/hw_1.dir/rule
+.PHONY : CMakeFiles/hw_1_flow.dir/rule
 
 # Convenience name for target.
-hw_1: CMakeFiles/hw_1.dir/rule
+hw_1_flow: CMakeFiles/hw_1_flow.dir/rule
 
-.PHONY : hw_1
+.PHONY : hw_1_flow
 
 # clean rule for target.
-CMakeFiles/hw_1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1.dir/build.make CMakeFiles/hw_1.dir/clean
-.PHONY : CMakeFiles/hw_1.dir/clean
+CMakeFiles/hw_1_flow.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_1_flow.dir/build.make CMakeFiles/hw_1_flow.dir/clean
+.PHONY : CMakeFiles/hw_1_flow.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
