@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pam/HomeWork/8sem/IBM/prog/tables/main.cpp
+algorithm
+-
+math.h
+-
+optional
+-
+string
+-
+vector
+-
+cstdlib
+-
+ctime
+-
+iostream
+-
+math.h
+-
+random
+-
+stdarg.h
+-
+stdio.h
+-
+tuple
+-
+

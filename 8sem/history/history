@@ -1,0 +1,23 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "../IBM/report/report.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "410_Sibgatullin_A_P.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "410_Sibgatullin_A_P.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
+        ],
+        "MasterFile": ""
+    }
+}

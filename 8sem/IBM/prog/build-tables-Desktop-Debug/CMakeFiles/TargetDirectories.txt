@@ -1,0 +1,3 @@
+/home/pam/HomeWork/8sem/IBM/prog/build-tables-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/pam/HomeWork/8sem/IBM/prog/build-tables-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/pam/HomeWork/8sem/IBM/prog/build-tables-Desktop-Debug/CMakeFiles/tables.dir

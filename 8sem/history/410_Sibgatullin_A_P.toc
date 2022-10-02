@@ -1,0 +1,7 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Введение}{2}{section.1}%
+\contentsline {section}{\numberline {2}Августовский путч: случайность или закономерность?}{3}{section.2}%
+\contentsline {section}{\numberline {3}Причины переворота: суждения и мнения}{5}{section.3}%
+\contentsline {section}{\numberline {4}Рассуждения о причинах неудачи переворота}{6}{section.4}%
+\contentsline {section}{\numberline {5}Последствия путча в оценках историков и современников}{8}{section.5}%
+\contentsline {section}{\numberline {6}Заключение}{10}{section.6}%

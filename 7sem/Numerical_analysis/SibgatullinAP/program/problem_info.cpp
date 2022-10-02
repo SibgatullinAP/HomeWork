@@ -1,4 +1,5 @@
 #include "problem_info.h"
+#include "/home/pam/HomeWork/8sem/IBM/eigen-3.4.0/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h"
 
 const math_vec &CDS_solver::get_answer_H() {
   if (!m_calculated) {
